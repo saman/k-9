@@ -1,29 +1,35 @@
 package com.fsck.k9.activity
 
+import android.annotation.SuppressLint
 import android.app.SearchManager
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import android.content.IntentSender
 import android.content.res.Configuration
 import android.os.Bundle
 import android.os.Parcelable
+import android.util.Log
 import android.view.KeyEvent
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.ProgressBar
+import androidx.appcompat.widget.SearchView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AlertDialog
+import androidx.core.view.isVisible
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.fsck.k9.Account
 import com.fsck.k9.Account.SortType
 import com.fsck.k9.K9
 import com.fsck.k9.K9.SplitViewMode
 import com.fsck.k9.Preferences
-import com.fsck.k9.account.BackgroundAccountRemover
 import com.fsck.k9.activity.compose.MessageActions
 import com.fsck.k9.controller.MessageReference
 import com.fsck.k9.fragment.MessageListFragment
@@ -33,6 +39,7 @@ import com.fsck.k9.helper.ParcelableUtil
 import com.fsck.k9.mailstore.SearchStatusManager
 import com.fsck.k9.mailstore.StorageManager
 import com.fsck.k9.mailstore.StorageManager.StorageListener
+import com.fsck.k9.models.SearchState
 import com.fsck.k9.notification.NotificationChannelManager
 import com.fsck.k9.search.LocalSearch
 import com.fsck.k9.search.SearchAccount
@@ -55,6 +62,8 @@ import com.fsck.k9.ui.permissions.Permission
 import com.fsck.k9.ui.permissions.PermissionUiHelper
 import com.fsck.k9.view.ViewSwitcher
 import com.fsck.k9.view.ViewSwitcher.OnSwitchCompleteListener
+import com.github.asml.rsm.android.RuntimeStateMigration
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.mikepenz.materialdrawer.Drawer.OnDrawerListener
 import org.koin.android.ext.android.inject
 import org.koin.core.KoinComponent
@@ -74,11 +83,12 @@ open class MessageList :
     OnSwitchCompleteListener,
     PermissionUiHelper {
 
+    private lateinit var migration: FloatingActionButton
     protected val searchStatusManager: SearchStatusManager by inject()
     private val preferences: Preferences by inject()
     private val channelUtils: NotificationChannelManager by inject()
     private val defaultFolderProvider: DefaultFolderProvider by inject()
-    private val accountRemover: BackgroundAccountRemover by inject()
+    private val rsm: RuntimeStateMigration by inject()
 
     private val storageListener: StorageListener = StorageListenerImplementation()
     private val permissionUiHelper: PermissionUiHelper = K9PermissionUiHelper(this)
@@ -99,6 +109,7 @@ open class MessageList :
     private var lastDirection = if (K9.isMessageViewShowNext) NEXT else PREVIOUS
 
     private var messageListActivityAppearance: MessageListActivityAppearance? = null
+    private lateinit var searchView: SearchView
 
     /**
      * `true` if the message list should be displayed as flat list (i.e. no threading)
@@ -117,13 +128,12 @@ open class MessageList :
     private var messageListWasDisplayed = false
     private var viewSwitcher: ViewSwitcher? = null
 
+    @SuppressLint("LogNotTimber")
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         val accounts = preferences.accounts
-        deleteIncompleteAccounts(accounts)
-        val hasAccountSetup = accounts.any { it.isFinishedSetup }
-        if (!hasAccountSetup) {
+        if (accounts.isEmpty()) {
             OnboardingActivity.launch(this)
             finish()
             return
@@ -168,6 +178,62 @@ open class MessageList :
         if (savedInstanceState == null) {
             checkAndRequestPermissions()
         }
+        rsm.setOnDeviceJoinListener { modelName, device ->
+            Log.d("RuntimeStateMigration", "setOnDeviceJoinListener called with: modelName = $modelName, device = ${device.name}")
+            Toast.makeText(this, "${device.name} joined $modelName", Toast.LENGTH_SHORT).show()
+        }
+        rsm.setOnDeviceLeaveListener { device ->
+            Log.d("RuntimeStateMigration", "setOnDeviceLeaveListener called with: device = ${device.name}")
+            Toast.makeText(this, "${device.name} left", Toast.LENGTH_SHORT).show()
+        }
+        rsm.setOnStateRequestListener { modelName, device ->
+            Log.d("RuntimeStateMigration", "setOnStateRequestListener() called with: modelName = $modelName, device = ${device.name}")
+            if (modelName == "search") {
+                rsm.setState("search", SearchState(searchView.query.toString()).toString())
+                rsm.sendState("search", device.id)
+            }
+        }
+        rsm.setOnStateReceiveListener { modelName, device, state, isValid ->
+            Log.d("RuntimeStateMigration", "setOnStateReceiveListener() called with: modelName = $modelName, device = ${device.name}, state = $state, isValid = $isValid")
+            if (modelName == "search" && isValid) {
+                val searchState = SearchState.fromJsonString(state)
+                searchView.isIconified = false
+                searchView.setQuery(searchState.query, false)
+                //requestSearchWithInitialValue(searchState.query)
+                rsm.setMigration("search", device.id)
+            }
+        }
+        rsm.setOnStateMigrationListener { modelName, device ->
+            if (modelName == "search" && searchView.isShown) {
+                searchView.setQuery("", false)
+            }
+        }
+        rsm.addModel(readStringFromRaw(R.raw.search))
+        rsm.addModel(readStringFromRaw(R.raw.sending_email))
+        rsm.introduce()
+
+        migration = findViewById<FloatingActionButton>(R.id.migration)
+        migration.visibility = View.GONE
+        migration.setOnClickListener {
+            val devices = rsm.getDevices("search")
+            if (devices.size < 1) {
+                return@setOnClickListener
+            }
+            var device = devices[0]
+            AlertDialog.Builder(this)
+                .setTitle("Migrate Search")
+                .setSingleChoiceItems(devices.map { it.name as CharSequence }.toTypedArray(), 0) { dialogInterface: DialogInterface, i: Int ->
+                    device = devices[i]
+                }
+                .setNegativeButton("Set State") { d, w ->
+                    rsm.setState("search", SearchState(searchView.query.toString()).toString())
+                    rsm.sendState("search", device.id)
+                }
+                .setPositiveButton("Get State") { d, w ->
+                    rsm.getStateDevice("search", device.id)
+                }
+                .create().show()
+        }
     }
 
     public override fun onNewIntent(intent: Intent) {
@@ -201,12 +267,6 @@ open class MessageList :
         initializeDisplayMode(null)
         initializeFragments()
         displayViews()
-    }
-
-    private fun deleteIncompleteAccounts(accounts: List<Account>) {
-        accounts.filter { !it.isFinishedSetup }.forEach {
-            accountRemover.removeAccountAsync(it.uuid)
-        }
     }
 
     private fun findFragments() {
@@ -330,7 +390,7 @@ open class MessageList :
             // check if this intent comes from the system search ( remote )
             if (Intent.ACTION_SEARCH == intent.action) {
                 // Query was received from Search Dialog
-                val query = intent.getStringExtra(SearchManager.QUERY).trim()
+                val query = intent.getStringExtra(SearchManager.QUERY)?.trim()
 
                 search = LocalSearch(getString(R.string.search_results))
                 search!!.isManualSearch = true
@@ -768,6 +828,10 @@ open class MessageList :
         return messageListFragment!!.onSearchRequested()
     }
 
+    fun requestSearchWithInitialValue(value: String?) {
+        messageListFragment!!.onSearchRequested(value)
+    }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val id = item.itemId
         if (id == android.R.id.home) {
@@ -1032,7 +1096,17 @@ open class MessageList :
         // Set visibility of menu items related to the message list
 
         // Hide both search menu items by default and enable one when appropriate
-        menu.findItem(R.id.search).isVisible = false
+        val searchManager = getSystemService(Context.SEARCH_SERVICE) as SearchManager
+        searchView = menu.findItem(R.id.search).actionView as SearchView
+        searchView.setOnQueryTextFocusChangeListener { v, hasFocus ->
+            migration.visibility = if (hasFocus) View.VISIBLE else View.GONE
+        }
+        searchView.apply {
+            isVisible = false
+            setSearchableInfo(searchManager.getSearchableInfo(componentName))
+            setIconifiedByDefault(true)
+        }
+        //menu.findItem(R.id.search).isVisible = false
         menu.findItem(R.id.search_remote).isVisible = false
 
         if (displayMode == DisplayMode.MESSAGE_VIEW || messageListFragment == null ||
@@ -1174,7 +1248,7 @@ open class MessageList :
         }
     }
 
-    override fun startSearch(account: Account?, folderId: Long?): Boolean {
+    override fun startSearch(account: Account?, folderId: Long?, initialQuery: String?): Boolean {
         // If this search was started from a MessageList of a single folder, pass along that folder info
         // so that we can enable remote search.
         if (account != null && folderId != null) {
@@ -1182,10 +1256,10 @@ open class MessageList :
                 putString(EXTRA_SEARCH_ACCOUNT, account.uuid)
                 putLong(EXTRA_SEARCH_FOLDER, folderId)
             }
-            startSearch(null, false, appData, false)
+            startSearch(initialQuery, false, appData, false)
         } else {
             // TODO Handle the case where we're searching from within a search result.
-            startSearch(null, false, null, false)
+            startSearch(initialQuery, false, null, false)
         }
 
         return true

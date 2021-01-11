@@ -1,6 +1,7 @@
 package com.fsck.k9
 
 import android.app.Application
+import android.os.StrictMode
 import com.fsck.k9.activity.MessageCompose
 import com.fsck.k9.controller.MessagingController
 import com.fsck.k9.external.MessageProvider
@@ -14,10 +15,13 @@ class App : Application() {
 
     override fun onCreate() {
         Core.earlyInit(this)
-
+        StrictMode.allowThreadDiskReads()
+        StrictMode.allowThreadDiskWrites()
         super.onCreate()
 
         DI.start(this, coreModules + uiModules + appModules)
+
+
 
         K9.init(this)
         Core.init(this)

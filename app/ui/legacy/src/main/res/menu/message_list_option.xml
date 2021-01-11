@@ -16,7 +16,8 @@
         android:id="@+id/search"
         android:icon="?attr/iconActionSearch"
         app:showAsAction="always"
-        android:title="@string/search_action"/>
+        android:title="@string/search_action"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
 
     <!-- MessageList -->
     <item

@@ -20,6 +20,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -41,8 +42,6 @@ import com.fsck.k9.mail.MailServerDirection;
 import com.fsck.k9.mail.ServerSettings;
 import com.fsck.k9.view.ClientCertificateSpinner;
 import com.fsck.k9.view.ClientCertificateSpinner.OnClientCertificateChangedListener;
-import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
 import timber.log.Timber;
 
 public class AccountSetupOutgoing extends K9Activity implements OnClickListener,
@@ -57,13 +56,13 @@ public class AccountSetupOutgoing extends K9Activity implements OnClickListener,
     private final BackendManager backendManager = DI.get(BackendManager.class);
     private final AccountCreator accountCreator = DI.get(AccountCreator.class);
 
-    private TextInputEditText mUsernameView;
-    private TextInputEditText mPasswordView;
-    private TextInputLayout mPasswordLayoutView;
+    private EditText mUsernameView;
+    private EditText mPasswordView;
     private ClientCertificateSpinner mClientCertificateSpinner;
     private TextView mClientCertificateLabelView;
-    private TextInputEditText mServerView;
-    private TextInputEditText mPortView;
+    private TextView mPasswordLabelView;
+    private EditText mServerView;
+    private EditText mPortView;
     private String mCurrentPortViewSetting;
     private CheckBox mRequireLoginView;
     private ViewGroup mRequireLoginSettingsView;
@@ -120,7 +119,7 @@ public class AccountSetupOutgoing extends K9Activity implements OnClickListener,
         mPasswordView = findViewById(R.id.account_password);
         mClientCertificateSpinner = findViewById(R.id.account_client_certificate_spinner);
         mClientCertificateLabelView = findViewById(R.id.account_client_certificate_label);
-        mPasswordLayoutView = findViewById(R.id.account_password_layout);
+        mPasswordLabelView = findViewById(R.id.account_password_label);
         mServerView = findViewById(R.id.account_server);
         mPortView = findViewById(R.id.account_port);
         mRequireLoginView = findViewById(R.id.account_require_login);
@@ -355,13 +354,15 @@ public class AccountSetupOutgoing extends K9Activity implements OnClickListener,
         if (isAuthTypeExternal) {
 
             // hide password fields, show client certificate fields
-            mPasswordLayoutView.setVisibility(View.GONE);
+            mPasswordView.setVisibility(View.GONE);
+            mPasswordLabelView.setVisibility(View.GONE);
             mClientCertificateLabelView.setVisibility(View.VISIBLE);
             mClientCertificateSpinner.setVisibility(View.VISIBLE);
         } else {
 
             // show password fields, hide client certificate fields
-            mPasswordLayoutView.setVisibility(View.VISIBLE);
+            mPasswordView.setVisibility(View.VISIBLE);
+            mPasswordLabelView.setVisibility(View.VISIBLE);
             mClientCertificateLabelView.setVisibility(View.GONE);
             mClientCertificateSpinner.setVisibility(View.GONE);
         }
@@ -465,6 +466,7 @@ public class AccountSetupOutgoing extends K9Activity implements OnClickListener,
                 finish();
             } else {
                 AccountSetupOptions.actionOptions(this, mAccount, mMakeDefault);
+                finish();
             }
         }
     }

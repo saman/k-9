@@ -28,4 +28,8 @@ abstract class K9Activity : AppCompatActivity() {
 
         setSupportActionBar(toolbar)
     }
+
+    protected fun readStringFromRaw(resource: Int): String = resources.openRawResource(resource).bufferedReader().use {
+        it.readText()
+    }
 }

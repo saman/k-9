@@ -91,6 +91,7 @@ class AccountSetupAccountType : K9Activity() {
 
     private fun returnAccountTypeSelectionResult() {
         AccountSetupIncoming.actionIncomingSettings(this, account, makeDefault)
+        finish()
     }
 
     companion object {

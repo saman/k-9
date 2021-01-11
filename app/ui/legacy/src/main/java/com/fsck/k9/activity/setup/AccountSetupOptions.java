@@ -120,6 +120,7 @@ public class AccountSetupOptions extends K9Activity implements OnClickListener {
         }
         Core.setServicesEnabled(this);
         AccountSetupNames.actionSetNames(this, mAccount);
+        finish();
     }
 
     public void onClick(View v) {

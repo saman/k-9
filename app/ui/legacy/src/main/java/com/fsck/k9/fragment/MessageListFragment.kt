@@ -1416,9 +1416,9 @@ class MessageListFragment :
     val isRemoteSearchAllowed: Boolean
         get() = isManualSearch && !isRemoteSearch && isSingleFolderMode && account?.isAllowRemoteSearch == true
 
-    fun onSearchRequested(): Boolean {
+    fun onSearchRequested(initialQuery: String? = null): Boolean {
         val folderId = currentFolder?.databaseId
-        return fragmentListener.startSearch(account, folderId)
+        return fragmentListener.startSearch(account, folderId, initialQuery)
     }
 
     fun setMessageList(messageListInfo: MessageListInfo) {
@@ -1893,7 +1893,7 @@ class MessageListFragment :
         fun openMessage(messageReference: MessageReference)
         fun setMessageListTitle(title: String)
         fun onCompose(account: Account?)
-        fun startSearch(account: Account?, folderId: Long?): Boolean
+        fun startSearch(account: Account?, folderId: Long?, initialQuery: String? = null): Boolean
         fun remoteSearchStarted()
         fun goBack()
         fun updateMenu()

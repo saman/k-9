@@ -234,6 +234,7 @@
                 android:value="com.fsck.k9.directshare.K9ChooserTargetService" />
         </activity>
 
+
         <!-- Search Activity - searchable -->
         <activity
             android:name=".activity.Search"

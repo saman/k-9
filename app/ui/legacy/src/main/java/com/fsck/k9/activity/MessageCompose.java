@@ -2,6 +2,7 @@ package com.fsck.k9.activity;
 
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -25,11 +26,14 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Parcelable;
+
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.appcompat.app.ActionBar;
+
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
@@ -48,6 +52,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fsck.k9.Account;
 import com.fsck.k9.Account.MessageFormat;
 import com.fsck.k9.DI;
@@ -85,6 +90,7 @@ import com.fsck.k9.helper.MailTo;
 import com.fsck.k9.helper.ReplyToParser;
 import com.fsck.k9.helper.SimpleTextWatcher;
 import com.fsck.k9.helper.Utility;
+import com.fsck.k9.mail.Address;
 import com.fsck.k9.mail.Flag;
 import com.fsck.k9.mail.Message;
 import com.fsck.k9.mail.Message.RecipientType;
@@ -102,6 +108,8 @@ import com.fsck.k9.message.PgpMessageBuilder;
 import com.fsck.k9.message.QuotedTextMode;
 import com.fsck.k9.message.SimpleMessageBuilder;
 import com.fsck.k9.message.SimpleMessageFormat;
+import com.fsck.k9.models.SearchState;
+import com.fsck.k9.models.SendingEmailState;
 import com.fsck.k9.search.LocalSearch;
 import com.fsck.k9.ui.R;
 import com.fsck.k9.ui.base.K9Activity;
@@ -114,6 +122,9 @@ import com.fsck.k9.ui.permissions.K9PermissionUiHelper;
 import com.fsck.k9.ui.permissions.Permission;
 import com.fsck.k9.ui.permissions.PermissionUiHelper;
 
+import com.github.asml.rsm.android.RuntimeStateMigration;
+import com.github.asml.rsm.android.models.Device;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
 import org.openintents.openpgp.OpenPgpApiManager;
 import org.openintents.openpgp.util.OpenPgpApi;
@@ -153,7 +164,8 @@ public class MessageCompose extends K9Activity implements OnClickListener,
     private static final String STATE_IN_REPLY_TO = "com.fsck.k9.activity.MessageCompose.inReplyTo";
     private static final String STATE_REFERENCES = "com.fsck.k9.activity.MessageCompose.references";
     private static final String STATE_KEY_READ_RECEIPT = "com.fsck.k9.activity.MessageCompose.messageReadReceipt";
-    private static final String STATE_KEY_CHANGES_MADE_SINCE_LAST_SAVE = "com.fsck.k9.activity.MessageCompose.changesMadeSinceLastSave";
+    private static final String STATE_KEY_CHANGES_MADE_SINCE_LAST_SAVE =
+            "com.fsck.k9.activity.MessageCompose.changesMadeSinceLastSave";
     private static final String STATE_ALREADY_NOTIFIED_USER_OF_EMPTY_SUBJECT = "alreadyNotifiedUserOfEmptySubject";
 
     private static final String FRAGMENT_WAITING_FOR_ATTACHMENT = "waitingForAttachment";
@@ -170,9 +182,8 @@ public class MessageCompose extends K9Activity implements OnClickListener,
 
     /**
      * Regular expression to remove the first localized "Re:" prefix in subjects.
-     *
-     * Currently:
-     * - "Aw:" (german: abbreviation for "Antwort")
+     * <p>
+     * Currently: - "Aw:" (german: abbreviation for "Antwort")
      */
     private static final Pattern PREFIX = Pattern.compile("^AW[:\\s]\\s*", Pattern.CASE_INSENSITIVE);
 
@@ -201,9 +212,8 @@ public class MessageCompose extends K9Activity implements OnClickListener,
     // relates to the message being replied to, forwarded, or edited TODO split up?
     private MessageReference relatedMessageReference;
     /**
-     * Indicates that the source message has been processed at least once and should not
-     * be processed on any subsequent loads. This protects us from adding attachments that
-     * have already been added from the restore of the view state.
+     * Indicates that the source message has been processed at least once and should not be processed on any subsequent loads. This protects us from adding attachments that have
+     * already been added from the restore of the view state.
      */
     private boolean relatedMessageProcessed = false;
     private MessageViewInfo currentMessageViewInfo;
@@ -235,6 +245,8 @@ public class MessageCompose extends K9Activity implements OnClickListener,
     private boolean isInSubActivity = false;
 
     private boolean navigateUp;
+    private RuntimeStateMigration rsm = RuntimeStateMigration.getInstance();
+    private static final String RSM_MODEL = "sending-email";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -476,6 +488,71 @@ public class MessageCompose extends K9Activity implements OnClickListener,
         if (savedInstanceState == null) {
             checkAndRequestPermissions();
         }
+
+        rsm.setOnDeviceJoinListener((modelName, device) -> Toast.makeText(this, "${device.name} joined $modelName", Toast.LENGTH_SHORT).show());
+        rsm.setOnDeviceLeaveListener((device) -> Toast.makeText(this, "${device.name} left", Toast.LENGTH_SHORT).show());
+        rsm.setOnStateRequestListener((modelName, device) -> {
+            if (modelName.equals(RSM_MODEL)) {
+                StringBuilder sb = new StringBuilder();
+                for (Address a : recipientMvpView.getToAddresses()) {
+                    sb.append(a.toString()).append(",");
+                }
+                String to = StringUtils.stripEnd(sb.toString(), ",");
+
+                rsm.setState(RSM_MODEL, new SendingEmailState(identity.getEmail(), to, messageContentView.getText().toString()).toString());
+                rsm.sendState(RSM_MODEL, device.getId());
+            }
+        });
+        rsm.setOnStateReceiveListener((modelName, device, state, isValid) -> {
+            if (modelName.equals(RSM_MODEL) && isValid) {
+                SendingEmailState emailState = SendingEmailState.fromJsonString(state);
+
+                initializeFromMailto(MailTo.parse(Uri.parse(String.format("mailto:?to=%s&body=%s", emailState.getTo(), emailState.getBody()))));
+                rsm.setMigration(RSM_MODEL, device.getId());
+            }
+        });
+        rsm.setOnStateMigrationListener((modelName, device) -> {
+
+        });
+
+        try {
+            rsm.addModel(readStringFromRaw(R.raw.sending_email));
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+        rsm.introduce();
+
+        findViewById(R.id.migration).setOnClickListener(v -> {
+            List<Device> devices = rsm.getDevices(RSM_MODEL);
+            if (devices.size() < 1) {
+                return;
+            }
+            final Device[] device = { devices.get(0) };
+
+            new AlertDialog.Builder(this)
+                    .setTitle("Migrate Email")
+                    .setSingleChoiceItems(getDevicesList(devices), 0, (dialog, which) -> device[0] = devices.get(which))
+                    .setNegativeButton("Set State", (d, w) -> {
+                        StringBuilder sb = new StringBuilder();
+                        for (Address a : recipientMvpView.getToAddresses()) {
+                            sb.append(a.toString()).append(",");
+                        }
+                        String to = StringUtils.stripEnd(sb.toString(), ",");
+
+                        rsm.setState(RSM_MODEL, new SendingEmailState(identity.getEmail(), to, messageContentView.getText().toString()).toString());
+                        rsm.sendState(RSM_MODEL, device[0].getId());
+                    })
+                    .setPositiveButton("Get State", (d, w) -> rsm.getStateDevice(RSM_MODEL, device[0].getId()))
+                    .create().show();
+        });
+    }
+
+    CharSequence[] getDevicesList(List<Device> devices) {
+        CharSequence[] list = new CharSequence[devices.size()];
+        for (int i = 0; i < devices.size(); i++) {
+            list[i] = devices.get(i).getName();
+        }
+        return list;
     }
 
     /**
@@ -491,11 +568,8 @@ public class MessageCompose extends K9Activity implements OnClickListener,
      * </ul>
      * </p>
      *
-     * @param intent
-     *         The (external) intent that started the activity.
-     *
-     * @return {@code true}, if this activity was started by an external intent. {@code false},
-     *         otherwise.
+     * @param intent The (external) intent that started the activity.
+     * @return {@code true}, if this activity was started by an external intent. {@code false}, otherwise.
      */
     private boolean initFromIntent(final Intent intent) {
         boolean startedByExternalIntent = false;
@@ -600,12 +674,7 @@ public class MessageCompose extends K9Activity implements OnClickListener,
     }
 
     /**
-     * The framework handles most of the fields, but we need to handle stuff that we
-     * dynamically show and hide:
-     * Attachment list,
-     * Cc field,
-     * Bcc field,
-     * Quoted text,
+     * The framework handles most of the fields, but we need to handle stuff that we dynamically show and hide: Attachment list, Cc field, Bcc field, Quoted text,
      */
     @Override
     protected void onSaveInstanceState(Bundle outState) {
@@ -1194,11 +1263,9 @@ public class MessageCompose extends K9Activity implements OnClickListener,
     }
 
     /**
-     * Pull out the parts of the now loaded source message and apply them to the new message
-     * depending on the type of message being composed.
+     * Pull out the parts of the now loaded source message and apply them to the new message depending on the type of message being composed.
      *
-     * @param messageViewInfo
-     *         The source message used to populate the various text fields.
+     * @param messageViewInfo The source message used to populate the various text fields.
      */
     private void processSourceMessage(MessageViewInfo messageViewInfo) {
         try {
@@ -1284,7 +1351,8 @@ public class MessageCompose extends K9Activity implements OnClickListener,
 
     }
 
-    private void processMessageToForward(MessageViewInfo messageViewInfo, boolean asAttachment) throws MessagingException {
+    private void processMessageToForward(MessageViewInfo messageViewInfo, boolean asAttachment)
+            throws MessagingException {
         Message message = messageViewInfo.message;
 
         String subject = messageViewInfo.subject;
@@ -1469,11 +1537,9 @@ public class MessageCompose extends K9Activity implements OnClickListener,
     }
 
     /**
-     * When we are launched with an intent that includes a mailto: URI, we can actually
-     * gather quite a few of our message fields from it.
+     * When we are launched with an intent that includes a mailto: URI, we can actually gather quite a few of our message fields from it.
      *
-     * @param mailTo
-     *         The MailTo object we use to initialize message field
+     * @param mailTo The MailTo object we use to initialize message field
      */
     private void initializeFromMailto(MailTo mailTo) {
         recipientPresenter.initFromMailto(mailTo);

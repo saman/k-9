@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.InputType;
 import android.text.TextWatcher;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -12,6 +13,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.EditText;
 
 import com.fsck.k9.Account;
 import com.fsck.k9.Core;
@@ -37,7 +39,6 @@ import com.fsck.k9.ui.R;
 import com.fsck.k9.ui.ConnectionSettings;
 import com.fsck.k9.view.ClientCertificateSpinner;
 import com.fsck.k9.view.ClientCertificateSpinner.OnClientCertificateChangedListener;
-import com.google.android.material.textfield.TextInputEditText;
 import timber.log.Timber;
 
 /**
@@ -58,8 +59,8 @@ public class AccountSetupBasics extends K9Activity
     private final AccountCreator accountCreator = DI.get(AccountCreator.class);
     private final SpecialLocalFoldersCreator localFoldersCreator = DI.get(SpecialLocalFoldersCreator.class);
 
-    private TextInputEditText mEmailView;
-    private TextInputEditText mPasswordView;
+    private EditText mEmailView;
+    private EditText mPasswordView;
     private CheckBox mClientCertificateCheckBox;
     private ClientCertificateSpinner mClientCertificateSpinner;
     private Button mNextButton;
@@ -68,6 +69,7 @@ public class AccountSetupBasics extends K9Activity
 
     private EmailAddressValidator mEmailValidator = new EmailAddressValidator();
     private boolean mCheckedIncoming = false;
+    private CheckBox mShowPasswordCheckBox;
 
     public static void actionNewAccount(Context context) {
         Intent i = new Intent(context, AccountSetupBasics.class);
@@ -84,6 +86,7 @@ public class AccountSetupBasics extends K9Activity
         mClientCertificateSpinner = findViewById(R.id.account_client_certificate_spinner);
         mNextButton = findViewById(R.id.next);
         mManualSetupButton = findViewById(R.id.manual_setup);
+        mShowPasswordCheckBox = findViewById(R.id.show_password);
         mNextButton.setOnClickListener(this);
         mManualSetupButton.setOnClickListener(this);
     }
@@ -93,6 +96,13 @@ public class AccountSetupBasics extends K9Activity
         mPasswordView.addTextChangedListener(this);
         mClientCertificateCheckBox.setOnCheckedChangeListener(this);
         mClientCertificateSpinner.setOnClientCertificateChangedListener(this);
+        mShowPasswordCheckBox.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                showPassword(isChecked);
+            }
+        });
+
     }
 
     @Override
@@ -116,6 +126,8 @@ public class AccountSetupBasics extends K9Activity
         mCheckedIncoming = savedInstanceState.getBoolean(STATE_KEY_CHECKED_INCOMING);
 
         updateViewVisibility(mClientCertificateCheckBox.isChecked());
+
+        showPassword(mShowPasswordCheckBox.isChecked());
     }
 
     @Override
@@ -166,12 +178,24 @@ public class AccountSetupBasics extends K9Activity
         if (usingCertificates) {
             // hide password fields, show client certificate spinner
             mPasswordView.setVisibility(View.GONE);
+            mShowPasswordCheckBox.setVisibility(View.GONE);
             mClientCertificateSpinner.setVisibility(View.VISIBLE);
         } else {
             // show password fields, hide client certificate spinner
             mPasswordView.setVisibility(View.VISIBLE);
+            mShowPasswordCheckBox.setVisibility(View.VISIBLE);
             mClientCertificateSpinner.setVisibility(View.GONE);
         }
+    }
+
+    private void showPassword(boolean show) {
+        int cursorPosition = mPasswordView.getSelectionStart();
+        if (show) {
+            mPasswordView.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        } else {
+            mPasswordView.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        }
+        mPasswordView.setSelection(cursorPosition);
     }
 
     private void validateFields() {
@@ -311,6 +335,7 @@ public class AccountSetupBasics extends K9Activity
                 Preferences.getPreferences(this).saveAccount(mAccount);
                 Core.setServicesEnabled(this);
                 AccountSetupNames.actionSetNames(this, mAccount);
+                finish();
             }
         }
     }
@@ -349,6 +374,8 @@ public class AccountSetupBasics extends K9Activity
         mAccount.setTransportUri(transportUri);
 
         AccountSetupAccountType.actionSelectAccountType(this, mAccount, false);
+
+        finish();
     }
 
     public void onClick(View v) {
