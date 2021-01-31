@@ -1,0 +1,21 @@
+com/fsck/k9/mail/transport/smtp/SmtpTransport.java
+ com.fsck.k9.mail.transport.smtp.SmtpTransport
+ com.fsck.k9.mail.transport.smtp.SmtpTransport$1
+ com.fsck.k9.mail.transport.smtp.SmtpTransport$CommandResponse
+com/fsck/k9/mail/transport/smtp/EnhancedNegativeSmtpReplyException.java
+ com.fsck.k9.mail.transport.smtp.EnhancedNegativeSmtpReplyException
+com/fsck/k9/mail/transport/smtp/StatusCodeClass.java
+ com.fsck.k9.mail.transport.smtp.StatusCodeClass
+com/fsck/k9/mail/protocols/smtp/BuildConfig.java
+ com.fsck.k9.mail.protocols.smtp.BuildConfig
+com/fsck/k9/mail/transport/smtp/SmtpTransportUriDecoder.java
+ com.fsck.k9.mail.transport.smtp.SmtpTransportUriDecoder
+com/fsck/k9/mail/transport/smtp/StatusCodeDetail.java
+ com.fsck.k9.mail.transport.smtp.StatusCodeDetail
+com/fsck/k9/mail/transport/smtp/SmtpTransportUriCreator.java
+ com.fsck.k9.mail.transport.smtp.SmtpTransportUriCreator
+ com.fsck.k9.mail.transport.smtp.SmtpTransportUriCreator$1
+com/fsck/k9/mail/transport/smtp/StatusCodeSubject.java
+ com.fsck.k9.mail.transport.smtp.StatusCodeSubject
+com/fsck/k9/mail/transport/smtp/NegativeSmtpReplyException.java
+ com.fsck.k9.mail.transport.smtp.NegativeSmtpReplyException

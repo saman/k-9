@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: rs.ltt.jmap:jmap-common:0.3.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/rs.ltt.jmap/jmap-common/0.3.1/2ccc13171bae7045c376028714ed67addd0344a8/jmap-common-0.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/rs.ltt.jmap/jmap-common/0.3.1/19b9e372fa67baaad1b716bbfa21cce4b4efc16d/jmap-common-0.3.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/rs.ltt.jmap/jmap-common/0.3.1/dad992478f88c84b0a876672c59db26af604d080/jmap-common-0.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

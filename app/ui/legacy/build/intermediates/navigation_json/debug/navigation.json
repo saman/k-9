@@ -1,0 +1,21 @@
+[
+  {
+    "name": "navigation_manage_folders",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "navigation_onboarding",
+    "navigationXmlIds": [
+      "navigation_add_account"
+    ],
+    "deepLinks": []
+  },
+  {
+    "name": "navigation_settings",
+    "navigationXmlIds": [
+      "navigation_add_account"
+    ],
+    "deepLinks": []
+  }
+]

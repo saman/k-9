@@ -1,0 +1,39 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/saman/Projects/asml-lang/k-9/app/k9mail/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "/Users/saman/Projects/asml-lang/k-9/PahoAndroidService/build/intermediates/packaged_res/debug/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "187"
+                    }
+                },
+                {
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/3c4bcf300f28ec9bbbc1e40fb1248d96/materialize-1.2.1/res/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2,8,12,17,23,27,36,41,45,49",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,331,615,924,1224,1520,1942,2263,2439,2627",
+                        "endLines": "7,11,16,22,26,35,40,44,48,52",
+                        "endColumns": "12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "326,610,919,1219,1515,1937,2258,2434,2622,2834"
+                    },
+                    "to": {
+                        "startLines": "5,11,15,20,26,30,39,44,48,52",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "192,468,752,1061,1361,1657,2079,2400,2576,2764",
+                        "endLines": "10,14,19,25,29,38,43,47,51,55",
+                        "endColumns": "12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "463,747,1056,1356,1652,2074,2395,2571,2759,2971"
+                    }
+                }
+            ]
+        }
+    ]
+}

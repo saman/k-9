@@ -1,0 +1,945 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.fsck.k9.debug"
+4    android:installLocation="auto"
+5    android:versionCode="27025"
+6    android:versionName="5.726-SNAPSHOT" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="21"
+9-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+11
+12    <uses-feature
+12-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:7:5-9:35
+13        android:name="android.hardware.touchscreen"
+13-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:8:9-52
+14        android:required="false" />
+14-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:9:9-33
+15
+16    <supports-screens
+16-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:11:5-15:38
+17        android:anyDensity="true"
+17-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:12:9-34
+18        android:largeScreens="true"
+18-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:13:9-36
+19        android:normalScreens="true"
+19-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:14:9-37
+20        android:smallScreens="true" />
+20-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:15:9-36
+21
+22    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+22-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:17:5-80
+22-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:17:22-78
+23    <uses-permission android:name="android.permission.READ_CONTACTS" />
+23-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:18:5-71
+23-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:18:22-69
+24    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+24-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:19:5-76
+24-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:19:22-74
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+25-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:21:5-78
+25-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:21:22-76
+26    <uses-permission android:name="android.permission.INTERNET" />
+26-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:22:5-66
+26-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:22:22-64
+27    <uses-permission android:name="android.permission.VIBRATE" />
+27-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:23:5-65
+27-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:23:22-63
+28    <uses-permission android:name="android.permission.WAKE_LOCK" />
+28-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:24:5-67
+28-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:24:22-65
+29
+30    <permission
+31        android:name="com.fsck.k9.debug.permission.READ_MESSAGES"
+31-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:27:9-65
+32        android:description="@string/read_messages_desc"
+32-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:28:9-57
+33        android:label="@string/read_messages_label"
+33-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:29:9-52
+34        android:permissionGroup="android.permission-group.MESSAGES"
+34-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:30:9-68
+35        android:protectionLevel="dangerous" />
+35-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:31:9-44
+36
+37    <uses-permission android:name="com.fsck.k9.debug.permission.READ_MESSAGES" />
+37-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:32:22-78
+38
+39    <permission
+40        android:name="com.fsck.k9.debug.permission.DELETE_MESSAGES"
+40-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:35:9-67
+41        android:description="@string/delete_messages_desc"
+41-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:36:9-59
+42        android:label="@string/delete_messages_label"
+42-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:37:9-54
+43        android:permissionGroup="android.permission-group.MESSAGES"
+43-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:38:9-68
+44        android:protectionLevel="dangerous" />
+44-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:39:9-44
+45
+46    <uses-permission android:name="com.fsck.k9.debug.permission.DELETE_MESSAGES" />
+46-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:40:22-80
+47    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+47-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:28:5-77
+47-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:28:22-74
+48
+49    <application
+49-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:43:5-422:19
+50        android:name="com.fsck.k9.App"
+50-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:44:9-39
+51        android:allowBackup="false"
+51-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:51:9-36
+52        android:allowTaskReparenting="false"
+52-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:45:9-45
+53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+53-->[androidx.core:core:1.3.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/2143a9f7df5ec404d9e48e1a8a846601/core-1.3.2/AndroidManifest.xml:24:18-86
+54        android:debuggable="true"
+55        android:icon="@drawable/ic_launcher"
+55-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:47:9-45
+56        android:label="@string/app_name"
+56-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:48:9-41
+57        android:resizeableActivity="true"
+57-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:50:9-42
+58        android:testOnly="true"
+59        android:theme="@style/Theme.K9.Startup"
+59-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:49:9-48
+60        android:usesCleartextTraffic="true" >
+60-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:46:9-44
+61        <meta-data
+61-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:53:9-55:58
+62            android:name="android.app.default_searchable"
+62-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:54:13-58
+63            android:value="com.fsck.k9.activity.Search" />
+63-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:55:13-56
+64
+65        <!-- TODO: Remove once minSdkVersion has been changed to 24+ -->
+66        <meta-data
+66-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:58:9-60:35
+67            android:name="com.lge.support.SPLIT_WINDOW"
+67-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:59:13-56
+68            android:value="true" />
+68-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:60:13-33
+69
+70        <uses-library
+70-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:61:9-63:39
+71            android:name="com.sec.android.app.multiwindow"
+71-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:62:13-59
+72            android:required="false" />
+72-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:63:13-37
+73
+74        <meta-data
+74-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:64:9-66:35
+75            android:name="com.sec.android.support.multiwindow"
+75-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:65:13-63
+76            android:value="true" />
+76-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:66:13-33
+77        <meta-data
+77-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:67:9-69:35
+78            android:name="com.samsung.android.sdk.multiwindow.penwindow.enable"
+78-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:68:13-80
+79            android:value="true" />
+79-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:69:13-33
+80        <meta-data
+80-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:70:9-71:36
+81            android:name="android.webkit.WebView.MetricsOptOut"
+81-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:70:20-71
+82            android:value="true" />
+82-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:71:13-33
+83
+84        <activity
+84-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:80:9-82:61
+85            android:name="com.fsck.k9.ui.onboarding.OnboardingActivity"
+85-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:81:13-61
+86            android:label="@string/welcome_message_title" />
+86-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:82:13-58
+87        <activity
+87-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:84:9-88:15
+88            android:name="com.fsck.k9.ui.settings.account.OpenPgpAppSelectDialog"
+88-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:85:13-71
+89            android:configChanges="locale"
+89-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:86:13-43
+90            android:theme="@style/Theme.K9.Dialog.Translucent.DayNight" />
+90-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:87:13-72
+91        <activity
+91-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:90:9-93:65
+92            android:name="com.fsck.k9.activity.setup.AccountSetupBasics"
+92-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:91:13-62
+93            android:configChanges="locale"
+93-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:92:13-43
+94            android:label="@string/account_setup_basics_title" />
+94-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:93:13-63
+95        <activity
+95-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:95:9-98:71
+96            android:name="com.fsck.k9.activity.setup.AccountSetupAccountType"
+96-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:96:13-67
+97            android:configChanges="locale"
+97-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:97:13-43
+98            android:label="@string/account_setup_account_type_title" />
+98-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:98:13-69
+99        <activity
+99-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:100:9-103:67
+100            android:name="com.fsck.k9.activity.setup.AccountSetupIncoming"
+100-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:101:13-64
+101            android:configChanges="locale"
+101-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:102:13-43
+102            android:label="@string/account_setup_incoming_title" />
+102-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:103:13-65
+103        <activity
+103-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:105:9-108:73
+104            android:name="com.fsck.k9.activity.setup.AccountSetupComposition"
+104-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:106:13-67
+105            android:configChanges="locale"
+105-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:107:13-43
+106            android:label="@string/account_settings_composition_title" />
+106-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:108:13-71
+107        <activity
+107-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:110:9-113:67
+108            android:name="com.fsck.k9.activity.setup.AccountSetupOutgoing"
+108-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:111:13-64
+109            android:configChanges="locale"
+109-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:112:13-43
+110            android:label="@string/account_setup_outgoing_title" />
+110-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:113:13-65
+111        <activity
+111-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:115:9-118:66
+112            android:name="com.fsck.k9.activity.setup.AccountSetupOptions"
+112-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:116:13-63
+113            android:configChanges="locale"
+113-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:117:13-43
+114            android:label="@string/account_setup_options_title" />
+114-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:118:13-64
+115        <activity
+115-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:120:9-123:64
+116            android:name="com.fsck.k9.activity.setup.AccountSetupNames"
+116-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:121:13-61
+117            android:configChanges="locale"
+117-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:122:13-43
+118            android:label="@string/account_setup_names_title" />
+118-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:123:13-62
+119        <activity
+119-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:125:9-129:40
+120            android:name="com.fsck.k9.activity.ChooseAccount"
+120-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:126:13-51
+121            android:configChanges="locale"
+121-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:127:13-43
+122            android:label="@string/choose_account_title"
+122-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:128:13-57
+123            android:noHistory="true" />
+123-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:129:13-37
+124        <activity
+124-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:131:9-135:40
+125            android:name="com.fsck.k9.ui.choosefolder.ChooseFolderActivity"
+125-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:132:13-65
+126            android:configChanges="locale"
+126-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:133:13-43
+127            android:label="@string/choose_folder_title"
+127-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:134:13-56
+128            android:noHistory="true" />
+128-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:135:13-37
+129        <activity
+129-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:137:9-140:61
+130            android:name="com.fsck.k9.activity.ChooseIdentity"
+130-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:138:13-52
+131            android:configChanges="locale"
+131-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:139:13-43
+132            android:label="@string/choose_identity_title" />
+132-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:140:13-58
+133        <activity
+133-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:142:9-145:62
+134            android:name="com.fsck.k9.activity.ManageIdentities"
+134-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:143:13-54
+135            android:configChanges="locale"
+135-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:144:13-43
+136            android:label="@string/manage_identities_title" />
+136-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:145:13-60
+137        <activity
+137-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:147:9-150:58
+138            android:name="com.fsck.k9.activity.EditIdentity"
+138-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:148:13-50
+139            android:configChanges="locale"
+139-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:149:13-43
+140            android:label="@string/edit_identity_title" />
+140-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:150:13-56
+141        <activity
+141-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:152:9-157:74
+142            android:name="com.fsck.k9.activity.NotificationDeleteConfirmation"
+142-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:153:13-68
+143            android:excludeFromRecents="true"
+143-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:154:13-46
+144            android:launchMode="singleTop"
+144-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:155:13-43
+145            android:taskAffinity=""
+145-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:156:13-36
+146            android:theme="@style/Theme.K9.Dialog.Translucent.DayNight" />
+146-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:157:13-72
+147
+148        <!--
+149             XXX Note: this activity is hacked to ignore config changes,
+150             since it doesn't currently handle them correctly in code.
+151        -->
+152        <activity
+152-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:161:9-164:73
+153            android:name="com.fsck.k9.activity.setup.AccountSetupCheckSettings"
+153-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:162:13-69
+154            android:configChanges="keyboardHidden|orientation|locale"
+154-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:163:13-70
+155            android:label="@string/account_setup_check_settings_title" />
+155-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:164:13-71
+156        <activity
+156-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:166:9-170:15
+157            android:name="com.fsck.k9.ui.endtoend.AutocryptKeyTransferActivity"
+157-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:167:13-69
+158            android:configChanges="locale"
+158-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:168:13-43
+159            android:label="@string/ac_transfer_title" />
+159-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:169:13-54
+160        <activity android:name="com.fsck.k9.activity.MessageList" >
+160-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:179:9-198:20
+160-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:179:19-55
+161            <intent-filter>
+161-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:180:13-190:29
+162                <action android:name="android.intent.action.MAIN" />
+162-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:181:17-68
+162-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:181:25-66
+163
+164                <category android:name="android.intent.category.DEFAULT" />
+164-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:17-75
+164-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:27-73
+165                <category android:name="android.intent.category.LAUNCHER" />
+165-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:184:17-76
+165-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:184:27-74
+166                <category android:name="android.intent.category.APP_EMAIL" />
+166-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:185:17-77
+166-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:185:27-75
+167
+168                <!-- TODO: Remove once minSdkVersion has been changed to 24+ -->
+169                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+169-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:188:17-88
+169-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:188:27-86
+170                <category android:name="android.intent.category.PENWINDOW_LAUNCHER" />
+170-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:189:17-86
+170-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:189:27-84
+171            </intent-filter>
+172            <intent-filter>
+172-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:191:13-197:29
+173                <action android:name="android.intent.action.VIEW" />
+173-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:192:17-68
+173-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:192:25-66
+174
+175                <data
+175-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:193:17-195:46
+176                    android:host="messages"
+176-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:194:21-44
+177                    android:scheme="k9mail" />
+177-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:195:21-44
+178
+179                <category android:name="android.intent.category.DEFAULT" />
+179-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:17-75
+179-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:27-73
+180            </intent-filter>
+181        </activity> <!-- activity-alias so old launcher shortcuts work -->
+182        <!-- TODO: Remove after 2020-12-31 -->
+183        <activity-alias
+183-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:174:9-177:39
+184            android:name="com.fsck.k9.activity.FolderList"
+184-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:175:13-48
+185            android:exported="true"
+185-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:177:13-36
+186            android:targetActivity="com.fsck.k9.activity.MessageList" /> <!-- activity-alias so old launcher shortcuts work -->
+186-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:176:13-59
+187        <!-- TODO: Remove after 2020-12-31 -->
+188        <activity-alias
+188-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:75:9-78:39
+189            android:name="com.fsck.k9.activity.Accounts"
+189-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:76:13-46
+190            android:exported="true"
+190-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:78:13-36
+191            android:targetActivity="com.fsck.k9.activity.MessageList" />
+191-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:77:13-59
+192
+193        <activity
+193-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:200:9-235:20
+194            android:name="com.fsck.k9.activity.MessageCompose"
+194-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:201:13-52
+195            android:configChanges="locale"
+195-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:202:13-43
+196            android:enabled="false"
+196-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:203:13-36
+197            android:label="@string/app_name" >
+197-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:204:13-45
+198            <intent-filter>
+198-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:205:13-209:29
+199                <action android:name="android.intent.action.SENDTO" />
+199-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:206:17-70
+199-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:206:25-68
+200
+201                <data android:scheme="mailto" />
+201-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:193:17-195:46
+201-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:195:21-44
+202
+203                <category android:name="android.intent.category.DEFAULT" />
+203-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:17-75
+203-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:27-73
+204            </intent-filter>
+205            <intent-filter>
+205-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:210:13-214:29
+206                <action android:name="android.intent.action.SEND" />
+206-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:211:17-68
+206-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:211:25-66
+207
+208                <data android:mimeType="*/*" />
+208-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:193:17-195:46
+208-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:212:23-45
+209
+210                <category android:name="android.intent.category.DEFAULT" />
+210-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:17-75
+210-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:27-73
+211            </intent-filter>
+212            <intent-filter>
+212-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:215:13-219:29
+213                <action android:name="android.intent.action.SEND_MULTIPLE" />
+213-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:216:17-77
+213-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:216:25-75
+214
+215                <data android:mimeType="*/*" />
+215-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:193:17-195:46
+215-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:212:23-45
+216
+217                <category android:name="android.intent.category.DEFAULT" />
+217-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:17-75
+217-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:27-73
+218            </intent-filter>
+219            <intent-filter>
+219-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:220:13-226:29
+220                <action android:name="android.intent.action.VIEW" />
+220-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:192:17-68
+220-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:192:25-66
+221
+222                <data android:scheme="mailto" />
+222-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:193:17-195:46
+222-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:195:21-44
+223
+224                <category android:name="android.intent.category.DEFAULT" />
+224-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:17-75
+224-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:27-73
+225                <category android:name="android.intent.category.BROWSABLE" />
+225-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:225:17-77
+225-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:225:27-75
+226            </intent-filter>
+227            <intent-filter>
+227-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:227:13-230:29
+228                <action android:name="org.autocrypt.PEER_ACTION" />
+228-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:228:17-67
+228-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:228:25-65
+229
+230                <category android:name="android.intent.category.DEFAULT" />
+230-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:17-75
+230-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:27-73
+231            </intent-filter>
+232
+233            <meta-data
+233-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:232:13-234:82
+234                android:name="android.service.chooser.chooser_target_service"
+234-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:233:17-78
+235                android:value="com.fsck.k9.directshare.K9ChooserTargetService" />
+235-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:234:17-79
+236        </activity>
+237
+238        <!-- Search Activity - searchable -->
+239        <activity
+239-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:239:9-251:20
+240            android:name="com.fsck.k9.activity.Search"
+240-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:240:13-44
+241            android:configChanges="locale"
+241-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:241:13-43
+242            android:label="@string/search_action"
+242-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:242:13-50
+243            android:uiOptions="splitActionBarWhenNarrow" >
+243-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:243:13-57
+244            <intent-filter>
+244-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:244:13-247:29
+245                <action android:name="android.intent.action.SEARCH" />
+245-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:245:17-70
+245-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:245:25-68
+246
+247                <category android:name="android.intent.category.DEFAULT" />
+247-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:17-75
+247-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:27-73
+248            </intent-filter>
+249
+250            <meta-data
+250-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:248:13-250:53
+251                android:name="android.app.searchable"
+251-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:249:17-54
+252                android:resource="@xml/searchable" />
+252-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:250:17-51
+253        </activity>
+254        <activity
+254-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:253:9-261:20
+255            android:name="com.fsck.k9.activity.LauncherShortcuts"
+255-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:254:13-55
+256            android:configChanges="locale"
+256-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:255:13-43
+257            android:label="@string/shortcuts_title" >
+257-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:256:13-52
+258            <intent-filter>
+258-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:257:13-260:29
+259                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+259-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:258:17-79
+259-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:258:25-77
+260
+261                <category android:name="android.intent.category.DEFAULT" />
+261-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:17-75
+261-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:27-73
+262            </intent-filter>
+263        </activity>
+264        <activity android:name="com.fsck.k9.widget.unread.UnreadWidgetConfigurationActivity" >
+264-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:263:9-267:20
+264-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:263:19-82
+265            <intent-filter>
+265-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:264:13-266:29
+266                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+266-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:265:17-86
+266-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:265:25-84
+267            </intent-filter>
+268        </activity>
+269        <activity
+269-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:269:9-271:62
+270            android:name="com.fsck.k9.activity.UpgradeDatabases"
+270-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:270:13-54
+271            android:label="@string/upgrade_databases_title" />
+271-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:271:13-60
+272        <activity
+272-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:273:9-275:54
+273            android:name="com.fsck.k9.ui.managefolders.ManageFoldersActivity"
+273-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:274:13-67
+274            android:label="@string/folders_action" />
+274-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:275:13-51
+275        <activity
+275-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:277:9-279:51
+276            android:name="com.fsck.k9.ui.settings.SettingsActivity"
+276-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:278:13-57
+277            android:label="@string/prefs_title" />
+277-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:279:13-48
+278        <activity
+278-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:281:9-283:62
+279            android:name="com.fsck.k9.ui.settings.general.GeneralSettingsActivity"
+279-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:282:13-72
+280            android:label="@string/general_settings_title" />
+280-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:283:13-59
+281        <activity
+281-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:285:9-287:66
+282            android:name="com.fsck.k9.ui.settings.account.AccountSettingsActivity"
+282-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:286:13-72
+283            android:label="@string/account_settings_title_fmt" />
+283-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:287:13-63
+284
+285        <receiver
+285-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:289:9-311:20
+286            android:name="com.fsck.k9.service.StorageReceiver"
+286-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:290:13-52
+287            android:enabled="true" >
+287-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:291:13-35
+288            <intent-filter>
+288-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:292:13-310:29
+289
+290                <!--
+291                android.intent.action.MEDIA_MOUNTED
+292
+293                     * Broadcast Action:  External media is present and mounted at its mount point.
+294                     * The path to the mount point for the removed media is contained in the Intent.mData field.
+295                     * The Intent contains an extra with name "read-only" and Boolean value to indicate if the
+296                     * media was mounted read only.
+297                -->
+298                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+298-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:302:17-77
+298-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:302:25-75
+299                <!--
+300                MEDIA_EJECT and MEDIA_UNMOUNTED are not defined here: they have to be dynamically registered
+301                otherwise it would make K-9 start at the wrong time
+302                -->
+303                <data android:scheme="file" />
+303-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:193:17-195:46
+303-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:195:21-44
+304            </intent-filter>
+305        </receiver>
+306        <receiver
+306-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:313:9-323:20
+307            android:name="com.fsck.k9.provider.UnreadWidgetProvider"
+307-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:314:13-58
+308            android:icon="@drawable/ic_launcher"
+308-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:315:13-49
+309            android:label="@string/unread_widget_label" >
+309-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:316:13-56
+310            <intent-filter>
+310-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:317:13-319:29
+311                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+311-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:318:17-83
+311-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:318:25-81
+312            </intent-filter>
+313
+314            <meta-data
+314-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:320:13-322:61
+315                android:name="android.appwidget.provider"
+315-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:321:17-58
+316                android:resource="@xml/unread_widget_info" />
+316-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:322:17-59
+317        </receiver>
+318        <receiver
+318-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:325:9-335:20
+319            android:name="com.fsck.k9.widget.list.MessageListWidgetProvider"
+319-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:326:13-66
+320            android:icon="@drawable/message_list_widget_preview"
+320-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:327:13-65
+321            android:label="@string/mail_list_widget_text" >
+321-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:328:13-58
+322            <intent-filter>
+322-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:317:13-319:29
+323                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+323-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:318:17-83
+323-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:318:25-81
+324            </intent-filter>
+325
+326            <meta-data
+326-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:320:13-322:61
+327                android:name="android.appwidget.provider"
+327-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:321:17-58
+328                android:resource="@xml/message_list_widget_info" />
+328-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:322:17-59
+329        </receiver>
+330
+331        <service
+331-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:337:9-340:72
+332            android:name="com.fsck.k9.widget.list.MessageListWidgetService"
+332-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:338:13-65
+333            android:enabled="true"
+333-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:339:13-35
+334            android:permission="android.permission.BIND_REMOTEVIEWS" />
+334-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:340:13-69
+335        <service
+335-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:342:9-344:37
+336            android:name="com.fsck.k9.notification.NotificationActionService"
+336-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:343:13-67
+337            android:enabled="true" />
+337-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:344:13-35
+338        <service
+338-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:346:9-348:39
+339            android:name="com.fsck.k9.service.DatabaseUpgradeService"
+339-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:347:13-59
+340            android:exported="false" />
+340-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:348:13-37
+341        <service
+341-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:351:9-357:19
+342            android:name="com.fsck.k9.directshare.K9ChooserTargetService"
+342-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:352:13-74
+343            android:permission="android.permission.BIND_CHOOSER_TARGET_SERVICE" >
+343-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:353:13-80
+344            <intent-filter>
+344-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:354:13-356:29
+345                <action android:name="android.service.chooser.ChooserTargetService" />
+345-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:355:17-87
+345-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:355:25-84
+346            </intent-filter>
+347        </service>
+348        <service
+348-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:359:9-361:71
+349            android:name="com.fsck.k9.account.AccountRemoverService"
+349-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:360:13-69
+350            android:permission="android.permission.BIND_JOB_SERVICE" />
+350-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:361:13-69
+351
+352        <provider
+353            android:name="com.fsck.k9.provider.AttachmentProvider"
+353-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:364:13-56
+354            android:authorities="com.fsck.k9.debug.attachmentprovider"
+354-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:365:13-70
+355            android:exported="false"
+355-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:366:13-37
+356            android:grantUriPermissions="true" >
+356-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:367:13-47
+357            <meta-data
+357-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:369:13-371:40
+358                android:name="de.cketti.safecontentresolver.ALLOW_INTERNAL_ACCESS"
+358-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:370:17-83
+359                android:value="true" />
+359-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:371:17-37
+360        </provider>
+361        <provider
+362            android:name="com.fsck.k9.provider.RawMessageProvider"
+362-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:376:13-56
+363            android:authorities="com.fsck.k9.debug.rawmessageprovider"
+363-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:377:13-70
+364            android:exported="false" >
+364-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:378:13-37
+365            <meta-data
+365-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:369:13-371:40
+366                android:name="de.cketti.safecontentresolver.ALLOW_INTERNAL_ACCESS"
+366-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:370:17-83
+367                android:value="true" />
+367-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:371:17-37
+368        </provider>
+369        <provider
+370            android:name="com.fsck.k9.external.MessageProvider"
+370-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:387:13-53
+371            android:authorities="com.fsck.k9.debug.messageprovider"
+371-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:388:13-67
+372            android:exported="true"
+372-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:389:13-36
+373            android:grantUriPermissions="true"
+373-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:390:13-47
+374            android:multiprocess="true"
+374-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:391:13-40
+375            android:readPermission="com.fsck.k9.debug.permission.READ_MESSAGES"
+375-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:392:13-79
+376            android:writePermission="com.fsck.k9.debug.permission.DELETE_MESSAGES" />
+376-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:393:13-82
+377        <provider
+378            android:name="com.fsck.k9.provider.EmailProvider"
+378-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:396:13-51
+379            android:authorities="com.fsck.k9.debug.provider.email"
+379-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:397:13-66
+380            android:exported="false" />
+380-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:398:13-37
+381        <provider
+382            android:name="com.fsck.k9.provider.DecryptedFileProvider"
+382-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:401:13-59
+383            android:authorities="com.fsck.k9.debug.decryptedfileprovider"
+383-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:402:13-73
+384            android:exported="false"
+384-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:403:13-37
+385            android:grantUriPermissions="true" >
+385-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:404:13-47
+386            <meta-data
+386-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:406:13-408:73
+387                android:name="android.support.FILE_PROVIDER_PATHS"
+387-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:407:17-67
+388                android:resource="@xml/decrypted_file_provider_paths" />
+388-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:408:17-70
+389        </provider>
+390        <provider
+391            android:name="com.fsck.k9.provider.AttachmentTempFileProvider"
+391-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:412:13-64
+392            android:authorities="com.fsck.k9.debug.tempfileprovider"
+392-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:413:13-68
+393            android:exported="false"
+393-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:414:13-37
+394            android:grantUriPermissions="true" >
+394-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:415:13-47
+395            <meta-data
+395-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:406:13-408:73
+396                android:name="android.support.FILE_PROVIDER_PATHS"
+396-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:407:17-67
+397                android:resource="@xml/temp_file_provider_paths" />
+397-->/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:408:17-70
+398        </provider>
+399
+400        <!-- Mqtt Service -->
+401        <service android:name="org.eclipse.paho.android.service.MqttService" />
+401-->[:app:ui:legacy] /Users/saman/Projects/asml-lang/k-9/app/ui/legacy/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-80
+401-->[:app:ui:legacy] /Users/saman/Projects/asml-lang/k-9/app/ui/legacy/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:18-77
+402
+403        <provider
+403-->[com.mikepenz:iconics-core:4.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/96ec9fbe6872bcda5289c1a35284292d/iconics-core-4.0.2/AndroidManifest.xml:27:9-32:39
+404            android:name="com.mikepenz.iconics.IconicsContentProvider"
+404-->[com.mikepenz:iconics-core:4.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/96ec9fbe6872bcda5289c1a35284292d/iconics-core-4.0.2/AndroidManifest.xml:28:13-71
+405            android:authorities="com.fsck.k9.debug.iconics.core.provider"
+405-->[com.mikepenz:iconics-core:4.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/96ec9fbe6872bcda5289c1a35284292d/iconics-core-4.0.2/AndroidManifest.xml:29:13-73
+406            android:enabled="@bool/is_iconics_content_provider_enabled"
+406-->[com.mikepenz:iconics-core:4.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/96ec9fbe6872bcda5289c1a35284292d/iconics-core-4.0.2/AndroidManifest.xml:30:13-72
+407            android:exported="false"
+407-->[com.mikepenz:iconics-core:4.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/96ec9fbe6872bcda5289c1a35284292d/iconics-core-4.0.2/AndroidManifest.xml:31:13-37
+408            android:initOrder="100" />
+408-->[com.mikepenz:iconics-core:4.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/96ec9fbe6872bcda5289c1a35284292d/iconics-core-4.0.2/AndroidManifest.xml:32:13-36
+409
+410        <service
+410-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:39:9-44:35
+411            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+411-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:40:13-88
+412            android:directBootAware="false"
+412-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:41:13-44
+413            android:enabled="@bool/enable_system_alarm_service_default"
+413-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:42:13-72
+414            android:exported="false" />
+414-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:43:13-37
+415        <service
+415-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:45:9-51:35
+416            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+416-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:46:13-84
+417            android:directBootAware="false"
+417-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:47:13-44
+418            android:enabled="@bool/enable_system_job_service_default"
+418-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:48:13-70
+419            android:exported="true"
+419-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:49:13-36
+420            android:permission="android.permission.BIND_JOB_SERVICE" />
+420-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:50:13-69
+421        <service
+421-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:52:9-57:35
+422            android:name="androidx.work.impl.foreground.SystemForegroundService"
+422-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:53:13-81
+423            android:directBootAware="false"
+423-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:54:13-44
+424            android:enabled="@bool/enable_system_foreground_service_default"
+424-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:55:13-77
+425            android:exported="false" />
+425-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:56:13-37
+426
+427        <receiver
+427-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:59:9-64:35
+428            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+428-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:60:13-88
+429            android:directBootAware="false"
+429-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:61:13-44
+430            android:enabled="true"
+430-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:62:13-35
+431            android:exported="false" />
+431-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:63:13-37
+432        <receiver
+432-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:65:9-75:20
+433            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+433-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:66:13-106
+434            android:directBootAware="false"
+434-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:67:13-44
+435            android:enabled="false"
+435-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:68:13-36
+436            android:exported="false" >
+436-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:69:13-37
+437            <intent-filter>
+437-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:71:13-74:29
+438                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+438-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:72:17-87
+438-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:72:25-84
+439                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+439-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:73:17-90
+439-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:73:25-87
+440            </intent-filter>
+441        </receiver>
+442        <receiver
+442-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:76:9-86:20
+443            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+443-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:77:13-104
+444            android:directBootAware="false"
+444-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:78:13-44
+445            android:enabled="false"
+445-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:79:13-36
+446            android:exported="false" >
+446-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:80:13-37
+447            <intent-filter>
+447-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:82:13-85:29
+448                <action android:name="android.intent.action.BATTERY_OKAY" />
+448-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:83:17-77
+448-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:83:25-74
+449                <action android:name="android.intent.action.BATTERY_LOW" />
+449-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:84:17-76
+449-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:84:25-73
+450            </intent-filter>
+451        </receiver>
+452        <receiver
+452-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:87:9-97:20
+453            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+453-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:88:13-104
+454            android:directBootAware="false"
+454-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:89:13-44
+455            android:enabled="false"
+455-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:90:13-36
+456            android:exported="false" >
+456-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:91:13-37
+457            <intent-filter>
+457-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:93:13-96:29
+458                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+458-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:94:17-83
+458-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:94:25-80
+459                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+459-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:95:17-82
+459-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:95:25-79
+460            </intent-filter>
+461        </receiver>
+462        <receiver
+462-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:98:9-107:20
+463            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+463-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:99:13-103
+464            android:directBootAware="false"
+464-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:100:13-44
+465            android:enabled="false"
+465-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:101:13-36
+466            android:exported="false" >
+466-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:102:13-37
+467            <intent-filter>
+467-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:104:13-106:29
+468                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+468-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:105:17-79
+468-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:105:25-76
+469            </intent-filter>
+470        </receiver>
+471        <receiver
+471-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:108:9-119:20
+472            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+472-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:109:13-88
+473            android:directBootAware="false"
+473-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:110:13-44
+474            android:enabled="false"
+474-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:111:13-36
+475            android:exported="false" >
+475-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:112:13-37
+476            <intent-filter>
+476-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:114:13-118:29
+477                <action android:name="android.intent.action.BOOT_COMPLETED" />
+477-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:115:17-79
+477-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:115:25-76
+478                <action android:name="android.intent.action.TIME_SET" />
+478-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:116:17-73
+478-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:116:25-70
+479                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+479-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:117:17-81
+479-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:117:25-78
+480            </intent-filter>
+481        </receiver>
+482        <receiver
+482-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:120:9-129:20
+483            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+483-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:121:13-99
+484            android:directBootAware="false"
+484-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:122:13-44
+485            android:enabled="@bool/enable_system_alarm_service_default"
+485-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:123:13-72
+486            android:exported="false" >
+486-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:124:13-37
+487            <intent-filter>
+487-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:126:13-128:29
+488                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+488-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:127:17-98
+488-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:127:25-95
+489            </intent-filter>
+490        </receiver>
+491        <receiver
+491-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:130:9-140:20
+492            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+492-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:131:13-78
+493            android:directBootAware="false"
+493-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:132:13-44
+494            android:enabled="true"
+494-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:133:13-35
+495            android:exported="true"
+495-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:134:13-36
+496            android:permission="android.permission.DUMP" >
+496-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:135:13-57
+497            <intent-filter>
+497-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:137:13-139:29
+498                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+498-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:138:17-88
+498-->[androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:138:25-85
+499            </intent-filter>
+500        </receiver>
+501
+502        <service
+502-->[androidx.room:room-runtime:2.2.5] /Users/saman/.gradle/caches/transforms-2/files-2.1/6d50c60b5f258f3d1d7ca16291a73f31/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+503            android:name="androidx.room.MultiInstanceInvalidationService"
+503-->[androidx.room:room-runtime:2.2.5] /Users/saman/.gradle/caches/transforms-2/files-2.1/6d50c60b5f258f3d1d7ca16291a73f31/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+504            android:directBootAware="true"
+504-->[androidx.room:room-runtime:2.2.5] /Users/saman/.gradle/caches/transforms-2/files-2.1/6d50c60b5f258f3d1d7ca16291a73f31/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+505            android:exported="false" />
+505-->[androidx.room:room-runtime:2.2.5] /Users/saman/.gradle/caches/transforms-2/files-2.1/6d50c60b5f258f3d1d7ca16291a73f31/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+506    </application>
+507
+508</manifest>

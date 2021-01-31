@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: rs.ltt.jmap:jmap-gson:0.3.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/rs.ltt.jmap/jmap-gson/0.3.1/7f226f978c39696040c8e965e6a86b1e9e0e1ffe/jmap-gson-0.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/rs.ltt.jmap/jmap-gson/0.3.1/c405889c67e641ca1c89ef2b9e015dad2f7679a6/jmap-gson-0.3.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/rs.ltt.jmap/jmap-gson/0.3.1/8c7782d6761d6560a453208ec3d918bf16772acf/jmap-gson-0.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

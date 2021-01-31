@@ -1,0 +1,4 @@
+com.github.asml.rsm.android
+raw schema
+style AppBaseTheme
+style AppTheme

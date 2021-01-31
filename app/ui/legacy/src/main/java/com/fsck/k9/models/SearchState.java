@@ -9,11 +9,18 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class SearchState {
     private String query;
 
+    public boolean isSubmit() {
+        return submit;
+    }
+
+    private boolean submit;
+
     public SearchState() {
     }
 
-    public SearchState(String query) {
+    public SearchState(String query, boolean submit) {
         this.query = query;
+        this.submit = submit;
     }
 
     public String getQuery() {
@@ -21,7 +28,8 @@ public class SearchState {
     }
 
     @JsonIgnore
-    @Override public String toString() {
+    @Override
+    public String toString() {
         ObjectMapper mapper = new ObjectMapper();
         try {
             return mapper.writeValueAsString(this);
@@ -29,9 +37,7 @@ public class SearchState {
             e.printStackTrace();
         }
 
-        return "{" +
-                "\"query\":\"" + query + '"' +
-                '}';
+        return "{" + "\"query\":\"" + query + "\", \"submit\":" + (submit ? "true" : "false") + '}';
     }
 
     @JsonIgnore

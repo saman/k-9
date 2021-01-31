@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.takisoft.preferencex:preferencex-colorpicker:1.1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6b12e25f5e77ff4eb6fe736deb68f196/preferencex-colorpicker-1.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6b12e25f5e77ff4eb6fe736deb68f196/preferencex-colorpicker-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6b12e25f5e77ff4eb6fe736deb68f196/preferencex-colorpicker-1.1.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.takisoft.preferencex/preferencex-colorpicker/1.1.0/2df7fbd0bc08f75781ef8839e5e40c679c2b6d11/preferencex-colorpicker-1.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.takisoft.preferencex/preferencex-colorpicker/1.1.0/cc41a1181b974871af55fdd457db56496520b523/preferencex-colorpicker-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

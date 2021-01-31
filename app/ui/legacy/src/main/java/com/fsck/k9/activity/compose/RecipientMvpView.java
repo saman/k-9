@@ -8,9 +8,11 @@ import java.util.List;
 import java.util.Set;
 
 import android.app.PendingIntent;
+
 import androidx.loader.app.LoaderManager;
 import androidx.interpolator.view.animation.FastOutLinearInInterpolator;
 import androidx.interpolator.view.animation.LinearOutSlowInInterpolator;
+
 import android.text.TextWatcher;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -206,6 +208,10 @@ public class RecipientMvpView implements OnFocusChangeListener, OnClickListener 
         bccView.setCryptoProvider(openPgpProvider, false);
     }
 
+    public void clearTo() {
+        toView.clearAsync();
+    }
+
     public void requestFocusOnToField() {
         toView.requestFocus();
     }
@@ -230,14 +236,22 @@ public class RecipientMvpView implements OnFocusChangeListener, OnClickListener 
 
     private int getTokenTextSize(int fontSize) {
         switch (fontSize) {
-            case FONT_10SP: return FONT_10SP;
-            case FONT_12SP: return FONT_12SP;
-            case SMALL: return SMALL;
-            case FONT_16SP: return 15;
-            case MEDIUM: return FONT_16SP;
-            case FONT_20SP: return MEDIUM;
-            case LARGE: return FONT_20SP;
-            default: return FONT_DEFAULT;
+            case FONT_10SP:
+                return FONT_10SP;
+            case FONT_12SP:
+                return FONT_12SP;
+            case SMALL:
+                return SMALL;
+            case FONT_16SP:
+                return 15;
+            case MEDIUM:
+                return FONT_16SP;
+            case FONT_20SP:
+                return MEDIUM;
+            case LARGE:
+                return FONT_20SP;
+            default:
+                return FONT_DEFAULT;
         }
     }
 

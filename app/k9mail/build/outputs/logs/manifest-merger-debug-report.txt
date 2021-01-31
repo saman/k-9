@@ -1,0 +1,1257 @@
+-- Merging decision tree log ---
+permission#com.fsck.k9.debug.permission.READ_MESSAGES
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:26:5-31:46
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:29:9-52
+	android:protectionLevel
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:31:9-44
+	android:permissionGroup
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:30:9-68
+	android:description
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:28:9-57
+	android:name
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:27:9-65
+uses-permission#com.fsck.k9.debug.permission.READ_MESSAGES
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:32:5-80
+	android:name
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:32:22-78
+permission#com.fsck.k9.debug.permission.DELETE_MESSAGES
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:34:5-39:46
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:37:9-54
+	android:protectionLevel
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:39:9-44
+	android:permissionGroup
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:38:9-68
+	android:description
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:36:9-59
+	android:name
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:35:9-67
+uses-permission#com.fsck.k9.debug.permission.DELETE_MESSAGES
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:40:5-82
+	android:name
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:40:22-80
+provider#com.fsck.k9.provider.AttachmentProvider
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:363:9-373:20
+	android:grantUriPermissions
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:367:13-47
+	android:authorities
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:365:13-70
+	android:exported
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:366:13-37
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:364:13-56
+provider#com.fsck.k9.provider.RawMessageProvider
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:375:9-384:20
+	android:authorities
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:377:13-70
+	android:exported
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:378:13-37
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:376:13-56
+provider#com.fsck.k9.external.MessageProvider
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:386:9-393:84
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:386:9-393:84
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:386:9-393:84
+	android:readPermission
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:392:13-79
+	android:grantUriPermissions
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:390:13-47
+	android:authorities
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:388:13-67
+	android:multiprocess
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:391:13-40
+	android:exported
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:389:13-36
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:387:13-53
+	android:writePermission
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:393:13-82
+provider#com.fsck.k9.provider.EmailProvider
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:395:9-398:39
+	android:authorities
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:397:13-66
+	android:exported
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:398:13-37
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:396:13-51
+provider#com.fsck.k9.provider.DecryptedFileProvider
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:400:9-409:20
+	android:grantUriPermissions
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:404:13-47
+	android:authorities
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:402:13-73
+	android:exported
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:403:13-37
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:401:13-59
+provider#com.fsck.k9.provider.AttachmentTempFileProvider
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:411:9-420:20
+	android:grantUriPermissions
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:415:13-47
+	android:authorities
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:413:13-68
+	android:exported
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:414:13-37
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:412:13-64
+manifest
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:2:1-423:12
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:2:1-423:12
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:2:1-423:12
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:2:1-423:12
+MERGED from [:app:ui:legacy] /Users/saman/Projects/asml-lang/k-9/app/ui/legacy/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:app:storage] /Users/saman/Projects/asml-lang/k-9/app/storage/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:app:crypto-openpgp] /Users/saman/Projects/asml-lang/k-9/app/crypto-openpgp/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:app:ui:setup] /Users/saman/Projects/asml-lang/k-9/app/ui/setup/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:app:ui:base] /Users/saman/Projects/asml-lang/k-9/app/ui/base/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:app:autodiscovery:providersxml] /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:app:autodiscovery:api] /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/api/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:app:core] /Users/saman/Projects/asml-lang/k-9/app/core/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-20:12
+MERGED from [com.mikepenz:materialdrawer:7.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/c3a3a09803331b9f71edd0b0825c925e/materialdrawer-7.0.0/AndroidManifest.xml:2:1-11:12
+MERGED from [:backend:imap] /Users/saman/Projects/asml-lang/k-9/backend/imap/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:backend:pop3] /Users/saman/Projects/asml-lang/k-9/backend/pop3/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:backend:webdav] /Users/saman/Projects/asml-lang/k-9/backend/webdav/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:backend:api] /Users/saman/Projects/asml-lang/k-9/backend/api/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:mail:protocols:imap] /Users/saman/Projects/asml-lang/k-9/mail/protocols/imap/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:mail:protocols:smtp] /Users/saman/Projects/asml-lang/k-9/mail/protocols/smtp/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:mail:protocols:pop3] /Users/saman/Projects/asml-lang/k-9/mail/protocols/pop3/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:mail:protocols:webdav] /Users/saman/Projects/asml-lang/k-9/mail/protocols/webdav/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:mail:common] /Users/saman/Projects/asml-lang/k-9/mail/common/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [com.mikepenz:iconics-core:4.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/96ec9fbe6872bcda5289c1a35284292d/iconics-core-4.0.2/AndroidManifest.xml:17:1-35:12
+MERGED from [:plugins:openpgp-api-lib:openpgp-api] /Users/saman/Projects/asml-lang/k-9/plugins/openpgp-api-lib/openpgp-api/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [com.takisoft.preferencex:preferencex-datetimepicker:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/734be16f0bba9ab868de8dc3d418d395/preferencex-datetimepicker-1.1.0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.takisoft.preferencex:preferencex-colorpicker:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/6b12e25f5e77ff4eb6fe736deb68f196/preferencex-colorpicker-1.1.0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.takisoft.preferencex:preferencex-ringtone:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/e33d2de0b4236ed868f3ccc2d5cfe96e/preferencex-ringtone-1.1.0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.takisoft.preferencex:preferencex:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/f31d1b973c2abd58e40ba01bb807d187/preferencex-1.1.0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.ByteHamster:SearchPreference:v2.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/c97ebeef04f1d7f2fe5b8ce023cc1454/SearchPreference-v2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.preference:preference:1.1.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/caa18452270a464e69a39e2b8e6acd1b/preference-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/saman/.gradle/caches/transforms-2/files-2.1/a84b40dc0187ff4ee6c911f14959075f/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
+MERGED from [com.mikepenz:materialize:1.2.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/3c4bcf300f28ec9bbbc1e40fb1248d96/materialize-1.2.1/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/900141913d57ce74b69abf3069d33bcc/navigation-ui-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/17b8080ba50a665e4f7d19dbf8a98b05/navigation-ui-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.2.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/d0e62d801293e52cd47ec069da7717d9/material-1.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.splitwise:tokenautocomplete:4.0.0-beta01] /Users/saman/.gradle/caches/transforms-2/files-2.1/371911bbf6d21b74e0c12cfb2ff4c689/tokenautocomplete-4.0.0-beta01/AndroidManifest.xml:2:1-13:12
+MERGED from [com.mikepenz:fastadapter-extensions-expandable:4.1.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/5857033fdb7ab7744334c88539efc3f8/fastadapter-extensions-expandable-4.1.2/AndroidManifest.xml:2:1-11:12
+MERGED from [com.mikepenz:fastadapter:4.1.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/72fa12efcacb0bfa740ae9c4674149e4/fastadapter-4.1.2/AndroidManifest.xml:2:1-11:12
+MERGED from [com.takisoft.datetimepicker:datetimepicker:1.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/f6bbce39c76a4d137ce78dc5405e7a0e/datetimepicker-1.0.2/AndroidManifest.xml:2:1-11:12
+MERGED from [com.takisoft.colorpicker:colorpicker:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/06efec43ea052b78b0e35196ad749e11/colorpicker-1.0.0/AndroidManifest.xml:2:1-11:12
+MERGED from [org.koin:koin-androidx-viewmodel:2.1.6] /Users/saman/.gradle/caches/transforms-2/files-2.1/997121da871c1120d8c48b3ff5473e20/koin-androidx-viewmodel-2.1.6/AndroidManifest.xml:2:1-9:12
+MERGED from [org.koin:koin-androidx-scope:2.1.6] /Users/saman/.gradle/caches/transforms-2/files-2.1/962235036dd5f657d18b4da4190a13de/koin-androidx-scope-2.1.6/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/39a4c860b666328ee00fa527e9333cb7/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/e95ed5c9e5db372368f0e02fe663f9c3/navigation-fragment-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] /Users/saman/.gradle/caches/transforms-2/files-2.1/24dd8e3328941da773f432a49b56f297/fragment-ktx-1.2.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/36b902ecaa160f75e8b64737363ed559/navigation-runtime-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/1d93c167990b292a453f0f82d60a9657/navigation-common-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/326879ca2317af2f55361da22667153e/activity-ktx-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.3.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/c3202eba7aa32a607b9c3ee80fea1e79/core-ktx-1.3.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/ae2e136abf349b44ade0a206c2040c02/timber-4.7.1/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/2b187cca02e1dd963a23408357d0402f/lifecycle-livedata-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/144b13926cddadf055279d31c756af3a/lifecycle-viewmodel-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.work:work-runtime-ktx:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/494443c33d2cb4280250e625184b6600/work-runtime-ktx-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/303413a2265791977f0a7d554b94b22e/lifecycle-runtime-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/824a391a9710514be5cb593f514ee2b1/glide-4.11.0/AndroidManifest.xml:2:1-12:12
+MERGED from [org.koin:koin-android:2.1.6] /Users/saman/.gradle/caches/transforms-2/files-2.1/b65737d9a672969f8e337267eb050b94/koin-android-2.1.6/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/bc57344f81ba5808bf98113b0da7f2df/lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [:rsm-android] /Users/saman/Projects/asml-lang/k-9/rsm-android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/cff9ebe82b3367b84166ecd0450a68be/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/32a4cd02b96576e4f54fe789d4977f68/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/033977da26fe7778953f31439a3121ee/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [:PahoAndroidService] /Users/saman/Projects/asml-lang/k-9/PahoAndroidService/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/46d3bff295b074295fb0791bc844f802/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/857226369cb7a4ec14563e348f4c3829/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/d08dfc058abc0927b6164ffc9368d4f8/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/71d96f98461c7db2e2b9b077997023eb/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [de.cketti.library.changelog:ckchangelog:1.2.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/2c34a1fa49e0c86aadacedc4db019737/ckchangelog-1.2.1/AndroidManifest.xml:2:1-12:12
+MERGED from [de.cketti.safecontentresolver:safe-content-resolver-v21:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/fcf4a82d07e2b4b1c980283fd5abcf73/safe-content-resolver-v21-1.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.mikepenz:fontawesome-typeface:5.9.0.0-kotlin] /Users/saman/.gradle/caches/transforms-2/files-2.1/9ef9eeaaaf0b5746308d380b6707237a/fontawesome-typeface-5.9.0.0-kotlin/AndroidManifest.xml:17:1-26:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/a5fc51a249b4f3a8f9cee59994f0ba52/circleimageview-3.1.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/7d059589837bbcb20a6096e2c865c91d/lifecycle-extensions-2.2.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.navigation:navigation-fragment:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/1eb6f72c6f324fbe1a78a953e1a75c35/navigation-fragment-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.5] /Users/saman/.gradle/caches/transforms-2/files-2.1/7e1e003df11f0d7671356874071fa657/fragment-1.2.5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4916962edfd5e49020dc1362b62ab61b/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/32c32127d74a5df56c0c9de7e0550694/appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/8a565133a8f4309ce20e84991c392ff2/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/b6f1b9738ffdf43ecc1eb32eca1b7228/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/1390c198b8417401ace48db5aff375a9/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:17:1-143:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/b77ee27c3b42603118d15a40575ebcb0/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/37e784a92c2f849ec1e1ee40cdfd381b/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/7026f73206a24803b838a7cbbb14e462/navigation-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/06ae7aa269be7008bd1c5dffda25c5f2/activity-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/83bdda2a589594232dcdb68f5763a081/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4abff6ea6dd556348e8db31d413fe213/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.3.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/0909ee4b987961a0c6a5d3099043afce/transition-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/cb798846d8a325ddb05820e912bd7037/navigation-common-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.3.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/2143a9f7df5ec404d9e48e1a8a846601/core-1.3.2/AndroidManifest.xml:17:1-26:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/01302086b376388ad5986cb9807e55f3/gifdecoder-4.11.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4ee0c919601898fb6d0ef9efb13c014e/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/d009ea79f37bff67717046f3a1be2560/lifecycle-livedata-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/a19ab857f8b205e13cb74039065d526d/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/621cfd896ac20ea74136d1a43b3c0e87/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/bca4a49e6babe4515b9062eaf18e4cc8/lifecycle-service-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/b90666411e04fb06fde00b05872f1734/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/d393964c02d3a8275b29e46f25dfe259/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4d826e952c78b8aac44b5663bf1b830b/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/914aea4f72e46ffb7c86a05923c71f87/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/a5428d6e78aca4c73110a0be0e67e686/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.room:room-runtime:2.2.5] /Users/saman/.gradle/caches/transforms-2/files-2.1/6d50c60b5f258f3d1d7ca16291a73f31/room-runtime-2.2.5/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/e9bad74e3e48db96d009196fd40886cb/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/cc8908e279f0b1f4d89bfb49036acc98/sqlite-framework-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/2e8a29751ff515666c8999e5ce9460ce/sqlite-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/729665966e56c73f45200f200a93400e/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/bacc205e1a26531df6e15abb07547aa9/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/da28e109657559dcc53c7699134ccafb/annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android:flexbox:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/473f5e0608bbe85ba50f9de0445bcf7a/flexbox-1.1.0/AndroidManifest.xml:17:1-26:12
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:2:1-423:12
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:2:1-423:12
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:2:1-423:12
+	package
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:5:5-26
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:2:1-423:12
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:2:1-423:12
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:3:5-63
+	android:installLocation
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:4:5-35
+uses-feature#android.hardware.touchscreen
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:7:5-9:35
+	android:required
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:9:9-33
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:8:9-52
+supports-screens
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:11:5-15:38
+	android:largeScreens
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:13:9-36
+	android:smallScreens
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:15:9-36
+	android:normalScreens
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:14:9-37
+	android:anyDensity
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:12:9-34
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:17:5-80
+MERGED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:27:5-81
+MERGED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:27:5-81
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:17:22-78
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:18:5-71
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:18:22-69
+uses-permission#android.permission.READ_SYNC_SETTINGS
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:19:5-76
+MERGED from [:app:core] /Users/saman/Projects/asml-lang/k-9/app/core/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-77
+MERGED from [:app:core] /Users/saman/Projects/asml-lang/k-9/app/core/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-77
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:19:22-74
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:21:5-78
+MERGED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:26:5-79
+MERGED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:21:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:22:5-66
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:22:22-64
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:23:5-65
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:23:22-63
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:24:5-67
+MERGED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:25:5-68
+MERGED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:24:22-65
+application
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:43:5-422:19
+MERGED from [:app:ui:legacy] /Users/saman/Projects/asml-lang/k-9/app/ui/legacy/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-13:19
+MERGED from [:app:ui:legacy] /Users/saman/Projects/asml-lang/k-9/app/ui/legacy/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-13:19
+MERGED from [:app:core] /Users/saman/Projects/asml-lang/k-9/app/core/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-18:19
+MERGED from [:app:core] /Users/saman/Projects/asml-lang/k-9/app/core/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-18:19
+MERGED from [com.mikepenz:iconics-core:4.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/96ec9fbe6872bcda5289c1a35284292d/iconics-core-4.0.2/AndroidManifest.xml:26:5-33:19
+MERGED from [com.mikepenz:iconics-core:4.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/96ec9fbe6872bcda5289c1a35284292d/iconics-core-4.0.2/AndroidManifest.xml:26:5-33:19
+MERGED from [:plugins:openpgp-api-lib:openpgp-api] /Users/saman/Projects/asml-lang/k-9/plugins/openpgp-api-lib/openpgp-api/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-20
+MERGED from [:plugins:openpgp-api-lib:openpgp-api] /Users/saman/Projects/asml-lang/k-9/plugins/openpgp-api-lib/openpgp-api/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/saman/.gradle/caches/transforms-2/files-2.1/a84b40dc0187ff4ee6c911f14959075f/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/saman/.gradle/caches/transforms-2/files-2.1/a84b40dc0187ff4ee6c911f14959075f/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.material:material:1.2.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/d0e62d801293e52cd47ec069da7717d9/material-1.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/d0e62d801293e52cd47ec069da7717d9/material-1.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.splitwise:tokenautocomplete:4.0.0-beta01] /Users/saman/.gradle/caches/transforms-2/files-2.1/371911bbf6d21b74e0c12cfb2ff4c689/tokenautocomplete-4.0.0-beta01/AndroidManifest.xml:11:5-20
+MERGED from [com.splitwise:tokenautocomplete:4.0.0-beta01] /Users/saman/.gradle/caches/transforms-2/files-2.1/371911bbf6d21b74e0c12cfb2ff4c689/tokenautocomplete-4.0.0-beta01/AndroidManifest.xml:11:5-20
+MERGED from [org.koin:koin-androidx-viewmodel:2.1.6] /Users/saman/.gradle/caches/transforms-2/files-2.1/997121da871c1120d8c48b3ff5473e20/koin-androidx-viewmodel-2.1.6/AndroidManifest.xml:7:5-20
+MERGED from [org.koin:koin-androidx-viewmodel:2.1.6] /Users/saman/.gradle/caches/transforms-2/files-2.1/997121da871c1120d8c48b3ff5473e20/koin-androidx-viewmodel-2.1.6/AndroidManifest.xml:7:5-20
+MERGED from [org.koin:koin-androidx-scope:2.1.6] /Users/saman/.gradle/caches/transforms-2/files-2.1/962235036dd5f657d18b4da4190a13de/koin-androidx-scope-2.1.6/AndroidManifest.xml:7:5-20
+MERGED from [org.koin:koin-androidx-scope:2.1.6] /Users/saman/.gradle/caches/transforms-2/files-2.1/962235036dd5f657d18b4da4190a13de/koin-androidx-scope-2.1.6/AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/ae2e136abf349b44ade0a206c2040c02/timber-4.7.1/AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/ae2e136abf349b44ade0a206c2040c02/timber-4.7.1/AndroidManifest.xml:7:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/824a391a9710514be5cb593f514ee2b1/glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/824a391a9710514be5cb593f514ee2b1/glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [:PahoAndroidService] /Users/saman/Projects/asml-lang/k-9/PahoAndroidService/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-10:19
+MERGED from [:PahoAndroidService] /Users/saman/Projects/asml-lang/k-9/PahoAndroidService/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-10:19
+MERGED from [de.cketti.library.changelog:ckchangelog:1.2.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/2c34a1fa49e0c86aadacedc4db019737/ckchangelog-1.2.1/AndroidManifest.xml:10:5-20
+MERGED from [de.cketti.library.changelog:ckchangelog:1.2.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/2c34a1fa49e0c86aadacedc4db019737/ckchangelog-1.2.1/AndroidManifest.xml:10:5-20
+MERGED from [de.cketti.safecontentresolver:safe-content-resolver-v21:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/fcf4a82d07e2b4b1c980283fd5abcf73/safe-content-resolver-v21-1.0.0/AndroidManifest.xml:7:5-20
+MERGED from [de.cketti.safecontentresolver:safe-content-resolver-v21:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/fcf4a82d07e2b4b1c980283fd5abcf73/safe-content-resolver-v21-1.0.0/AndroidManifest.xml:7:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/a5fc51a249b4f3a8f9cee59994f0ba52/circleimageview-3.1.0/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/a5fc51a249b4f3a8f9cee59994f0ba52/circleimageview-3.1.0/AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/7d059589837bbcb20a6096e2c865c91d/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/7d059589837bbcb20a6096e2c865c91d/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:30:5-141:19
+MERGED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:30:5-141:19
+MERGED from [androidx.core:core:1.3.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/2143a9f7df5ec404d9e48e1a8a846601/core-1.3.2/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/2143a9f7df5ec404d9e48e1a8a846601/core-1.3.2/AndroidManifest.xml:24:5-89
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/01302086b376388ad5986cb9807e55f3/gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/01302086b376388ad5986cb9807e55f3/gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/a5428d6e78aca4c73110a0be0e67e686/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/a5428d6e78aca4c73110a0be0e67e686/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.room:room-runtime:2.2.5] /Users/saman/.gradle/caches/transforms-2/files-2.1/6d50c60b5f258f3d1d7ca16291a73f31/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.2.5] /Users/saman/.gradle/caches/transforms-2/files-2.1/6d50c60b5f258f3d1d7ca16291a73f31/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/2143a9f7df5ec404d9e48e1a8a846601/core-1.3.2/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:48:9-41
+	android:resizeableActivity
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:50:9-42
+	android:allowTaskReparenting
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:45:9-45
+	android:icon
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:47:9-45
+	android:allowBackup
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:51:9-36
+	android:theme
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:49:9-48
+	android:usesCleartextTraffic
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:46:9-44
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:44:9-39
+meta-data#android.app.default_searchable
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:53:9-55:58
+	android:value
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:55:13-56
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:54:13-58
+meta-data#com.lge.support.SPLIT_WINDOW
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:58:9-60:35
+	android:value
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:60:13-33
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:59:13-56
+uses-library#com.sec.android.app.multiwindow
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:61:9-63:39
+	android:required
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:63:13-37
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:62:13-59
+meta-data#com.sec.android.support.multiwindow
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:64:9-66:35
+	android:value
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:66:13-33
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:65:13-63
+meta-data#com.samsung.android.sdk.multiwindow.penwindow.enable
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:67:9-69:35
+	android:value
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:69:13-33
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:68:13-80
+meta-data#android.webkit.WebView.MetricsOptOut
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:70:9-71:36
+	android:value
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:71:13-33
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:70:20-71
+activity-alias#com.fsck.k9.activity.Accounts
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:75:9-78:39
+	android:exported
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:78:13-36
+	android:targetActivity
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:77:13-59
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:76:13-46
+activity#com.fsck.k9.ui.onboarding.OnboardingActivity
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:80:9-82:61
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:82:13-58
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:81:13-61
+activity#com.fsck.k9.ui.settings.account.OpenPgpAppSelectDialog
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:84:9-88:15
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:86:13-43
+	android:theme
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:87:13-72
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:85:13-71
+activity#com.fsck.k9.activity.setup.AccountSetupBasics
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:90:9-93:65
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:93:13-63
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:92:13-43
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:91:13-62
+activity#com.fsck.k9.activity.setup.AccountSetupAccountType
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:95:9-98:71
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:98:13-69
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:97:13-43
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:96:13-67
+activity#com.fsck.k9.activity.setup.AccountSetupIncoming
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:100:9-103:67
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:103:13-65
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:102:13-43
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:101:13-64
+activity#com.fsck.k9.activity.setup.AccountSetupComposition
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:105:9-108:73
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:108:13-71
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:107:13-43
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:106:13-67
+activity#com.fsck.k9.activity.setup.AccountSetupOutgoing
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:110:9-113:67
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:113:13-65
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:112:13-43
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:111:13-64
+activity#com.fsck.k9.activity.setup.AccountSetupOptions
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:115:9-118:66
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:118:13-64
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:117:13-43
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:116:13-63
+activity#com.fsck.k9.activity.setup.AccountSetupNames
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:120:9-123:64
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:123:13-62
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:122:13-43
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:121:13-61
+activity#com.fsck.k9.activity.ChooseAccount
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:125:9-129:40
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:128:13-57
+	android:noHistory
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:129:13-37
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:127:13-43
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:126:13-51
+activity#com.fsck.k9.ui.choosefolder.ChooseFolderActivity
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:131:9-135:40
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:134:13-56
+	android:noHistory
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:135:13-37
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:133:13-43
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:132:13-65
+activity#com.fsck.k9.activity.ChooseIdentity
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:137:9-140:61
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:140:13-58
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:139:13-43
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:138:13-52
+activity#com.fsck.k9.activity.ManageIdentities
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:142:9-145:62
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:145:13-60
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:144:13-43
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:143:13-54
+activity#com.fsck.k9.activity.EditIdentity
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:147:9-150:58
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:150:13-56
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:149:13-43
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:148:13-50
+activity#com.fsck.k9.activity.NotificationDeleteConfirmation
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:152:9-157:74
+	android:excludeFromRecents
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:154:13-46
+	android:launchMode
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:155:13-43
+	android:theme
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:157:13-72
+	android:taskAffinity
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:156:13-36
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:153:13-68
+activity#com.fsck.k9.activity.setup.AccountSetupCheckSettings
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:161:9-164:73
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:164:13-71
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:163:13-70
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:162:13-69
+activity#com.fsck.k9.ui.endtoend.AutocryptKeyTransferActivity
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:166:9-170:15
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:169:13-54
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:168:13-43
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:167:13-69
+activity-alias#com.fsck.k9.activity.FolderList
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:174:9-177:39
+	android:exported
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:177:13-36
+	android:targetActivity
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:176:13-59
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:175:13-48
+activity#com.fsck.k9.activity.MessageList
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:179:9-198:20
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:179:19-55
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.APP_EMAIL+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.LAUNCHER+category:name:android.intent.category.MULTIWINDOW_LAUNCHER+category:name:android.intent.category.PENWINDOW_LAUNCHER
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:180:13-190:29
+action#android.intent.action.MAIN
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:181:17-68
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:181:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:17-75
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:183:27-73
+category#android.intent.category.LAUNCHER
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:184:17-76
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:184:27-74
+category#android.intent.category.APP_EMAIL
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:185:17-77
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:185:27-75
+category#android.intent.category.MULTIWINDOW_LAUNCHER
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:188:17-88
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:188:27-86
+category#android.intent.category.PENWINDOW_LAUNCHER
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:189:17-86
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:189:27-84
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:host:messages+data:scheme:k9mail
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:191:13-197:29
+action#android.intent.action.VIEW
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:192:17-68
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:192:25-66
+data
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:193:17-195:46
+	android:host
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:194:21-44
+	android:scheme
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:195:21-44
+	android:mimeType
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:212:23-45
+activity#com.fsck.k9.activity.MessageCompose
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:200:9-235:20
+	android:enabled
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:203:13-36
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:204:13-45
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:202:13-43
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:201:13-52
+intent-filter#action:name:android.intent.action.SENDTO+category:name:android.intent.category.DEFAULT+data:scheme:mailto
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:205:13-209:29
+action#android.intent.action.SENDTO
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:206:17-70
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:206:25-68
+intent-filter#action:name:android.intent.action.SEND+category:name:android.intent.category.DEFAULT+data:mimeType:*/*
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:210:13-214:29
+action#android.intent.action.SEND
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:211:17-68
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:211:25-66
+intent-filter#action:name:android.intent.action.SEND_MULTIPLE+category:name:android.intent.category.DEFAULT+data:mimeType:*/*
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:215:13-219:29
+action#android.intent.action.SEND_MULTIPLE
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:216:17-77
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:216:25-75
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:mailto
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:220:13-226:29
+category#android.intent.category.BROWSABLE
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:225:17-77
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:225:27-75
+intent-filter#action:name:org.autocrypt.PEER_ACTION+category:name:android.intent.category.DEFAULT
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:227:13-230:29
+action#org.autocrypt.PEER_ACTION
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:228:17-67
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:228:25-65
+meta-data#android.service.chooser.chooser_target_service
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:232:13-234:82
+	android:value
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:234:17-79
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:233:17-78
+activity#com.fsck.k9.activity.Search
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:239:9-251:20
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:242:13-50
+	android:uiOptions
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:243:13-57
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:241:13-43
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:240:13-44
+intent-filter#action:name:android.intent.action.SEARCH+category:name:android.intent.category.DEFAULT
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:244:13-247:29
+action#android.intent.action.SEARCH
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:245:17-70
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:245:25-68
+meta-data#android.app.searchable
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:248:13-250:53
+	android:resource
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:250:17-51
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:249:17-54
+activity#com.fsck.k9.activity.LauncherShortcuts
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:253:9-261:20
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:256:13-52
+	android:configChanges
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:255:13-43
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:254:13-55
+intent-filter#action:name:android.intent.action.CREATE_SHORTCUT+category:name:android.intent.category.DEFAULT
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:257:13-260:29
+action#android.intent.action.CREATE_SHORTCUT
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:258:17-79
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:258:25-77
+activity#com.fsck.k9.widget.unread.UnreadWidgetConfigurationActivity
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:263:9-267:20
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:263:19-82
+intent-filter#action:name:android.appwidget.action.APPWIDGET_CONFIGURE
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:264:13-266:29
+action#android.appwidget.action.APPWIDGET_CONFIGURE
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:265:17-86
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:265:25-84
+activity#com.fsck.k9.activity.UpgradeDatabases
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:269:9-271:62
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:271:13-60
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:270:13-54
+activity#com.fsck.k9.ui.managefolders.ManageFoldersActivity
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:273:9-275:54
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:275:13-51
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:274:13-67
+activity#com.fsck.k9.ui.settings.SettingsActivity
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:277:9-279:51
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:279:13-48
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:278:13-57
+activity#com.fsck.k9.ui.settings.general.GeneralSettingsActivity
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:281:9-283:62
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:283:13-59
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:282:13-72
+activity#com.fsck.k9.ui.settings.account.AccountSettingsActivity
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:285:9-287:66
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:287:13-63
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:286:13-72
+receiver#com.fsck.k9.service.StorageReceiver
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:289:9-311:20
+	android:enabled
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:291:13-35
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:290:13-52
+intent-filter#action:name:android.intent.action.MEDIA_MOUNTED+data:scheme:file
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:292:13-310:29
+action#android.intent.action.MEDIA_MOUNTED
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:302:17-77
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:302:25-75
+receiver#com.fsck.k9.provider.UnreadWidgetProvider
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:313:9-323:20
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:316:13-56
+	android:icon
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:315:13-49
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:314:13-58
+intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:317:13-319:29
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:318:17-83
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:318:25-81
+meta-data#android.appwidget.provider
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:320:13-322:61
+	android:resource
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:322:17-59
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:321:17-58
+receiver#com.fsck.k9.widget.list.MessageListWidgetProvider
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:325:9-335:20
+	android:label
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:328:13-58
+	android:icon
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:327:13-65
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:326:13-66
+service#com.fsck.k9.widget.list.MessageListWidgetService
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:337:9-340:72
+	android:enabled
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:339:13-35
+	android:permission
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:340:13-69
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:338:13-65
+service#com.fsck.k9.notification.NotificationActionService
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:342:9-344:37
+	android:enabled
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:344:13-35
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:343:13-67
+service#com.fsck.k9.service.DatabaseUpgradeService
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:346:9-348:39
+	android:exported
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:348:13-37
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:347:13-59
+service#com.fsck.k9.directshare.K9ChooserTargetService
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:351:9-357:19
+	android:permission
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:353:13-80
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:352:13-74
+intent-filter#action:name:android.service.chooser.ChooserTargetService
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:354:13-356:29
+action#android.service.chooser.ChooserTargetService
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:355:17-87
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:355:25-84
+service#com.fsck.k9.account.AccountRemoverService
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:359:9-361:71
+	android:permission
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:361:13-69
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:360:13-69
+uses-sdk
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+MERGED from [:app:ui:legacy] /Users/saman/Projects/asml-lang/k-9/app/ui/legacy/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:app:ui:legacy] /Users/saman/Projects/asml-lang/k-9/app/ui/legacy/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:app:storage] /Users/saman/Projects/asml-lang/k-9/app/storage/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:app:storage] /Users/saman/Projects/asml-lang/k-9/app/storage/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:app:crypto-openpgp] /Users/saman/Projects/asml-lang/k-9/app/crypto-openpgp/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:app:crypto-openpgp] /Users/saman/Projects/asml-lang/k-9/app/crypto-openpgp/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:app:ui:setup] /Users/saman/Projects/asml-lang/k-9/app/ui/setup/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:app:ui:setup] /Users/saman/Projects/asml-lang/k-9/app/ui/setup/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:app:ui:base] /Users/saman/Projects/asml-lang/k-9/app/ui/base/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:app:ui:base] /Users/saman/Projects/asml-lang/k-9/app/ui/base/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:app:autodiscovery:providersxml] /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:app:autodiscovery:providersxml] /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:app:autodiscovery:api] /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/api/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:app:autodiscovery:api] /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/api/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:app:core] /Users/saman/Projects/asml-lang/k-9/app/core/build/intermediates/library_manifest/debug/AndroidManifest.xml:6:5-8:41
+MERGED from [:app:core] /Users/saman/Projects/asml-lang/k-9/app/core/build/intermediates/library_manifest/debug/AndroidManifest.xml:6:5-8:41
+MERGED from [com.mikepenz:materialdrawer:7.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/c3a3a09803331b9f71edd0b0825c925e/materialdrawer-7.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mikepenz:materialdrawer:7.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/c3a3a09803331b9f71edd0b0825c925e/materialdrawer-7.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [:backend:imap] /Users/saman/Projects/asml-lang/k-9/backend/imap/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:backend:imap] /Users/saman/Projects/asml-lang/k-9/backend/imap/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:backend:pop3] /Users/saman/Projects/asml-lang/k-9/backend/pop3/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:backend:pop3] /Users/saman/Projects/asml-lang/k-9/backend/pop3/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:backend:webdav] /Users/saman/Projects/asml-lang/k-9/backend/webdav/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:backend:webdav] /Users/saman/Projects/asml-lang/k-9/backend/webdav/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:backend:api] /Users/saman/Projects/asml-lang/k-9/backend/api/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:backend:api] /Users/saman/Projects/asml-lang/k-9/backend/api/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:mail:protocols:imap] /Users/saman/Projects/asml-lang/k-9/mail/protocols/imap/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:mail:protocols:imap] /Users/saman/Projects/asml-lang/k-9/mail/protocols/imap/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:mail:protocols:smtp] /Users/saman/Projects/asml-lang/k-9/mail/protocols/smtp/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:mail:protocols:smtp] /Users/saman/Projects/asml-lang/k-9/mail/protocols/smtp/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:mail:protocols:pop3] /Users/saman/Projects/asml-lang/k-9/mail/protocols/pop3/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:mail:protocols:pop3] /Users/saman/Projects/asml-lang/k-9/mail/protocols/pop3/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:mail:protocols:webdav] /Users/saman/Projects/asml-lang/k-9/mail/protocols/webdav/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:mail:protocols:webdav] /Users/saman/Projects/asml-lang/k-9/mail/protocols/webdav/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:mail:common] /Users/saman/Projects/asml-lang/k-9/mail/common/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:mail:common] /Users/saman/Projects/asml-lang/k-9/mail/common/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [com.mikepenz:iconics-core:4.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/96ec9fbe6872bcda5289c1a35284292d/iconics-core-4.0.2/AndroidManifest.xml:22:5-24:41
+MERGED from [com.mikepenz:iconics-core:4.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/96ec9fbe6872bcda5289c1a35284292d/iconics-core-4.0.2/AndroidManifest.xml:22:5-24:41
+MERGED from [:plugins:openpgp-api-lib:openpgp-api] /Users/saman/Projects/asml-lang/k-9/plugins/openpgp-api-lib/openpgp-api/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:plugins:openpgp-api-lib:openpgp-api] /Users/saman/Projects/asml-lang/k-9/plugins/openpgp-api-lib/openpgp-api/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [com.takisoft.preferencex:preferencex-datetimepicker:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/734be16f0bba9ab868de8dc3d418d395/preferencex-datetimepicker-1.1.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.takisoft.preferencex:preferencex-datetimepicker:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/734be16f0bba9ab868de8dc3d418d395/preferencex-datetimepicker-1.1.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.takisoft.preferencex:preferencex-colorpicker:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/6b12e25f5e77ff4eb6fe736deb68f196/preferencex-colorpicker-1.1.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.takisoft.preferencex:preferencex-colorpicker:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/6b12e25f5e77ff4eb6fe736deb68f196/preferencex-colorpicker-1.1.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.takisoft.preferencex:preferencex-ringtone:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/e33d2de0b4236ed868f3ccc2d5cfe96e/preferencex-ringtone-1.1.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.takisoft.preferencex:preferencex-ringtone:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/e33d2de0b4236ed868f3ccc2d5cfe96e/preferencex-ringtone-1.1.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.takisoft.preferencex:preferencex:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/f31d1b973c2abd58e40ba01bb807d187/preferencex-1.1.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.takisoft.preferencex:preferencex:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/f31d1b973c2abd58e40ba01bb807d187/preferencex-1.1.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.ByteHamster:SearchPreference:v2.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/c97ebeef04f1d7f2fe5b8ce023cc1454/SearchPreference-v2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.ByteHamster:SearchPreference:v2.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/c97ebeef04f1d7f2fe5b8ce023cc1454/SearchPreference-v2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.preference:preference:1.1.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/caa18452270a464e69a39e2b8e6acd1b/preference-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.preference:preference:1.1.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/caa18452270a464e69a39e2b8e6acd1b/preference-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/saman/.gradle/caches/transforms-2/files-2.1/a84b40dc0187ff4ee6c911f14959075f/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/saman/.gradle/caches/transforms-2/files-2.1/a84b40dc0187ff4ee6c911f14959075f/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.mikepenz:materialize:1.2.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/3c4bcf300f28ec9bbbc1e40fb1248d96/materialize-1.2.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mikepenz:materialize:1.2.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/3c4bcf300f28ec9bbbc1e40fb1248d96/materialize-1.2.1/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/900141913d57ce74b69abf3069d33bcc/navigation-ui-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/900141913d57ce74b69abf3069d33bcc/navigation-ui-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/17b8080ba50a665e4f7d19dbf8a98b05/navigation-ui-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/17b8080ba50a665e4f7d19dbf8a98b05/navigation-ui-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.2.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/d0e62d801293e52cd47ec069da7717d9/material-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/d0e62d801293e52cd47ec069da7717d9/material-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.splitwise:tokenautocomplete:4.0.0-beta01] /Users/saman/.gradle/caches/transforms-2/files-2.1/371911bbf6d21b74e0c12cfb2ff4c689/tokenautocomplete-4.0.0-beta01/AndroidManifest.xml:7:5-9:41
+MERGED from [com.splitwise:tokenautocomplete:4.0.0-beta01] /Users/saman/.gradle/caches/transforms-2/files-2.1/371911bbf6d21b74e0c12cfb2ff4c689/tokenautocomplete-4.0.0-beta01/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mikepenz:fastadapter-extensions-expandable:4.1.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/5857033fdb7ab7744334c88539efc3f8/fastadapter-extensions-expandable-4.1.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mikepenz:fastadapter-extensions-expandable:4.1.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/5857033fdb7ab7744334c88539efc3f8/fastadapter-extensions-expandable-4.1.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mikepenz:fastadapter:4.1.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/72fa12efcacb0bfa740ae9c4674149e4/fastadapter-4.1.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mikepenz:fastadapter:4.1.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/72fa12efcacb0bfa740ae9c4674149e4/fastadapter-4.1.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.takisoft.datetimepicker:datetimepicker:1.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/f6bbce39c76a4d137ce78dc5405e7a0e/datetimepicker-1.0.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.takisoft.datetimepicker:datetimepicker:1.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/f6bbce39c76a4d137ce78dc5405e7a0e/datetimepicker-1.0.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.takisoft.colorpicker:colorpicker:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/06efec43ea052b78b0e35196ad749e11/colorpicker-1.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.takisoft.colorpicker:colorpicker:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/06efec43ea052b78b0e35196ad749e11/colorpicker-1.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [org.koin:koin-androidx-viewmodel:2.1.6] /Users/saman/.gradle/caches/transforms-2/files-2.1/997121da871c1120d8c48b3ff5473e20/koin-androidx-viewmodel-2.1.6/AndroidManifest.xml:5:5-44
+MERGED from [org.koin:koin-androidx-viewmodel:2.1.6] /Users/saman/.gradle/caches/transforms-2/files-2.1/997121da871c1120d8c48b3ff5473e20/koin-androidx-viewmodel-2.1.6/AndroidManifest.xml:5:5-44
+MERGED from [org.koin:koin-androidx-scope:2.1.6] /Users/saman/.gradle/caches/transforms-2/files-2.1/962235036dd5f657d18b4da4190a13de/koin-androidx-scope-2.1.6/AndroidManifest.xml:5:5-44
+MERGED from [org.koin:koin-androidx-scope:2.1.6] /Users/saman/.gradle/caches/transforms-2/files-2.1/962235036dd5f657d18b4da4190a13de/koin-androidx-scope-2.1.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/39a4c860b666328ee00fa527e9333cb7/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/39a4c860b666328ee00fa527e9333cb7/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/e95ed5c9e5db372368f0e02fe663f9c3/navigation-fragment-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/e95ed5c9e5db372368f0e02fe663f9c3/navigation-fragment-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] /Users/saman/.gradle/caches/transforms-2/files-2.1/24dd8e3328941da773f432a49b56f297/fragment-ktx-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] /Users/saman/.gradle/caches/transforms-2/files-2.1/24dd8e3328941da773f432a49b56f297/fragment-ktx-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/36b902ecaa160f75e8b64737363ed559/navigation-runtime-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/36b902ecaa160f75e8b64737363ed559/navigation-runtime-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/1d93c167990b292a453f0f82d60a9657/navigation-common-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/1d93c167990b292a453f0f82d60a9657/navigation-common-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/326879ca2317af2f55361da22667153e/activity-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/326879ca2317af2f55361da22667153e/activity-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.3.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/c3202eba7aa32a607b9c3ee80fea1e79/core-ktx-1.3.2/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.3.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/c3202eba7aa32a607b9c3ee80fea1e79/core-ktx-1.3.2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/ae2e136abf349b44ade0a206c2040c02/timber-4.7.1/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/ae2e136abf349b44ade0a206c2040c02/timber-4.7.1/AndroidManifest.xml:5:5-43
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/2b187cca02e1dd963a23408357d0402f/lifecycle-livedata-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/2b187cca02e1dd963a23408357d0402f/lifecycle-livedata-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/144b13926cddadf055279d31c756af3a/lifecycle-viewmodel-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/144b13926cddadf055279d31c756af3a/lifecycle-viewmodel-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.work:work-runtime-ktx:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/494443c33d2cb4280250e625184b6600/work-runtime-ktx-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.work:work-runtime-ktx:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/494443c33d2cb4280250e625184b6600/work-runtime-ktx-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/303413a2265791977f0a7d554b94b22e/lifecycle-runtime-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/303413a2265791977f0a7d554b94b22e/lifecycle-runtime-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/824a391a9710514be5cb593f514ee2b1/glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/824a391a9710514be5cb593f514ee2b1/glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [org.koin:koin-android:2.1.6] /Users/saman/.gradle/caches/transforms-2/files-2.1/b65737d9a672969f8e337267eb050b94/koin-android-2.1.6/AndroidManifest.xml:5:5-44
+MERGED from [org.koin:koin-android:2.1.6] /Users/saman/.gradle/caches/transforms-2/files-2.1/b65737d9a672969f8e337267eb050b94/koin-android-2.1.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/bc57344f81ba5808bf98113b0da7f2df/lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/bc57344f81ba5808bf98113b0da7f2df/lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [:rsm-android] /Users/saman/Projects/asml-lang/k-9/rsm-android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:rsm-android] /Users/saman/Projects/asml-lang/k-9/rsm-android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/cff9ebe82b3367b84166ecd0450a68be/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/cff9ebe82b3367b84166ecd0450a68be/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/32a4cd02b96576e4f54fe789d4977f68/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/32a4cd02b96576e4f54fe789d4977f68/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/033977da26fe7778953f31439a3121ee/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/033977da26fe7778953f31439a3121ee/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [:PahoAndroidService] /Users/saman/Projects/asml-lang/k-9/PahoAndroidService/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:PahoAndroidService] /Users/saman/Projects/asml-lang/k-9/PahoAndroidService/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/46d3bff295b074295fb0791bc844f802/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/46d3bff295b074295fb0791bc844f802/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/857226369cb7a4ec14563e348f4c3829/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/857226369cb7a4ec14563e348f4c3829/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/d08dfc058abc0927b6164ffc9368d4f8/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/d08dfc058abc0927b6164ffc9368d4f8/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/71d96f98461c7db2e2b9b077997023eb/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/71d96f98461c7db2e2b9b077997023eb/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [de.cketti.library.changelog:ckchangelog:1.2.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/2c34a1fa49e0c86aadacedc4db019737/ckchangelog-1.2.1/AndroidManifest.xml:6:5-8:41
+MERGED from [de.cketti.library.changelog:ckchangelog:1.2.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/2c34a1fa49e0c86aadacedc4db019737/ckchangelog-1.2.1/AndroidManifest.xml:6:5-8:41
+MERGED from [de.cketti.safecontentresolver:safe-content-resolver-v21:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/fcf4a82d07e2b4b1c980283fd5abcf73/safe-content-resolver-v21-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [de.cketti.safecontentresolver:safe-content-resolver-v21:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/fcf4a82d07e2b4b1c980283fd5abcf73/safe-content-resolver-v21-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.mikepenz:fontawesome-typeface:5.9.0.0-kotlin] /Users/saman/.gradle/caches/transforms-2/files-2.1/9ef9eeaaaf0b5746308d380b6707237a/fontawesome-typeface-5.9.0.0-kotlin/AndroidManifest.xml:22:5-24:41
+MERGED from [com.mikepenz:fontawesome-typeface:5.9.0.0-kotlin] /Users/saman/.gradle/caches/transforms-2/files-2.1/9ef9eeaaaf0b5746308d380b6707237a/fontawesome-typeface-5.9.0.0-kotlin/AndroidManifest.xml:22:5-24:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/a5fc51a249b4f3a8f9cee59994f0ba52/circleimageview-3.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/a5fc51a249b4f3a8f9cee59994f0ba52/circleimageview-3.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/7d059589837bbcb20a6096e2c865c91d/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/7d059589837bbcb20a6096e2c865c91d/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/1eb6f72c6f324fbe1a78a953e1a75c35/navigation-fragment-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/1eb6f72c6f324fbe1a78a953e1a75c35/navigation-fragment-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.5] /Users/saman/.gradle/caches/transforms-2/files-2.1/7e1e003df11f0d7671356874071fa657/fragment-1.2.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.5] /Users/saman/.gradle/caches/transforms-2/files-2.1/7e1e003df11f0d7671356874071fa657/fragment-1.2.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4916962edfd5e49020dc1362b62ab61b/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4916962edfd5e49020dc1362b62ab61b/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/32c32127d74a5df56c0c9de7e0550694/appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/32c32127d74a5df56c0c9de7e0550694/appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/8a565133a8f4309ce20e84991c392ff2/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/8a565133a8f4309ce20e84991c392ff2/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/b6f1b9738ffdf43ecc1eb32eca1b7228/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/b6f1b9738ffdf43ecc1eb32eca1b7228/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/1390c198b8417401ace48db5aff375a9/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/1390c198b8417401ace48db5aff375a9/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/b77ee27c3b42603118d15a40575ebcb0/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/b77ee27c3b42603118d15a40575ebcb0/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/37e784a92c2f849ec1e1ee40cdfd381b/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/37e784a92c2f849ec1e1ee40cdfd381b/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/7026f73206a24803b838a7cbbb14e462/navigation-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/7026f73206a24803b838a7cbbb14e462/navigation-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/06ae7aa269be7008bd1c5dffda25c5f2/activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/06ae7aa269be7008bd1c5dffda25c5f2/activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/83bdda2a589594232dcdb68f5763a081/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/83bdda2a589594232dcdb68f5763a081/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4abff6ea6dd556348e8db31d413fe213/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4abff6ea6dd556348e8db31d413fe213/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/0909ee4b987961a0c6a5d3099043afce/transition-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/0909ee4b987961a0c6a5d3099043afce/transition-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/cb798846d8a325ddb05820e912bd7037/navigation-common-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.1] /Users/saman/.gradle/caches/transforms-2/files-2.1/cb798846d8a325ddb05820e912bd7037/navigation-common-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/2143a9f7df5ec404d9e48e1a8a846601/core-1.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/2143a9f7df5ec404d9e48e1a8a846601/core-1.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/01302086b376388ad5986cb9807e55f3/gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/01302086b376388ad5986cb9807e55f3/gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4ee0c919601898fb6d0ef9efb13c014e/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4ee0c919601898fb6d0ef9efb13c014e/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/d009ea79f37bff67717046f3a1be2560/lifecycle-livedata-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/d009ea79f37bff67717046f3a1be2560/lifecycle-livedata-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/a19ab857f8b205e13cb74039065d526d/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/a19ab857f8b205e13cb74039065d526d/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/621cfd896ac20ea74136d1a43b3c0e87/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/621cfd896ac20ea74136d1a43b3c0e87/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/bca4a49e6babe4515b9062eaf18e4cc8/lifecycle-service-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/bca4a49e6babe4515b9062eaf18e4cc8/lifecycle-service-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/b90666411e04fb06fde00b05872f1734/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/b90666411e04fb06fde00b05872f1734/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/d393964c02d3a8275b29e46f25dfe259/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/d393964c02d3a8275b29e46f25dfe259/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4d826e952c78b8aac44b5663bf1b830b/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4d826e952c78b8aac44b5663bf1b830b/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/914aea4f72e46ffb7c86a05923c71f87/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/914aea4f72e46ffb7c86a05923c71f87/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/a5428d6e78aca4c73110a0be0e67e686/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/a5428d6e78aca4c73110a0be0e67e686/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.5] /Users/saman/.gradle/caches/transforms-2/files-2.1/6d50c60b5f258f3d1d7ca16291a73f31/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.5] /Users/saman/.gradle/caches/transforms-2/files-2.1/6d50c60b5f258f3d1d7ca16291a73f31/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/e9bad74e3e48db96d009196fd40886cb/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/e9bad74e3e48db96d009196fd40886cb/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/cc8908e279f0b1f4d89bfb49036acc98/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/cc8908e279f0b1f4d89bfb49036acc98/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/2e8a29751ff515666c8999e5ce9460ce/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/2e8a29751ff515666c8999e5ce9460ce/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/729665966e56c73f45200f200a93400e/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/729665966e56c73f45200f200a93400e/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/bacc205e1a26531df6e15abb07547aa9/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/bacc205e1a26531df6e15abb07547aa9/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/da28e109657559dcc53c7699134ccafb/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/da28e109657559dcc53c7699134ccafb/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android:flexbox:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/473f5e0608bbe85ba50f9de0445bcf7a/flexbox-1.1.0/AndroidManifest.xml:22:5-24:41
+MERGED from [com.google.android:flexbox:1.1.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/473f5e0608bbe85ba50f9de0445bcf7a/flexbox-1.1.0/AndroidManifest.xml:22:5-24:41
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml
+meta-data#de.cketti.safecontentresolver.ALLOW_INTERNAL_ACCESS
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:369:13-371:40
+	android:value
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:371:17-37
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:370:17-83
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:406:13-408:73
+	android:resource
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:408:17-70
+	android:name
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/AndroidManifest.xml:407:17-67
+service#org.eclipse.paho.android.service.MqttService
+ADDED from [:app:ui:legacy] /Users/saman/Projects/asml-lang/k-9/app/ui/legacy/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-80
+	android:name
+		ADDED from [:app:ui:legacy] /Users/saman/Projects/asml-lang/k-9/app/ui/legacy/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:18-77
+provider#androidx.work.impl.WorkManagerInitializer
+ADDED from [:app:core] /Users/saman/Projects/asml-lang/k-9/app/core/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-17:35
+REJECTED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:31:9-37:35
+	tools:node
+		ADDED from [:app:core] /Users/saman/Projects/asml-lang/k-9/app/core/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-32
+	android:authorities
+		ADDED from [:app:core] /Users/saman/Projects/asml-lang/k-9/app/core/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-68
+	android:exported
+		ADDED from [:app:core] /Users/saman/Projects/asml-lang/k-9/app/core/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-37
+	android:name
+		ADDED from [:app:core] /Users/saman/Projects/asml-lang/k-9/app/core/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-69
+provider#com.mikepenz.iconics.IconicsContentProvider
+ADDED from [com.mikepenz:iconics-core:4.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/96ec9fbe6872bcda5289c1a35284292d/iconics-core-4.0.2/AndroidManifest.xml:27:9-32:39
+	android:enabled
+		ADDED from [com.mikepenz:iconics-core:4.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/96ec9fbe6872bcda5289c1a35284292d/iconics-core-4.0.2/AndroidManifest.xml:30:13-72
+	android:authorities
+		ADDED from [com.mikepenz:iconics-core:4.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/96ec9fbe6872bcda5289c1a35284292d/iconics-core-4.0.2/AndroidManifest.xml:29:13-73
+	android:exported
+		ADDED from [com.mikepenz:iconics-core:4.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/96ec9fbe6872bcda5289c1a35284292d/iconics-core-4.0.2/AndroidManifest.xml:31:13-37
+	android:initOrder
+		ADDED from [com.mikepenz:iconics-core:4.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/96ec9fbe6872bcda5289c1a35284292d/iconics-core-4.0.2/AndroidManifest.xml:32:13-36
+	android:name
+		ADDED from [com.mikepenz:iconics-core:4.0.2] /Users/saman/.gradle/caches/transforms-2/files-2.1/96ec9fbe6872bcda5289c1a35284292d/iconics-core-4.0.2/AndroidManifest.xml:28:13-71
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:28:5-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:28:22-74
+service#androidx.work.impl.background.systemalarm.SystemAlarmService
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:39:9-44:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:42:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:43:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:44:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:41:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:40:13-88
+service#androidx.work.impl.background.systemjob.SystemJobService
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:45:9-51:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:48:13-70
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:49:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:50:13-69
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:51:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:47:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:46:13-84
+service#androidx.work.impl.foreground.SystemForegroundService
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:52:9-57:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:55:13-77
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:56:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:57:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:54:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:53:13-81
+receiver#androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:59:9-64:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:62:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:63:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:64:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:61:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:60:13-88
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:65:9-75:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:68:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:69:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:70:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:67:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:66:13-106
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:71:13-74:29
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:72:17-87
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:72:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:73:17-90
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:73:25-87
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:76:9-86:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:79:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:80:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:81:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:78:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:77:13-104
+intent-filter#action:name:android.intent.action.BATTERY_LOW+action:name:android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:82:13-85:29
+action#android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:83:17-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:83:25-74
+action#android.intent.action.BATTERY_LOW
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:84:17-76
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:84:25-73
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:87:9-97:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:90:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:91:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:92:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:89:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:88:13-104
+intent-filter#action:name:android.intent.action.DEVICE_STORAGE_LOW+action:name:android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:93:13-96:29
+action#android.intent.action.DEVICE_STORAGE_LOW
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:94:17-83
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:94:25-80
+action#android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:95:17-82
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:95:25-79
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:98:9-107:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:101:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:102:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:103:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:100:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:99:13-103
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:104:13-106:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:105:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:105:25-76
+receiver#androidx.work.impl.background.systemalarm.RescheduleReceiver
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:108:9-119:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:111:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:112:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:113:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:110:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:109:13-88
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:114:13-118:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:115:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:115:25-76
+action#android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:116:17-73
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:116:25-70
+action#android.intent.action.TIMEZONE_CHANGED
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:117:17-81
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:117:25-78
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:120:9-129:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:123:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:124:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:125:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:122:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:121:13-99
+intent-filter#action:name:androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:126:13-128:29
+action#androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:127:17-98
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:127:25-95
+receiver#androidx.work.impl.diagnostics.DiagnosticsReceiver
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:130:9-140:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:133:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:134:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:135:13-57
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:136:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:132:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:131:13-78
+intent-filter#action:name:androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:137:13-139:29
+action#androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:138:17-88
+	android:name
+		ADDED from [androidx.work:work-runtime:2.4.0] /Users/saman/.gradle/caches/transforms-2/files-2.1/4f63c885b51056843a49336eb36336b7/work-runtime-2.4.0/AndroidManifest.xml:138:25-85
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.2.5] /Users/saman/.gradle/caches/transforms-2/files-2.1/6d50c60b5f258f3d1d7ca16291a73f31/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.2.5] /Users/saman/.gradle/caches/transforms-2/files-2.1/6d50c60b5f258f3d1d7ca16291a73f31/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.2.5] /Users/saman/.gradle/caches/transforms-2/files-2.1/6d50c60b5f258f3d1d7ca16291a73f31/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.2.5] /Users/saman/.gradle/caches/transforms-2/files-2.1/6d50c60b5f258f3d1d7ca16291a73f31/room-runtime-2.2.5/AndroidManifest.xml:26:13-74

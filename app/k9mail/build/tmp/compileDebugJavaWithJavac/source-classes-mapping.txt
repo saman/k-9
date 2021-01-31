@@ -1,0 +1,49 @@
+com/fsck/k9/directshare/K9ChooserTargetService.java
+ com.fsck.k9.directshare.K9ChooserTargetService
+com/fsck/k9/glide/K9AppGlideModule.java
+ com.fsck.k9.glide.K9AppGlideModule
+com/fsck/k9/widget/list/MessageListWidgetProvider.java
+ com.fsck.k9.widget.list.MessageListWidgetProvider
+com/fsck/k9/notification/K9NotificationActionCreator.java
+ com.fsck.k9.notification.K9NotificationActionCreator
+com/fsck/k9/widget/list/MessageListWidgetService.java
+ com.fsck.k9.widget.list.MessageListWidgetService
+com/fsck/k9/widget/list/MessageListRemoteViewFactory.java
+ com.fsck.k9.widget.list.MessageListRemoteViewFactory
+ com.fsck.k9.widget.list.MessageListRemoteViewFactory$MailItem
+com/fsck/k9/external/MessageInfoHolder.java
+ com.fsck.k9.external.MessageInfoHolder
+com/fsck/k9/external/MessageProvider.java
+ com.fsck.k9.external.MessageProvider
+ com.fsck.k9.external.MessageProvider$1
+ com.fsck.k9.external.MessageProvider$AccountColorExtractor
+ com.fsck.k9.external.MessageProvider$AccountColumns
+ com.fsck.k9.external.MessageProvider$AccountExtractor
+ com.fsck.k9.external.MessageProvider$AccountNumberExtractor
+ com.fsck.k9.external.MessageProvider$AccountsQueryHandler
+ com.fsck.k9.external.MessageProvider$CountExtractor
+ com.fsck.k9.external.MessageProvider$DeleteUriExtractor
+ com.fsck.k9.external.MessageProvider$FieldExtractor
+ com.fsck.k9.external.MessageProvider$HasAttachmentsExtractor
+ com.fsck.k9.external.MessageProvider$HasStarExtractor
+ com.fsck.k9.external.MessageProvider$IdExtractor
+ com.fsck.k9.external.MessageProvider$IncrementExtractor
+ com.fsck.k9.external.MessageProvider$MessageColumns
+ com.fsck.k9.external.MessageProvider$MessageInfoHolderRetrieverListener
+ com.fsck.k9.external.MessageProvider$MessagesQueryHandler
+ com.fsck.k9.external.MessageProvider$MonitoredCursor
+ com.fsck.k9.external.MessageProvider$PreviewExtractor
+ com.fsck.k9.external.MessageProvider$QueryHandler
+ com.fsck.k9.external.MessageProvider$ReverseDateComparator
+ com.fsck.k9.external.MessageProvider$SendDateExtractor
+ com.fsck.k9.external.MessageProvider$SenderAddressExtractor
+ com.fsck.k9.external.MessageProvider$SenderExtractor
+ com.fsck.k9.external.MessageProvider$SubjectExtractor
+ com.fsck.k9.external.MessageProvider$ThrottlingQueryHandler
+ com.fsck.k9.external.MessageProvider$ThrottlingQueryHandler$1
+ com.fsck.k9.external.MessageProvider$UnreadColumns
+ com.fsck.k9.external.MessageProvider$UnreadExtractor
+ com.fsck.k9.external.MessageProvider$UnreadQueryHandler
+ com.fsck.k9.external.MessageProvider$UriExtractor
+com/fsck/k9/BuildConfig.java
+ com.fsck.k9.BuildConfig

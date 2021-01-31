@@ -8,14 +8,16 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class SendingEmailState {
     private String from;
     private String to;
+    private String subject;
     private String body;
 
     public SendingEmailState() {
     }
 
-    public SendingEmailState(String from, String to, String body) {
+    public SendingEmailState(String from, String to, String subject, String body) {
         this.from = from;
         this.to = to;
+        this.subject = subject;
         this.body = body;
     }
 
@@ -25,6 +27,10 @@ public class SendingEmailState {
 
     public String getTo() {
         return to;
+    }
+
+    public String getSubject() {
+        return subject;
     }
 
     public String getBody() {
@@ -42,8 +48,9 @@ public class SendingEmailState {
 
         return "{" +
                 "\"from\":\"" + from + '"' +
-                ", \"to\"" + to + '\"' +
-                ", \"body\"" + body + '\"' +
+                ", \"to\"" + to + '"' +
+                ", \"subject\"" + subject + '"' +
+                ", \"body\"" + body + '"' +
                 '}';
     }
 

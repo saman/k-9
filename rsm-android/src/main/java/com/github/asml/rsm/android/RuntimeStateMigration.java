@@ -24,6 +24,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 public final class RuntimeStateMigration implements OnOnlineListener, OnMessageListener {
@@ -32,11 +33,11 @@ public final class RuntimeStateMigration implements OnOnlineListener, OnMessageL
     private static Api api;
     private static Device device;
     private static RuntimeStateMigration INSTANCE;
-    private static String TAG = "RuntimeStateMigration";
+    private static final String TAG = "RuntimeStateMigration";
     ObjectMapper mapper = new ObjectMapper();
-    private JsonSchemaValidator validator;
-    private List<Model> models = new ArrayList<>();
-    private List<Device> devices = new ArrayList<>();
+    private final JsonSchemaValidator validator;
+    private final List<Model> models = new ArrayList<>();
+    private final List<Device> devices = new ArrayList<>();
     private OnStateReceiveListener onStateReceiveListener;
     private OnStateRequestListener onStateRequestListener;
     private OnDeviceJoinListener onDeviceJoinListener;
@@ -80,13 +81,10 @@ public final class RuntimeStateMigration implements OnOnlineListener, OnMessageL
         if (models.isEmpty()) {
             throw new IllegalStateException("At least one model needs to be added.");
         }
-        api.run(device, new OnClientConnectedListener() {
-            @Override
-            public void onConnected() {
-                for (Model m : models) {
-                    Log.d(TAG, "onConnected: Publishing model: " + m.getName());
-                    api.publishDevice(device, m);
-                }
+        api.run(device, () -> {
+            for (Model m : models) {
+                Log.d(TAG, "onConnected: Publishing model: " + m.getName());
+                api.publishDevice(device, m);
             }
         });
 
@@ -102,6 +100,16 @@ public final class RuntimeStateMigration implements OnOnlineListener, OnMessageL
             throw new IllegalStateException("Could not find the model " + modelName);
         }
         model.setState(state);
+        api.publishHasState(modelName, device);
+    }
+
+    public void setHasState(String modelName) {
+        Model model = getModel(modelName);
+        if (model == null) {
+            throw new IllegalStateException("Could not find the model " + modelName);
+        }
+
+        api.publishHasState(modelName, device);
     }
 
     public void sendState(String modelName, String deviceId) {
@@ -129,10 +137,19 @@ public final class RuntimeStateMigration implements OnOnlineListener, OnMessageL
     }
 
     public List<Device> getDevices(String modelName) {
+        return getDevices(modelName, false);
+    }
+
+    public List<Device> getDevices(String modelName, boolean hasState) {
         Model model = getModel(modelName);
         if (model == null) {
             throw new IllegalStateException("Could not find the model " + modelName);
         }
+        if (hasState) {
+            return devices.stream().filter(d -> d.getModelsHasState().contains(modelName)).collect(Collectors.toList());
+        }
+        return devices.stream().filter(d -> d.getModels().contains(modelName)).collect(Collectors.toList());
+/*
         List<Device> deviceList = new ArrayList<>();
         for (Device device : devices) {
             List<String> deviceModels = device.getModels();
@@ -144,15 +161,12 @@ public final class RuntimeStateMigration implements OnOnlineListener, OnMessageL
             }
         }
         return deviceList;
+
+ */
     }
 
     private Model getModel(String name) {
-        for (Model model : models) {
-            if (model.getName().equals(name)) {
-                return model;
-            }
-        }
-        return null;
+        return models.stream().filter(m-> m.getName().equals(name)).findFirst().orElse(null);
     }
 
     @Override
@@ -175,9 +189,12 @@ public final class RuntimeStateMigration implements OnOnlineListener, OnMessageL
                 JavaType type = mapper.getTypeFactory().constructParametricType(State.class, DeviceState.class);
                 State<DeviceState> state = mapper.readValue(payload, type);
 
-                Device device = state.getData().getDevice();
+                Device device = devices.stream().filter(d-> d.getId().equals(state.getData().getDevice().getId())).findFirst().orElse(null);
+                if (device == null){
+                    devices.add(state.getData().getDevice());
+                    device = devices.get(devices.size()-1);
+                }
                 device.addModel(topic);
-                addDevice(device, topic);
 
                 if (state.getData().isNew()) {
                     if (onDeviceJoinListener != null) {
@@ -211,6 +228,13 @@ public final class RuntimeStateMigration implements OnOnlineListener, OnMessageL
                     });
                     onStateMigrationListener.onStateMigration(topic, state.getData().getDevice());
                 }
+            } else if (action.equals("has-state")) {
+                State<HasState> state = mapper.readValue(payload, new TypeReference<State<HasState>>() {
+                });
+                Device device = devices.stream().filter(d -> d.getId().equals(state.getData().getDevice().getId())).findFirst().orElse(null);
+                if (device != null && !device.getModelsHasState().contains(topic)) {
+                    device.addModelHasState(topic);
+                }
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -221,28 +245,11 @@ public final class RuntimeStateMigration implements OnOnlineListener, OnMessageL
         }
     }
 
-    private void addDevice(Device device, String model) {
-        for (int i = 0; i < devices.size(); i++) {
-            Device d = devices.get(i);
-            if (d.getId().equals(device.getId())) {
-                d.addModel(model);
-                devices.set(i, d);
-                return;
-            }
-        }
-        devices.add(device);
-    }
-
     @Override
     public void onOnline(String deviceId, boolean isOnline) {
         Log.d(TAG, "onOnline() called with: deviceId = [" + deviceId + "], isOnline = [" + isOnline + "]");
-        if (deviceId.equals(RuntimeStateMigration.device.getId())) {
+        if (deviceId.equals(device.getId())) {
             return;
-        }
-        if (VERSION.SDK_INT >= VERSION_CODES.N) {
-            devices.forEach((item) -> {
-                Log.d(TAG, "onOnline:device:before " + item.getName());
-            });
         }
         if (!isOnline) {
             for (int i = 0; i < devices.size(); i++) {
@@ -253,14 +260,9 @@ public final class RuntimeStateMigration implements OnOnlineListener, OnMessageL
                     if (onDeviceLeaveListener != null) {
                         onDeviceLeaveListener.onDeviceLeave(d);
                     }
-                    break;
+                    return;
                 }
             }
-        }
-        if (VERSION.SDK_INT >= VERSION_CODES.N) {
-            devices.forEach((item) -> {
-                Log.d(TAG, "onOnline:device:after " + item.getName());
-            });
         }
     }
 

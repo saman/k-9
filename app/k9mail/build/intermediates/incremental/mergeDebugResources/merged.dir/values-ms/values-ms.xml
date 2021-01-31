@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Navigasi laman utama"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Navigasi ke atas"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Lagi pilihan"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Selesai"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Lihat semua"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Pilih apl"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"MATI"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"HIDUP"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Fungsi+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"ruang"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Cari…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Kosongkan pertanyaan"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Pertanyaan carian"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Cari"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Serah pertanyaan"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Carian suara"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Kongsi dengan"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Kongsi dengan <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Runtuhkan"</string>
+    <string name="add_ringtone_text">Tambah nada dering</string>
+    <string name="alarm_sound_default">Bunyi penggera lalai</string>
+    <string msgid="1248663997452044787" name="color_picker_default_title">"Pilih Warna"</string>
+    <string msgid="2883438431173736180" name="color_swatch_description">"Warna <ns1:g id="COLOR_INDEX">%1$d</ns1:g>"</string>
+    <string msgid="5020921249944943124" name="color_swatch_description_selected">"Warna <ns1:g id="COLOR_INDEX">%1$d</ns1:g> dipilih"</string>
+    <string msgid="3209159573327985035" name="copy">"Salin"</string>
+    <string name="date_picker_next_month_button">Bulan seterusnya</string>
+    <string name="date_picker_prev_month_button">Bulan sebelumnya</string>
+    <string name="datetime_EMMMMdy">EEE, d MMMM y</string>
+    <string name="datetime_EMMMd">EEE, d MMM</string>
+    <string name="datetime_Hm">HH:mm</string>
+    <string name="datetime_MMMMy">y MMMM</string>
+    <string name="datetime_hm">h:mm a</string>
+    <string msgid="1234962710353108940" name="expand_button_title">"Terperinci"</string>
+    <string name="hour_picker_description">Penggelangsar bulatan jam</string>
+    <string name="minute_picker_description">Penggelangsar bulatan minit</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Navigasi ke atas"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Buka laci navigasi"</string>
+    <string msgid="478774118347071097" name="not_set">"Tidak ditetapkan"</string>
+    <string name="notification_sound_default">Bunyi pemberitahuan lalai</string>
+    <string name="number_picker_decrement_button">Kurangkan</string>
+    <string name="number_picker_increment_button">Tingkatkan</string>
+    <string msgid="7961817945132860002" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" disalin ke papan keratan."</string>
+    <string name="ringtone_default">Nada dering lalai</string>
+    <string name="ringtone_picker_title">Nada dering</string>
+    <string name="ringtone_silent">Tiada</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Cari"</string>
+    <string name="select_day">Pilih bulan dan hari</string>
+    <string name="select_hours">Pilih jam</string>
+    <string name="select_minutes">Pilih minit</string>
+    <string name="select_year">Pilih tahun</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="5190123168583152844" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="time_picker_decrement_hour_button">Kurangkan jam</string>
+    <string name="time_picker_decrement_minute_button">Kurangkan minit</string>
+    <string name="time_picker_decrement_set_am_button">Tetapkan AM</string>
+    <string name="time_picker_header_text">Tetapkan masa</string>
+    <string name="time_picker_hour_label">jam</string>
+    <string name="time_picker_increment_hour_button">Tingkatkan jam</string>
+    <string name="time_picker_increment_minute_button">Tingkatkan minit</string>
+    <string name="time_picker_increment_set_pm_button">Tetapkan PM</string>
+    <string name="time_picker_input_error">Masukkan masa yang sah</string>
+    <string name="time_picker_minute_label">minit</string>
+    <string name="time_picker_prompt_label">Taipkan masa</string>
+    <string name="time_picker_radial_mode_description">Beralih ke mod jam untuk input masa.</string>
+    <string name="time_picker_text_input_mode_description">Beralih ke mod input teks untuk input masa.</string>
+    <string name="unable_to_add_ringtone">Tidak dapat menambah nada dering tersuai</string>
+    <string msgid="5138405918326871307" name="v7_preference_off">"MATI"</string>
+    <string msgid="27351710992731591" name="v7_preference_on">"HIDUP"</string>
+</resources>

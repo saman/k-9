@@ -1,0 +1,73 @@
+com/fsck/k9/mail/store/imap/SelectOrExamineResponse.java
+ com.fsck.k9.mail.store.imap.SelectOrExamineResponse
+com/fsck/k9/mail/store/imap/FolderNameCodec.java
+ com.fsck.k9.mail.store.imap.FolderNameCodec
+com/fsck/k9/mail/store/imap/Commands.java
+ com.fsck.k9.mail.store.imap.Commands
+com/fsck/k9/mail/store/imap/ImapMessage.java
+ com.fsck.k9.mail.store.imap.ImapMessage
+com/fsck/k9/mail/store/imap/FetchPartCallback.java
+ com.fsck.k9.mail.store.imap.FetchPartCallback
+com/fsck/k9/mail/store/imap/IdGrouper.java
+ com.fsck.k9.mail.store.imap.IdGrouper
+ com.fsck.k9.mail.store.imap.IdGrouper$ContiguousIdGroup
+ com.fsck.k9.mail.store.imap.IdGrouper$GroupedIds
+com/fsck/k9/mail/store/imap/ImapSettings.java
+ com.fsck.k9.mail.store.imap.ImapSettings
+com/fsck/k9/mail/store/imap/UidSearchCommandBuilder.java
+ com.fsck.k9.mail.store.imap.UidSearchCommandBuilder
+ com.fsck.k9.mail.store.imap.UidSearchCommandBuilder$1
+com/fsck/k9/mail/store/imap/ImapUtility.java
+ com.fsck.k9.mail.store.imap.ImapUtility
+com/fsck/k9/mail/store/imap/FolderNotFoundException.java
+ com.fsck.k9.mail.store.imap.FolderNotFoundException
+com/fsck/k9/mail/store/imap/ImapStoreSettings.java
+ com.fsck.k9.mail.store.imap.ImapStoreSettings
+com/fsck/k9/mail/store/imap/ListResponse.java
+ com.fsck.k9.mail.store.imap.ListResponse
+com/fsck/k9/mail/store/imap/ImapResponseCallback.java
+ com.fsck.k9.mail.store.imap.ImapResponseCallback
+com/fsck/k9/mail/store/imap/ImapStore.java
+ com.fsck.k9.mail.store.imap.ImapStore
+ com.fsck.k9.mail.store.imap.ImapStore$1
+ com.fsck.k9.mail.store.imap.ImapStore$StoreImapSettings
+com/fsck/k9/mail/store/imap/NamespaceResponse.java
+ com.fsck.k9.mail.store.imap.NamespaceResponse
+com/fsck/k9/mail/store/imap/SearchResponse.java
+ com.fsck.k9.mail.store.imap.SearchResponse
+com/fsck/k9/mail/store/imap/NegativeImapResponseException.java
+ com.fsck.k9.mail.store.imap.NegativeImapResponseException
+com/fsck/k9/mail/store/imap/UidCopyResponse.java
+ com.fsck.k9.mail.store.imap.UidCopyResponse
+com/fsck/k9/mail/protocols/imap/BuildConfig.java
+ com.fsck.k9.mail.protocols.imap.BuildConfig
+com/fsck/k9/mail/store/imap/FetchBodyCallback.java
+ com.fsck.k9.mail.store.imap.FetchBodyCallback
+com/fsck/k9/mail/store/imap/Capabilities.java
+ com.fsck.k9.mail.store.imap.Capabilities
+com/fsck/k9/mail/store/imap/ImapCommandSplitter.java
+ com.fsck.k9.mail.store.imap.ImapCommandSplitter
+com/fsck/k9/mail/store/imap/ImapConnection.java
+ com.fsck.k9.mail.store.imap.ImapConnection
+ com.fsck.k9.mail.store.imap.ImapConnection$1
+ com.fsck.k9.mail.store.imap.ImapConnection$2
+com/fsck/k9/mail/store/imap/ImapResponseParser.java
+ com.fsck.k9.mail.store.imap.ImapResponseParser
+com/fsck/k9/mail/store/imap/ImapResponse.java
+ com.fsck.k9.mail.store.imap.ImapResponse
+com/fsck/k9/mail/store/imap/Responses.java
+ com.fsck.k9.mail.store.imap.Responses
+com/fsck/k9/mail/store/imap/ImapList.java
+ com.fsck.k9.mail.store.imap.ImapList
+com/fsck/k9/mail/store/imap/ResponseCodeExtractor.java
+ com.fsck.k9.mail.store.imap.ResponseCodeExtractor
+com/fsck/k9/mail/store/imap/UntaggedHandler.java
+ com.fsck.k9.mail.store.imap.UntaggedHandler
+com/fsck/k9/mail/store/imap/AlertResponse.java
+ com.fsck.k9.mail.store.imap.AlertResponse
+com/fsck/k9/mail/store/imap/CapabilityResponse.java
+ com.fsck.k9.mail.store.imap.CapabilityResponse
+com/fsck/k9/mail/store/imap/PermanentFlagsResponse.java
+ com.fsck.k9.mail.store.imap.PermanentFlagsResponse
+com/fsck/k9/mail/store/imap/ImapResponseParserException.java
+ com.fsck.k9.mail.store.imap.ImapResponseParserException

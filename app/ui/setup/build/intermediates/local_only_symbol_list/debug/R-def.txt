@@ -1,0 +1,8 @@
+R_DEF: Internal format may change without notice
+local
+id enterEmailAddressScreen
+id navigation_add_account
+id textView
+layout fragment_enter_email_address
+navigation navigation_add_account
+string add_account_title

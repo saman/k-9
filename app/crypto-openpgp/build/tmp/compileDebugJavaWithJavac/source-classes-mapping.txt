@@ -1,0 +1,4 @@
+com/fsck/k9/crypto/openpgp/BuildConfig.java
+ com.fsck.k9.crypto.openpgp.BuildConfig
+com/fsck/k9/crypto/openpgp/EncryptionDetector.java
+ com.fsck.k9.crypto.openpgp.EncryptionDetector

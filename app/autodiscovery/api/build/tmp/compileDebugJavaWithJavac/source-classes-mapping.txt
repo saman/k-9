@@ -1,0 +1,2 @@
+com/fsck/k9/autodiscovery/api/BuildConfig.java
+ com.fsck.k9.autodiscovery.api.BuildConfig

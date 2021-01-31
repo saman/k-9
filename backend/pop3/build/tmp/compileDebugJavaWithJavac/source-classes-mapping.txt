@@ -1,0 +1,13 @@
+com/fsck/k9/backend/pop3/Pop3StoreUriCreator.java
+ com.fsck.k9.backend.pop3.Pop3StoreUriCreator
+ com.fsck.k9.backend.pop3.Pop3StoreUriCreator$1
+com/fsck/k9/backend/pop3/CommandSetFlag.java
+ com.fsck.k9.backend.pop3.CommandSetFlag
+com/fsck/k9/backend/pop3/Pop3Sync.java
+ com.fsck.k9.backend.pop3.Pop3Sync
+ com.fsck.k9.backend.pop3.Pop3Sync$1
+ com.fsck.k9.backend.pop3.Pop3Sync$2
+com/fsck/k9/backend/pop3/Pop3StoreUriDecoder.java
+ com.fsck.k9.backend.pop3.Pop3StoreUriDecoder
+com/fsck/k9/backend/pop3/BuildConfig.java
+ com.fsck.k9.backend.pop3.BuildConfig

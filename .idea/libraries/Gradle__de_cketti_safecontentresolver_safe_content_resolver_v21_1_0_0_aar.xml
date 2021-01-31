@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: de.cketti.safecontentresolver:safe-content-resolver-v21:1.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/96606b2aaab1cfdae8410b097c8c76ea/safe-content-resolver-v21-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fcf4a82d07e2b4b1c980283fd5abcf73/safe-content-resolver-v21-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fcf4a82d07e2b4b1c980283fd5abcf73/safe-content-resolver-v21-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fcf4a82d07e2b4b1c980283fd5abcf73/safe-content-resolver-v21-1.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.cketti.safecontentresolver/safe-content-resolver-v21/1.0.0/891c8d4639d430b286a2d624076cdffa02dc53ab/safe-content-resolver-v21-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.cketti.safecontentresolver/safe-content-resolver-v21/1.0.0/caeb469fc4fc018371ce4a15f1b263031ffd1bc0/safe-content-resolver-v21-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml:2:1-62
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml:2:1-62
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml:2:1-62
+	package
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml:2:11-59
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml:2:1-62
+uses-sdk
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml
+INJECTED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/app/autodiscovery/providersxml/src/main/AndroidManifest.xml

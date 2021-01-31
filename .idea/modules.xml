@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/k-9.iml" filepath="$PROJECT_DIR$/.idea/modules/k-9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PahoAndroidService/k-9.PahoAndroidService.iml" filepath="$PROJECT_DIR$/.idea/modules/PahoAndroidService/k-9.PahoAndroidService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/k-9.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/k-9.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/autodiscovery/k-9.app.autodiscovery.iml" filepath="$PROJECT_DIR$/.idea/modules/app/autodiscovery/k-9.app.autodiscovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/autodiscovery/api/k-9.app.autodiscovery.api.iml" filepath="$PROJECT_DIR$/.idea/modules/app/autodiscovery/api/k-9.app.autodiscovery.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/autodiscovery/providersxml/k-9.app.autodiscovery.providersxml.iml" filepath="$PROJECT_DIR$/.idea/modules/app/autodiscovery/providersxml/k-9.app.autodiscovery.providersxml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/autodiscovery/srvrecords/k-9.app.autodiscovery.srvrecords.iml" filepath="$PROJECT_DIR$/.idea/modules/app/autodiscovery/srvrecords/k-9.app.autodiscovery.srvrecords.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/autodiscovery/thunderbird/k-9.app.autodiscovery.thunderbird.iml" filepath="$PROJECT_DIR$/.idea/modules/app/autodiscovery/thunderbird/k-9.app.autodiscovery.thunderbird.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/core/k-9.app.core.iml" filepath="$PROJECT_DIR$/.idea/modules/app/core/k-9.app.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/crypto-openpgp/k-9.app.crypto-openpgp.iml" filepath="$PROJECT_DIR$/.idea/modules/app/crypto-openpgp/k-9.app.crypto-openpgp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/k9mail/k-9.app.k9mail.iml" filepath="$PROJECT_DIR$/.idea/modules/app/k9mail/k-9.app.k9mail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/k9mail-jmap/k-9.app.k9mail-jmap.iml" filepath="$PROJECT_DIR$/.idea/modules/app/k9mail-jmap/k-9.app.k9mail-jmap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/storage/k-9.app.storage.iml" filepath="$PROJECT_DIR$/.idea/modules/app/storage/k-9.app.storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/testing/k-9.app.testing.iml" filepath="$PROJECT_DIR$/.idea/modules/app/testing/k-9.app.testing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ui/k-9.app.ui.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ui/k-9.app.ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ui/base/k-9.app.ui.base.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ui/base/k-9.app.ui.base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ui/legacy/k-9.app.ui.legacy.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ui/legacy/k-9.app.ui.legacy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ui/setup/k-9.app.ui.setup.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ui/setup/k-9.app.ui.setup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/backend/k-9.backend.iml" filepath="$PROJECT_DIR$/.idea/modules/backend/k-9.backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/backend/api/k-9.backend.api.iml" filepath="$PROJECT_DIR$/.idea/modules/backend/api/k-9.backend.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/backend/imap/k-9.backend.imap.iml" filepath="$PROJECT_DIR$/.idea/modules/backend/imap/k-9.backend.imap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/backend/jmap/k-9.backend.jmap.iml" filepath="$PROJECT_DIR$/.idea/modules/backend/jmap/k-9.backend.jmap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/backend/pop3/k-9.backend.pop3.iml" filepath="$PROJECT_DIR$/.idea/modules/backend/pop3/k-9.backend.pop3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/backend/webdav/k-9.backend.webdav.iml" filepath="$PROJECT_DIR$/.idea/modules/backend/webdav/k-9.backend.webdav.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mail/k-9.mail.iml" filepath="$PROJECT_DIR$/.idea/modules/mail/k-9.mail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mail/common/k-9.mail.common.iml" filepath="$PROJECT_DIR$/.idea/modules/mail/common/k-9.mail.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mail/protocols/k-9.mail.protocols.iml" filepath="$PROJECT_DIR$/.idea/modules/mail/protocols/k-9.mail.protocols.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mail/protocols/imap/k-9.mail.protocols.imap.iml" filepath="$PROJECT_DIR$/.idea/modules/mail/protocols/imap/k-9.mail.protocols.imap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mail/protocols/pop3/k-9.mail.protocols.pop3.iml" filepath="$PROJECT_DIR$/.idea/modules/mail/protocols/pop3/k-9.mail.protocols.pop3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mail/protocols/smtp/k-9.mail.protocols.smtp.iml" filepath="$PROJECT_DIR$/.idea/modules/mail/protocols/smtp/k-9.mail.protocols.smtp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mail/protocols/webdav/k-9.mail.protocols.webdav.iml" filepath="$PROJECT_DIR$/.idea/modules/mail/protocols/webdav/k-9.mail.protocols.webdav.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mail/testing/k-9.mail.testing.iml" filepath="$PROJECT_DIR$/.idea/modules/mail/testing/k-9.mail.testing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugins/k-9.plugins.iml" filepath="$PROJECT_DIR$/.idea/modules/plugins/k-9.plugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugins/openpgp-api-lib/k-9.plugins.openpgp-api-lib.iml" filepath="$PROJECT_DIR$/.idea/modules/plugins/openpgp-api-lib/k-9.plugins.openpgp-api-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugins/openpgp-api-lib/openpgp-api/k-9.plugins.openpgp-api-lib.openpgp-api.iml" filepath="$PROJECT_DIR$/.idea/modules/plugins/openpgp-api-lib/openpgp-api/k-9.plugins.openpgp-api-lib.openpgp-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rsm-android/k-9.rsm-android.iml" filepath="$PROJECT_DIR$/.idea/modules/rsm-android/k-9.rsm-android.iml" />
+    </modules>
+  </component>
+</project>

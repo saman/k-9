@@ -1,0 +1,7 @@
+com/fsck/k9/backend/imap/ImapStoreUriDecoder.java
+ com.fsck.k9.backend.imap.ImapStoreUriDecoder
+com/fsck/k9/backend/imap/BuildConfig.java
+ com.fsck.k9.backend.imap.BuildConfig
+com/fsck/k9/backend/imap/ImapStoreUriCreator.java
+ com.fsck.k9.backend.imap.ImapStoreUriCreator
+ com.fsck.k9.backend.imap.ImapStoreUriCreator$1

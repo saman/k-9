@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: rs.ltt.jmap:jmap-annotation:0.3.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/rs.ltt.jmap/jmap-annotation/0.3.1/676cfde717e2042dd70fd15b76abb46b1d671684/jmap-annotation-0.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/rs.ltt.jmap/jmap-annotation/0.3.1/f7aad34330d7fb97a99edc5f071c301a23b8be2a/jmap-annotation-0.3.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/rs.ltt.jmap/jmap-annotation/0.3.1/c9cf408e7d749d0c4b6549b2ce5c5c3063a61f16/jmap-annotation-0.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

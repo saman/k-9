@@ -1,0 +1,15 @@
+com/fsck/k9/backend/webdav/WebDavSync.java
+ com.fsck.k9.backend.webdav.WebDavSync
+ com.fsck.k9.backend.webdav.WebDavSync$1
+ com.fsck.k9.backend.webdav.WebDavSync$2
+com/fsck/k9/backend/webdav/WebDavStoreUriCreator.java
+ com.fsck.k9.backend.webdav.WebDavStoreUriCreator
+ com.fsck.k9.backend.webdav.WebDavStoreUriCreator$1
+com/fsck/k9/backend/webdav/CommandSetFlag.java
+ com.fsck.k9.backend.webdav.CommandSetFlag
+com/fsck/k9/backend/webdav/CommandMoveOrCopyMessages.java
+ com.fsck.k9.backend.webdav.CommandMoveOrCopyMessages
+com/fsck/k9/backend/webdav/BuildConfig.java
+ com.fsck.k9.backend.webdav.BuildConfig
+com/fsck/k9/backend/webdav/WebDavStoreUriDecoder.java
+ com.fsck.k9.backend.webdav.WebDavStoreUriDecoder

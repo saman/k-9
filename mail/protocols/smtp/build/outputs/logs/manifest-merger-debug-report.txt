@@ -1,0 +1,19 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/saman/Projects/asml-lang/k-9/mail/protocols/smtp/src/main/AndroidManifest.xml:2:1-55
+INJECTED from /Users/saman/Projects/asml-lang/k-9/mail/protocols/smtp/src/main/AndroidManifest.xml:2:1-55
+INJECTED from /Users/saman/Projects/asml-lang/k-9/mail/protocols/smtp/src/main/AndroidManifest.xml:2:1-55
+	package
+		ADDED from /Users/saman/Projects/asml-lang/k-9/mail/protocols/smtp/src/main/AndroidManifest.xml:2:11-52
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/mail/protocols/smtp/src/main/AndroidManifest.xml
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/mail/protocols/smtp/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/saman/Projects/asml-lang/k-9/mail/protocols/smtp/src/main/AndroidManifest.xml:2:1-55
+uses-sdk
+INJECTED from /Users/saman/Projects/asml-lang/k-9/mail/protocols/smtp/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/saman/Projects/asml-lang/k-9/mail/protocols/smtp/src/main/AndroidManifest.xml
+INJECTED from /Users/saman/Projects/asml-lang/k-9/mail/protocols/smtp/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/mail/protocols/smtp/src/main/AndroidManifest.xml
+		ADDED from /Users/saman/Projects/asml-lang/k-9/mail/protocols/smtp/src/main/AndroidManifest.xml
+		INJECTED from /Users/saman/Projects/asml-lang/k-9/mail/protocols/smtp/src/main/AndroidManifest.xml

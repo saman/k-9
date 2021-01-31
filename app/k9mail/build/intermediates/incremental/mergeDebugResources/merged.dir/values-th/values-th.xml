@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"นำทางไปหน้าแรก"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"กลับ"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"ตัวเลือกอื่น"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"เสร็จ"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"ดูทั้งหมด"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"เลือกแอป"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"ปิด"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"เปิด"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"ลบ"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"Enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"Space"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"เมนู+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"ค้นหา…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"ล้างคำค้นหา"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"คำค้นหา"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"ค้นหา"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"ส่งคำค้นหา"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"ค้นหาด้วยเสียง"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"แชร์กับ"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"แชร์ทาง <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"ยุบ"</string>
+    <string name="add_ringtone_text">เพิ่มเสียงเรียกเข้า</string>
+    <string name="alarm_sound_default">เสียงปลุกเริ่มต้น</string>
+    <string msgid="1248663997452044787" name="color_picker_default_title">"เลือกสี"</string>
+    <string msgid="2883438431173736180" name="color_swatch_description">"สี <ns1:g id="COLOR_INDEX">%1$d</ns1:g>"</string>
+    <string msgid="5020921249944943124" name="color_swatch_description_selected">"เลือกสี <ns1:g id="COLOR_INDEX">%1$d</ns1:g>"</string>
+    <string msgid="3209159573327985035" name="copy">"คัดลอก"</string>
+    <string name="date_picker_next_month_button">เดือนหน้า</string>
+    <string name="date_picker_prev_month_button">เดือนที่แล้ว</string>
+    <string name="datetime_EMMMMdy">EEE d MMMM G y</string>
+    <string name="datetime_EMMMd">EEE d MMM</string>
+    <string name="datetime_Hm">HH:mm น.</string>
+    <string name="datetime_MMMMy">MMMM G y</string>
+    <string name="datetime_hm">h:mm a</string>
+    <string msgid="1234962710353108940" name="expand_button_title">"ขั้นสูง"</string>
+    <string name="hour_picker_description">ตัวเลื่อนหมุนระบุชั่วโมง</string>
+    <string name="minute_picker_description">ตัวเลื่อนหมุนระบุนาที</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"นำทางขึ้น"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"เปิดลิ้นชักการนำทาง"</string>
+    <string msgid="478774118347071097" name="not_set">"ไม่ได้ตั้งค่า"</string>
+    <string name="notification_sound_default">เสียงแจ้งเตือนเริ่มต้น</string>
+    <string name="number_picker_decrement_button">ลด</string>
+    <string name="number_picker_increment_button">เพิ่ม</string>
+    <string msgid="7961817945132860002" name="preference_copied">"คัดลอก \"<ns1:g id="SUMMARY">%1$s</ns1:g>\" ไปยังคลิปบอร์ดแล้ว"</string>
+    <string name="ringtone_default">เสียงเรียกเข้าเริ่มต้น</string>
+    <string name="ringtone_picker_title">เสียงเรียกเข้า</string>
+    <string name="ringtone_silent">ไม่มี</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"ค้นหา"</string>
+    <string name="select_day">เลือกเดือนและวัน</string>
+    <string name="select_hours">เลือกชั่วโมง</string>
+    <string name="select_minutes">เลือกนาที</string>
+    <string name="select_year">เลือกปี</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="5190123168583152844" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g> <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="time_picker_decrement_hour_button">ลดชั่วโมง</string>
+    <string name="time_picker_decrement_minute_button">ลดนาที</string>
+    <string name="time_picker_decrement_set_am_button">ตั้งค่า AM</string>
+    <string name="time_picker_header_text">ตั้งเวลา</string>
+    <string name="time_picker_hour_label">ชั่วโมง</string>
+    <string name="time_picker_increment_hour_button">เพิ่มชั่วโมง</string>
+    <string name="time_picker_increment_minute_button">เพิ่มนาที</string>
+    <string name="time_picker_increment_set_pm_button">ตั้งค่า PM</string>
+    <string name="time_picker_input_error">ป้อนเวลาที่ถูกต้อง</string>
+    <string name="time_picker_minute_label">นาที</string>
+    <string name="time_picker_prompt_label">พิมพ์เวลา</string>
+    <string name="time_picker_radial_mode_description">สลับไปโหมดนาฬิกาเพื่อป้อนเวลา</string>
+    <string name="time_picker_text_input_mode_description">สลับไปโหมดป้อนข้อความเพื่อป้อนเวลา</string>
+    <string name="unable_to_add_ringtone">ไม่สามารถเพิ่มเสียงเรียกเข้าที่กำหนดเอง</string>
+    <string msgid="5138405918326871307" name="v7_preference_off">"ปิด"</string>
+    <string msgid="27351710992731591" name="v7_preference_on">"เปิด"</string>
+</resources>

@@ -1,0 +1,23 @@
+com/fsck/k9/mail/store/pop3/Pop3ResponseInputStream.java
+ com.fsck.k9.mail.store.pop3.Pop3ResponseInputStream
+com/fsck/k9/mail/store/pop3/Pop3Message.java
+ com.fsck.k9.mail.store.pop3.Pop3Message
+com/fsck/k9/mail/store/pop3/Pop3ErrorResponse.java
+ com.fsck.k9.mail.store.pop3.Pop3ErrorResponse
+com/fsck/k9/mail/protocols/pop3/BuildConfig.java
+ com.fsck.k9.mail.protocols.pop3.BuildConfig
+com/fsck/k9/mail/store/pop3/Pop3Connection.java
+ com.fsck.k9.mail.store.pop3.Pop3Connection
+ com.fsck.k9.mail.store.pop3.Pop3Connection$1
+com/fsck/k9/mail/store/pop3/Pop3Settings.java
+ com.fsck.k9.mail.store.pop3.Pop3Settings
+com/fsck/k9/mail/store/pop3/Pop3Capabilities.java
+ com.fsck.k9.mail.store.pop3.Pop3Capabilities
+com/fsck/k9/mail/store/pop3/Pop3Commands.java
+ com.fsck.k9.mail.store.pop3.Pop3Commands
+com/fsck/k9/mail/store/pop3/Pop3Store.java
+ com.fsck.k9.mail.store.pop3.Pop3Store
+ com.fsck.k9.mail.store.pop3.Pop3Store$1
+ com.fsck.k9.mail.store.pop3.Pop3Store$StorePop3Settings
+com/fsck/k9/mail/store/pop3/Pop3Folder.java
+ com.fsck.k9.mail.store.pop3.Pop3Folder

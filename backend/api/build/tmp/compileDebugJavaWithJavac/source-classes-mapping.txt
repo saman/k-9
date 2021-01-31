@@ -1,0 +1,2 @@
+com/fsck/k9/backend/api/BuildConfig.java
+ com.fsck.k9.backend.api.BuildConfig

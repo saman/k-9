@@ -7,6 +7,7 @@ import android.content.DialogInterface
 import android.content.Intent
 import android.content.IntentSender
 import android.content.res.Configuration
+import android.net.Uri
 import android.os.Bundle
 import android.os.Parcelable
 import android.util.Log
@@ -15,16 +16,16 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.animation.AnimationUtils
+import android.widget.LinearLayout
 import android.widget.ProgressBar
-import androidx.appcompat.widget.SearchView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.widget.SearchView
 import androidx.core.view.isVisible
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.fsck.k9.Account
 import com.fsck.k9.Account.SortType
 import com.fsck.k9.K9
@@ -40,6 +41,7 @@ import com.fsck.k9.mailstore.SearchStatusManager
 import com.fsck.k9.mailstore.StorageManager
 import com.fsck.k9.mailstore.StorageManager.StorageListener
 import com.fsck.k9.models.SearchState
+import com.fsck.k9.models.SendingEmailState
 import com.fsck.k9.notification.NotificationChannelManager
 import com.fsck.k9.search.LocalSearch
 import com.fsck.k9.search.SearchAccount
@@ -65,6 +67,7 @@ import com.fsck.k9.view.ViewSwitcher.OnSwitchCompleteListener
 import com.github.asml.rsm.android.RuntimeStateMigration
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.mikepenz.materialdrawer.Drawer.OnDrawerListener
+import org.apache.commons.lang3.StringUtils
 import org.koin.android.ext.android.inject
 import org.koin.core.KoinComponent
 import org.koin.core.inject
@@ -128,6 +131,8 @@ open class MessageList :
     private var messageListWasDisplayed = false
     private var viewSwitcher: ViewSwitcher? = null
 
+    private val RSM_MODEL = "search"
+
     @SuppressLint("LogNotTimber")
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -188,23 +193,31 @@ open class MessageList :
         }
         rsm.setOnStateRequestListener { modelName, device ->
             Log.d("RuntimeStateMigration", "setOnStateRequestListener() called with: modelName = $modelName, device = ${device.name}")
-            if (modelName == "search") {
-                rsm.setState("search", SearchState(searchView.query.toString()).toString())
-                rsm.sendState("search", device.id)
+            if (modelName == RSM_MODEL) {
+                rsm.setState(RSM_MODEL, SearchState(searchView.query.toString(), true).toString())
+                rsm.sendState(RSM_MODEL, device.id)
             }
         }
         rsm.setOnStateReceiveListener { modelName, device, state, isValid ->
             Log.d("RuntimeStateMigration", "setOnStateReceiveListener() called with: modelName = $modelName, device = ${device.name}, state = $state, isValid = $isValid")
-            if (modelName == "search" && isValid) {
+            if (modelName == RSM_MODEL && isValid) {
                 val searchState = SearchState.fromJsonString(state)
                 searchView.isIconified = false
-                searchView.setQuery(searchState.query, false)
+                searchView.setQuery(searchState.query, searchState.isSubmit)
                 //requestSearchWithInitialValue(searchState.query)
-                rsm.setMigration("search", device.id)
+                rsm.setMigration(RSM_MODEL, device.id)
+            } else if (modelName == MessageCompose.RSM_MODEL && isValid) {
+                val emailState = SendingEmailState.fromJsonString(state)
+                intent = Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse("mailto:?to=${emailState.to}&subject=${emailState.subject}&body=${emailState.body}"),
+                    this, MessageCompose::class.java
+                )
+                startActivity(intent)
             }
         }
         rsm.setOnStateMigrationListener { modelName, device ->
-            if (modelName == "search" && searchView.isShown) {
+            if (modelName == RSM_MODEL && searchView.isShown) {
                 searchView.setQuery("", false)
             }
         }
@@ -212,27 +225,54 @@ open class MessageList :
         rsm.addModel(readStringFromRaw(R.raw.sending_email))
         rsm.introduce()
 
-        migration = findViewById<FloatingActionButton>(R.id.migration)
-        migration.visibility = View.GONE
-        migration.setOnClickListener {
-            val devices = rsm.getDevices("search")
+        val migrationMenu = findViewById<LinearLayout>(R.id.migration_menu)
+        val migrationSet = findViewById<LinearLayout>(R.id.migration_set)
+        val migrationGet = findViewById<LinearLayout>(R.id.migration_get)
+        migrationSet.setOnClickListener {
+            val devices = rsm.getDevices(RSM_MODEL)
             if (devices.size < 1) {
+                AlertDialog.Builder(this)
+                    .setTitle("Migrate Search")
+                    .setMessage("There is not device for 'search'")
+                    .setPositiveButton("OK") { d: DialogInterface, w: Int -> d.dismiss() }
+                    .create().show()
                 return@setOnClickListener
             }
             var device = devices[0]
-            AlertDialog.Builder(this)
+            android.app.AlertDialog.Builder(this)
                 .setTitle("Migrate Search")
-                .setSingleChoiceItems(devices.map { it.name as CharSequence }.toTypedArray(), 0) { dialogInterface: DialogInterface, i: Int ->
-                    device = devices[i]
+                .setSingleChoiceItems(devices.map { it.name as CharSequence }.toTypedArray(), 0) { _, which: Int ->
+                    device = devices[which]
                 }
-                .setNegativeButton("Set State") { d, w ->
-                    rsm.setState("search", SearchState(searchView.query.toString()).toString())
-                    rsm.sendState("search", device.id)
-                }
-                .setPositiveButton("Get State") { d, w ->
-                    rsm.getStateDevice("search", device.id)
+                .setPositiveButton("Migrate") { _, _ ->
+                    rsm.setState(RSM_MODEL, SearchState(searchView.query.toString(), false).toString())
+                    rsm.sendState(RSM_MODEL, device.id)
                 }
                 .create().show()
+        }
+        migrationGet.setOnClickListener {
+            val devices = rsm.getDevices(RSM_MODEL, true)
+            if (devices.size < 1) {
+                AlertDialog.Builder(this)
+                    .setTitle("Migrate Search")
+                    .setMessage("There is not device for 'search'")
+                    .setPositiveButton("OK") { d: DialogInterface, w: Int -> d.dismiss() }
+                    .create().show()
+                return@setOnClickListener
+            }
+            var device = devices[0]
+            android.app.AlertDialog.Builder(this)
+                .setTitle("Migrate Search")
+                .setSingleChoiceItems(devices.map { it.name as CharSequence }.toTypedArray(), 0) { _, which: Int ->
+                    device = devices[which]
+                }
+                .setPositiveButton("Migrate") { _, _ -> rsm.getStateDevice(RSM_MODEL, device.id) }
+                .create().show()
+        }
+        findViewById<View>(R.id.migration).setOnClickListener { v: View? ->
+            val devices = rsm.getDevices(RSM_MODEL, true)
+            migrationGet.visibility = if (devices == null || devices.size < 1) View.GONE else View.VISIBLE
+            migrationMenu.visibility = if (migrationMenu.visibility == View.VISIBLE) View.GONE else View.VISIBLE
         }
     }
 
@@ -1098,9 +1138,19 @@ open class MessageList :
         // Hide both search menu items by default and enable one when appropriate
         val searchManager = getSystemService(Context.SEARCH_SERVICE) as SearchManager
         searchView = menu.findItem(R.id.search).actionView as SearchView
-        searchView.setOnQueryTextFocusChangeListener { v, hasFocus ->
+/*        searchView.setOnQueryTextFocusChangeListener { v, hasFocus ->
             migration.visibility = if (hasFocus) View.VISIBLE else View.GONE
-        }
+        }*/
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                rsm.setHasState(RSM_MODEL)
+                return false
+            }
+        })
         searchView.apply {
             isVisible = false
             setSearchableInfo(searchManager.getSearchableInfo(componentName))

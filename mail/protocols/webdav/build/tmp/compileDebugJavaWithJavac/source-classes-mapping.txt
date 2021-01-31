@@ -1,0 +1,31 @@
+com/fsck/k9/mail/store/webdav/DraftsFolderProvider.java
+ com.fsck.k9.mail.store.webdav.DraftsFolderProvider
+com/fsck/k9/mail/store/webdav/WebDavConstants.java
+ com.fsck.k9.mail.store.webdav.WebDavConstants
+com/fsck/k9/mail/store/webdav/ParsedMessageEnvelope.java
+ com.fsck.k9.mail.store.webdav.ParsedMessageEnvelope
+com/fsck/k9/mail/store/webdav/WebDavHandler.java
+ com.fsck.k9.mail.store.webdav.WebDavHandler
+com/fsck/k9/mail/store/webdav/DataSet.java
+ com.fsck.k9.mail.store.webdav.DataSet
+com/fsck/k9/mail/transport/WebDavTransport.java
+ com.fsck.k9.mail.transport.WebDavTransport
+com/fsck/k9/mail/protocols/webdav/BuildConfig.java
+ com.fsck.k9.mail.protocols.webdav.BuildConfig
+com/fsck/k9/mail/store/webdav/WebDavMessage.java
+ com.fsck.k9.mail.store.webdav.WebDavMessage
+com/fsck/k9/mail/store/webdav/HttpGeneric.java
+ com.fsck.k9.mail.store.webdav.HttpGeneric
+com/fsck/k9/mail/store/webdav/ConnectionInfo.java
+ com.fsck.k9.mail.store.webdav.ConnectionInfo
+com/fsck/k9/mail/store/webdav/WebDavStore.java
+ com.fsck.k9.mail.store.webdav.WebDavStore
+com/fsck/k9/mail/store/webdav/WebDavHttpClient.java
+ com.fsck.k9.mail.store.webdav.WebDavHttpClient
+ com.fsck.k9.mail.store.webdav.WebDavHttpClient$WebDavHttpClientFactory
+com/fsck/k9/mail/store/webdav/WebDavFolder.java
+ com.fsck.k9.mail.store.webdav.WebDavFolder
+com/fsck/k9/mail/store/webdav/WebDavStoreSettings.java
+ com.fsck.k9.mail.store.webdav.WebDavStoreSettings
+com/fsck/k9/mail/store/webdav/WebDavSocketFactory.java
+ com.fsck.k9.mail.store.webdav.WebDavSocketFactory

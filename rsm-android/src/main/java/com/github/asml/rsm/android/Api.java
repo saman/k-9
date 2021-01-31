@@ -1,5 +1,6 @@
 package com.github.asml.rsm.android;
 
+
 import android.content.Context;
 import android.util.Log;
 
@@ -42,16 +43,19 @@ class Api {
         client.setTraceEnabled(true);
 
         client.setCallback(new MqttCallbackExtended() {
-            @Override public void connectComplete(boolean reconnect, String serverURI) {
+            @Override
+            public void connectComplete(boolean reconnect, String serverURI) {
                 Log.d(TAG, "connectComplete() called with: reconnect = [" + reconnect + "], serverURI = [" + serverURI + "]");
                 listener.onConnected();
             }
 
-            @Override public void connectionLost(Throwable cause) {
+            @Override
+            public void connectionLost(Throwable cause) {
                 Log.d(TAG, "connectionLost() called with: cause = [" + cause + "]");
             }
 
-            @Override public void messageArrived(String topic, MqttMessage message) throws Exception {
+            @Override
+            public void messageArrived(String topic, MqttMessage message) throws Exception {
                 Log.d(TAG, "messageArrived() called with: topic = [" + topic + "], message = [" + message + "]");
                 String[] topicParts = topic.split("/");
                 Log.d(TAG, "messageArrived: Split:" + topicParts.length);
@@ -70,18 +74,20 @@ class Api {
                 }
             }
 
-            @Override public void deliveryComplete(IMqttDeliveryToken token) {
+            @Override
+            public void deliveryComplete(IMqttDeliveryToken token) {
                 Log.d(TAG, "deliveryComplete() called with: token = [" + token + "]");
             }
         });
         MqttConnectOptions options = new MqttConnectOptions();
         options.setCleanSession(true);
         options.setAutomaticReconnect(true);
-        options.setWill("online/" + device.getId(), new byte[]{}, 2, true);
+        options.setWill("online/" + device.getId(), new byte[] {}, 2, true);
         try {
             Log.d(TAG, "run: Trying to connect to " + serverConfig.getUri());
             client.connect(options, null, new IMqttActionListener() {
-                @Override public void onSuccess(IMqttToken asyncActionToken) {
+                @Override
+                public void onSuccess(IMqttToken asyncActionToken) {
                     Log.d(TAG, "onSuccess: Connection");
                     DisconnectedBufferOptions disconnectedBufferOptions = new DisconnectedBufferOptions();
                     disconnectedBufferOptions.setBufferEnabled(true);
@@ -92,7 +98,8 @@ class Api {
                     setOnline(device.getId());
                 }
 
-                @Override public void onFailure(IMqttToken asyncActionToken, Throwable exception) {
+                @Override
+                public void onFailure(IMqttToken asyncActionToken, Throwable exception) {
                     Log.d(TAG, "onFailure() called with: asyncActionToken = [" + asyncActionToken + "], exception = [" + exception + "]");
                 }
             });
@@ -113,6 +120,11 @@ class Api {
     public void publishState(String modelName, String deviceId, Device device, String state) {
         State<ResponseState> data = new State<>(new ResponseState(device, state));
         publish(modelName + "/" + deviceId, data);
+    }
+
+    public void publishHasState(String modelName, Device device) {
+        State<HasState> data = new State<>(new HasState(device));
+        publish(modelName, data);
     }
 
     public void publishMigration(String modelName, String deviceId, Device device) {

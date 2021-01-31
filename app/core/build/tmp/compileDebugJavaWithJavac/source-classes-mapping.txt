@@ -1,0 +1,505 @@
+com/fsck/k9/helper/ReplyToParser.java
+ com.fsck.k9.helper.ReplyToParser
+ com.fsck.k9.helper.ReplyToParser$ReplyToAddresses
+com/fsck/k9/FontSizes.java
+ com.fsck.k9.FontSizes
+com/fsck/k9/preferences/Storage.java
+ com.fsck.k9.preferences.Storage
+com/fsck/k9/controller/MessagingListener.java
+ com.fsck.k9.controller.MessagingListener
+com/fsck/k9/QuietTimeChecker.java
+ com.fsck.k9.QuietTimeChecker
+com/fsck/k9/controller/MessageReferenceHelper.java
+ com.fsck.k9.controller.MessageReferenceHelper
+com/fsck/k9/message/html/HeadCleaner.java
+ com.fsck.k9.message.html.HeadCleaner
+ com.fsck.k9.message.html.HeadCleaner$CleaningVisitor
+com/fsck/k9/provider/AttachmentProvider.java
+ com.fsck.k9.provider.AttachmentProvider
+ com.fsck.k9.provider.AttachmentProvider$AttachmentProviderColumns
+com/fsck/k9/helper/RetainFragment.java
+ com.fsck.k9.helper.RetainFragment
+com/fsck/k9/helper/jsoup/AdvancedNodeTraversor.java
+ com.fsck.k9.helper.jsoup.AdvancedNodeTraversor
+ com.fsck.k9.helper.jsoup.AdvancedNodeTraversor$FilterResult
+com/fsck/k9/power/TracingPowerManager.java
+ com.fsck.k9.power.TracingPowerManager
+ com.fsck.k9.power.TracingPowerManager$TracingWakeLock
+ com.fsck.k9.power.TracingPowerManager$TracingWakeLock$1
+com/fsck/k9/message/extractors/AttachmentInfoExtractor.java
+ com.fsck.k9.message.extractors.AttachmentInfoExtractor
+com/fsck/k9/mailstore/BinaryAttachmentBody.java
+ com.fsck.k9.mailstore.BinaryAttachmentBody
+com/fsck/k9/mailstore/TempFileBody.java
+ com.fsck.k9.mailstore.TempFileBody
+com/fsck/k9/helper/MessageHelper.java
+ com.fsck.k9.helper.MessageHelper
+com/fsck/k9/autocrypt/AutocryptGossipHeaderParser.java
+ com.fsck.k9.autocrypt.AutocryptGossipHeaderParser
+com/fsck/k9/mailstore/MessageHelper.java
+ com.fsck.k9.mailstore.MessageHelper
+com/fsck/k9/notification/NotificationIds.java
+ com.fsck.k9.notification.NotificationIds
+com/fsck/k9/message/extractors/MessagePreviewCreator.java
+ com.fsck.k9.message.extractors.MessagePreviewCreator
+com/fsck/k9/mailstore/DatabasePreviewType.java
+ com.fsck.k9.mailstore.DatabasePreviewType
+com/fsck/k9/mailstore/util/FileFactory.java
+ com.fsck.k9.mailstore.util.FileFactory
+com/fsck/k9/provider/RawMessageProvider.java
+ com.fsck.k9.provider.RawMessageProvider
+ com.fsck.k9.provider.RawMessageProvider$1
+com/fsck/k9/controller/MessagingController.java
+ com.fsck.k9.controller.MessagingController
+ com.fsck.k9.controller.MessagingController$1
+ com.fsck.k9.controller.MessagingController$10
+ com.fsck.k9.controller.MessagingController$11
+ com.fsck.k9.controller.MessagingController$11$1
+ com.fsck.k9.controller.MessagingController$12
+ com.fsck.k9.controller.MessagingController$13
+ com.fsck.k9.controller.MessagingController$14
+ com.fsck.k9.controller.MessagingController$14$1
+ com.fsck.k9.controller.MessagingController$15
+ com.fsck.k9.controller.MessagingController$16
+ com.fsck.k9.controller.MessagingController$17
+ com.fsck.k9.controller.MessagingController$18
+ com.fsck.k9.controller.MessagingController$19
+ com.fsck.k9.controller.MessagingController$2
+ com.fsck.k9.controller.MessagingController$3
+ com.fsck.k9.controller.MessagingController$4
+ com.fsck.k9.controller.MessagingController$5
+ com.fsck.k9.controller.MessagingController$6
+ com.fsck.k9.controller.MessagingController$7
+ com.fsck.k9.controller.MessagingController$8
+ com.fsck.k9.controller.MessagingController$9
+ com.fsck.k9.controller.MessagingController$9$1
+ com.fsck.k9.controller.MessagingController$Command
+ com.fsck.k9.controller.MessagingController$ControllerSyncListener
+ com.fsck.k9.controller.MessagingController$MessageActor
+ com.fsck.k9.controller.MessagingController$MoveOrCopyFlavor
+com/fsck/k9/controller/SimpleMessagingListener.java
+ com.fsck.k9.controller.SimpleMessagingListener
+com/fsck/k9/autocrypt/AutocryptHeaderParser.java
+ com.fsck.k9.autocrypt.AutocryptHeaderParser
+com/fsck/k9/mailstore/ThreadInfo.java
+ com.fsck.k9.mailstore.ThreadInfo
+com/fsck/k9/helper/Preconditions.java
+ com.fsck.k9.helper.Preconditions
+com/fsck/k9/helper/jsoup/NodeFilter.java
+ com.fsck.k9.helper.jsoup.NodeFilter
+ com.fsck.k9.helper.jsoup.NodeFilter$HeadFilterDecision
+ com.fsck.k9.helper.jsoup.NodeFilter$TailFilterDecision
+com/fsck/k9/autocrypt/AutocryptGossipHeader.java
+ com.fsck.k9.autocrypt.AutocryptGossipHeader
+com/fsck/k9/message/IdentityField.java
+ com.fsck.k9.message.IdentityField
+com/fsck/k9/AccountsChangeListener.java
+ com.fsck.k9.AccountsChangeListener
+com/fsck/k9/notification/SendFailedNotifications.java
+ com.fsck.k9.notification.SendFailedNotifications
+com/fsck/k9/mailstore/LocalMimeMessage.java
+ com.fsck.k9.mailstore.LocalMimeMessage
+com/fsck/k9/controller/UnavailableAccountException.java
+ com.fsck.k9.controller.UnavailableAccountException
+com/fsck/k9/mailstore/DeferredFileBody.java
+ com.fsck.k9.mailstore.DeferredFileBody
+ com.fsck.k9.mailstore.DeferredFileBody$1
+com/fsck/k9/message/signature/HtmlSignatureRemover.java
+ com.fsck.k9.message.signature.HtmlSignatureRemover
+ com.fsck.k9.message.signature.HtmlSignatureRemover$StripSignatureFilter
+com/fsck/k9/notification/NotificationController.java
+ com.fsck.k9.notification.NotificationController
+com/fsck/k9/message/html/HtmlProcessor.java
+ com.fsck.k9.message.html.HtmlProcessor
+com/fsck/k9/controller/MemorizingMessagingListener.java
+ com.fsck.k9.controller.MemorizingMessagingListener
+ com.fsck.k9.controller.MemorizingMessagingListener$1
+ com.fsck.k9.controller.MemorizingMessagingListener$MemorizingState
+ com.fsck.k9.controller.MemorizingMessagingListener$Memory
+com/fsck/k9/message/extractors/PreviewExtractionException.java
+ com.fsck.k9.message.extractors.PreviewExtractionException
+com/fsck/k9/notification/NewMailNotifications.java
+ com.fsck.k9.notification.NewMailNotifications
+com/fsck/k9/notification/LockScreenNotification.java
+ com.fsck.k9.notification.LockScreenNotification
+ com.fsck.k9.notification.LockScreenNotification$1
+com/fsck/k9/message/quote/HtmlQuoteCreator.java
+ com.fsck.k9.message.quote.HtmlQuoteCreator
+com/fsck/k9/provider/AttachmentTempFileProvider.java
+ com.fsck.k9.provider.AttachmentTempFileProvider
+ com.fsck.k9.provider.AttachmentTempFileProvider$1
+ com.fsck.k9.provider.AttachmentTempFileProvider$AttachmentTempFileProviderCleanupReceiver
+com/fsck/k9/message/ComposePgpInlineDecider.java
+ com.fsck.k9.message.ComposePgpInlineDecider
+com/fsck/k9/notification/NotificationContentCreator.java
+ com.fsck.k9.notification.NotificationContentCreator
+ com.fsck.k9.notification.NotificationContentCreator$1
+com/fsck/k9/mailstore/StorageManager.java
+ com.fsck.k9.mailstore.StorageManager
+ com.fsck.k9.mailstore.StorageManager$ExternalStorageProvider
+ com.fsck.k9.mailstore.StorageManager$FixedStorageProviderBase
+ com.fsck.k9.mailstore.StorageManager$InternalStorageProvider
+ com.fsck.k9.mailstore.StorageManager$StorageListener
+ com.fsck.k9.mailstore.StorageManager$StorageProvider
+ com.fsck.k9.mailstore.StorageManager$SynchronizationAid
+com/fsck/k9/notification/NotificationGroupKeys.java
+ com.fsck.k9.notification.NotificationGroupKeys
+com/fsck/k9/provider/EmailProvider.java
+ com.fsck.k9.provider.EmailProvider
+ com.fsck.k9.provider.EmailProvider$1
+ com.fsck.k9.provider.EmailProvider$2
+ com.fsck.k9.provider.EmailProvider$3
+ com.fsck.k9.provider.EmailProvider$FolderColumns
+ com.fsck.k9.provider.EmailProvider$IdTrickeryCursor
+ com.fsck.k9.provider.EmailProvider$InternalMessageColumns
+ com.fsck.k9.provider.EmailProvider$MessageColumns
+ com.fsck.k9.provider.EmailProvider$SpecialColumns
+ com.fsck.k9.provider.EmailProvider$SpecialColumnsCursor
+ com.fsck.k9.provider.EmailProvider$StatsColumns
+ com.fsck.k9.provider.EmailProvider$ThreadColumns
+com/fsck/k9/message/html/EthereumUriParser.java
+ com.fsck.k9.message.html.EthereumUriParser
+com/fsck/k9/service/DatabaseUpgradeService.java
+ com.fsck.k9.service.DatabaseUpgradeService
+ com.fsck.k9.service.DatabaseUpgradeService$1
+com/fsck/k9/mailstore/LocalFolder.java
+ com.fsck.k9.mailstore.LocalFolder
+ com.fsck.k9.mailstore.LocalFolder$1
+ com.fsck.k9.mailstore.LocalFolder$10
+ com.fsck.k9.mailstore.LocalFolder$11
+ com.fsck.k9.mailstore.LocalFolder$12
+ com.fsck.k9.mailstore.LocalFolder$13
+ com.fsck.k9.mailstore.LocalFolder$14
+ com.fsck.k9.mailstore.LocalFolder$15
+ com.fsck.k9.mailstore.LocalFolder$16
+ com.fsck.k9.mailstore.LocalFolder$17
+ com.fsck.k9.mailstore.LocalFolder$18
+ com.fsck.k9.mailstore.LocalFolder$19
+ com.fsck.k9.mailstore.LocalFolder$2
+ com.fsck.k9.mailstore.LocalFolder$20
+ com.fsck.k9.mailstore.LocalFolder$21
+ com.fsck.k9.mailstore.LocalFolder$3
+ com.fsck.k9.mailstore.LocalFolder$4
+ com.fsck.k9.mailstore.LocalFolder$5
+ com.fsck.k9.mailstore.LocalFolder$6
+ com.fsck.k9.mailstore.LocalFolder$7
+ com.fsck.k9.mailstore.LocalFolder$8
+ com.fsck.k9.mailstore.LocalFolder$9
+ com.fsck.k9.mailstore.LocalFolder$DataLocation
+ com.fsck.k9.mailstore.LocalFolder$MessagePartType
+ com.fsck.k9.mailstore.LocalFolder$MoreMessages
+ com.fsck.k9.mailstore.LocalFolder$PartContainer
+ com.fsck.k9.mailstore.LocalFolder$PreferencesHolder
+com/fsck/k9/message/extractors/PreviewResult.java
+ com.fsck.k9.message.extractors.PreviewResult
+ com.fsck.k9.message.extractors.PreviewResult$PreviewType
+com/fsck/k9/search/SearchSpecification.java
+ com.fsck.k9.search.SearchSpecification
+ com.fsck.k9.search.SearchSpecification$1
+ com.fsck.k9.search.SearchSpecification$Attribute
+ com.fsck.k9.search.SearchSpecification$SearchCondition
+ com.fsck.k9.search.SearchSpecification$SearchCondition$1
+ com.fsck.k9.search.SearchSpecification$SearchField
+com/fsck/k9/preferences/FolderSettingsDescriptions.java
+ com.fsck.k9.preferences.FolderSettingsDescriptions
+com/fsck/k9/autocrypt/AutocryptOperations.java
+ com.fsck.k9.autocrypt.AutocryptOperations
+com/fsck/k9/notification/NotificationContent.java
+ com.fsck.k9.notification.NotificationContent
+com/fsck/k9/Preferences.java
+ com.fsck.k9.Preferences
+com/fsck/k9/core/BuildConfig.java
+ com.fsck.k9.core.BuildConfig
+com/fsck/k9/controller/ProgressBodyFactory.java
+ com.fsck.k9.controller.ProgressBodyFactory
+ com.fsck.k9.controller.ProgressBodyFactory$1
+ com.fsck.k9.controller.ProgressBodyFactory$ProgressListener
+com/fsck/k9/mailstore/FileBackedBody.java
+ com.fsck.k9.mailstore.FileBackedBody
+com/fsck/k9/message/PgpMessageBuilder.java
+ com.fsck.k9.message.PgpMessageBuilder
+ com.fsck.k9.message.PgpMessageBuilder$1
+com/fsck/k9/message/signature/TextSignatureRemover.java
+ com.fsck.k9.message.signature.TextSignatureRemover
+com/fsck/k9/message/SimpleMessageBuilder.java
+ com.fsck.k9.message.SimpleMessageBuilder
+com/fsck/k9/message/IdentityHeaderBuilder.java
+ com.fsck.k9.message.IdentityHeaderBuilder
+com/fsck/k9/mailstore/CryptoResultAnnotation.java
+ com.fsck.k9.mailstore.CryptoResultAnnotation
+ com.fsck.k9.mailstore.CryptoResultAnnotation$CryptoError
+com/fsck/k9/preferences/SettingsImportExportException.java
+ com.fsck.k9.preferences.SettingsImportExportException
+com/fsck/k9/notification/AddNotificationResult.java
+ com.fsck.k9.notification.AddNotificationResult
+com/fsck/k9/mailstore/MimePartStreamParser.java
+ com.fsck.k9.mailstore.MimePartStreamParser
+ com.fsck.k9.mailstore.MimePartStreamParser$PartBuilder
+com/fsck/k9/search/SqlQueryBuilder.java
+ com.fsck.k9.search.SqlQueryBuilder
+ com.fsck.k9.search.SqlQueryBuilder$1
+com/fsck/k9/mailstore/LocalBodyPart.java
+ com.fsck.k9.mailstore.LocalBodyPart
+com/fsck/k9/message/extractors/TextPartFinder.java
+ com.fsck.k9.message.extractors.TextPartFinder
+com/fsck/k9/notification/NotificationHolder.java
+ com.fsck.k9.notification.NotificationHolder
+com/fsck/k9/helper/MergeCursorWithUniqueId.java
+ com.fsck.k9.helper.MergeCursorWithUniqueId
+com/fsck/k9/service/StorageGoneReceiver.java
+ com.fsck.k9.service.StorageGoneReceiver
+com/fsck/k9/notification/BaseNotifications.java
+ com.fsck.k9.notification.BaseNotifications
+com/fsck/k9/mailstore/MessageViewInfoExtractor.java
+ com.fsck.k9.mailstore.MessageViewInfoExtractor
+ com.fsck.k9.mailstore.MessageViewInfoExtractor$ViewableExtractedText
+com/fsck/k9/notification/SyncNotifications.java
+ com.fsck.k9.notification.SyncNotifications
+com/fsck/k9/notification/NotificationActionCreator.java
+ com.fsck.k9.notification.NotificationActionCreator
+com/fsck/k9/message/ComposePgpEnableByDefaultDecider.java
+ com.fsck.k9.message.ComposePgpEnableByDefaultDecider
+com/fsck/k9/crypto/MessageCryptoStructureDetector.java
+ com.fsck.k9.crypto.MessageCryptoStructureDetector
+com/fsck/k9/message/extractors/AttachmentCounter.java
+ com.fsck.k9.message.extractors.AttachmentCounter
+com/fsck/k9/mailstore/util/DeferredFileOutputStream.java
+ com.fsck.k9.mailstore.util.DeferredFileOutputStream
+com/fsck/k9/message/MessageBuilder.java
+ com.fsck.k9.message.MessageBuilder
+ com.fsck.k9.message.MessageBuilder$1
+ com.fsck.k9.message.MessageBuilder$2
+ com.fsck.k9.message.MessageBuilder$Callback
+com/fsck/k9/helper/SimpleTextWatcher.java
+ com.fsck.k9.helper.SimpleTextWatcher
+com/fsck/k9/notification/CertificateErrorNotifications.java
+ com.fsck.k9.notification.CertificateErrorNotifications
+com/fsck/k9/mailstore/util/FlowedMessageUtils.java
+ com.fsck.k9.mailstore.util.FlowedMessageUtils
+com/fsck/k9/message/TextBodyBuilder.java
+ com.fsck.k9.message.TextBodyBuilder
+com/fsck/k9/controller/PendingCommandSerializer.java
+ com.fsck.k9.controller.PendingCommandSerializer
+com/fsck/k9/mailstore/MessageCryptoAnnotations.java
+ com.fsck.k9.mailstore.MessageCryptoAnnotations
+com/fsck/k9/mailstore/AttachmentViewInfo.java
+ com.fsck.k9.mailstore.AttachmentViewInfo
+com/fsck/k9/message/extractors/MessageFulltextCreator.java
+ com.fsck.k9.message.extractors.MessageFulltextCreator
+com/fsck/k9/autocrypt/AutocryptHeader.java
+ com.fsck.k9.autocrypt.AutocryptHeader
+com/fsck/k9/search/SearchAccount.java
+ com.fsck.k9.search.SearchAccount
+com/fsck/k9/helper/K9AlarmManager.java
+ com.fsck.k9.helper.K9AlarmManager
+com/fsck/k9/helper/Contacts.java
+ com.fsck.k9.helper.Contacts
+com/fsck/k9/notification/RemoveNotificationResult.java
+ com.fsck.k9.notification.RemoveNotificationResult
+com/fsck/k9/controller/UidReverseComparator.java
+ com.fsck.k9.controller.UidReverseComparator
+com/fsck/k9/mailstore/LocalPart.java
+ com.fsck.k9.mailstore.LocalPart
+com/fsck/k9/notification/WearNotifications.java
+ com.fsck.k9.notification.WearNotifications
+com/fsck/k9/message/quote/InsertableHtmlContent.java
+ com.fsck.k9.message.quote.InsertableHtmlContent
+ com.fsck.k9.message.quote.InsertableHtmlContent$InsertionLocation
+com/fsck/k9/preferences/GeneralSettingsDescriptions.java
+ com.fsck.k9.preferences.GeneralSettingsDescriptions
+ com.fsck.k9.preferences.GeneralSettingsDescriptions$1
+ com.fsck.k9.preferences.GeneralSettingsDescriptions$LanguageSetting
+ com.fsck.k9.preferences.GeneralSettingsDescriptions$LegacyThemeSetting
+ com.fsck.k9.preferences.GeneralSettingsDescriptions$SettingsUpgraderV12
+ com.fsck.k9.preferences.GeneralSettingsDescriptions$SettingsUpgraderV24
+ com.fsck.k9.preferences.GeneralSettingsDescriptions$SettingsUpgraderV31
+ com.fsck.k9.preferences.GeneralSettingsDescriptions$SettingsUpgraderV58
+ com.fsck.k9.preferences.GeneralSettingsDescriptions$SubThemeSetting
+ com.fsck.k9.preferences.GeneralSettingsDescriptions$ThemeSetting
+ com.fsck.k9.preferences.GeneralSettingsDescriptions$TimeSetting
+com/fsck/k9/search/LocalSearch.java
+ com.fsck.k9.search.LocalSearch
+ com.fsck.k9.search.LocalSearch$1
+com/fsck/k9/cache/EmailProviderCacheCursor.java
+ com.fsck.k9.cache.EmailProviderCacheCursor
+com/fsck/k9/helper/UrlEncodingHelper.java
+ com.fsck.k9.helper.UrlEncodingHelper
+com/fsck/k9/mailstore/LockableDatabase.java
+ com.fsck.k9.mailstore.LockableDatabase
+ com.fsck.k9.mailstore.LockableDatabase$1
+ com.fsck.k9.mailstore.LockableDatabase$DbCallback
+ com.fsck.k9.mailstore.LockableDatabase$SchemaDefinition
+ com.fsck.k9.mailstore.LockableDatabase$StorageListener
+ com.fsck.k9.mailstore.LockableDatabase$WrappedException
+com/fsck/k9/message/QuotedTextMode.java
+ com.fsck.k9.message.QuotedTextMode
+com/fsck/k9/preferences/AccountSettingsDescriptions.java
+ com.fsck.k9.preferences.AccountSettingsDescriptions
+ com.fsck.k9.preferences.AccountSettingsDescriptions$1
+ com.fsck.k9.preferences.AccountSettingsDescriptions$DeletePolicySetting
+ com.fsck.k9.preferences.AccountSettingsDescriptions$IntegerResourceSetting
+ com.fsck.k9.preferences.AccountSettingsDescriptions$RingtoneSetting
+ com.fsck.k9.preferences.AccountSettingsDescriptions$SettingsUpgraderV53
+ com.fsck.k9.preferences.AccountSettingsDescriptions$SettingsUpgraderV54
+ com.fsck.k9.preferences.AccountSettingsDescriptions$StorageProviderSetting
+ com.fsck.k9.preferences.AccountSettingsDescriptions$StringResourceSetting
+com/fsck/k9/provider/DecryptedFileProvider.java
+ com.fsck.k9.provider.DecryptedFileProvider
+ com.fsck.k9.provider.DecryptedFileProvider$1
+ com.fsck.k9.provider.DecryptedFileProvider$2
+ com.fsck.k9.provider.DecryptedFileProvider$DecryptedFileProviderCleanupReceiver
+com/fsck/k9/message/SimpleMessageFormat.java
+ com.fsck.k9.message.SimpleMessageFormat
+com/fsck/k9/notification/NotificationActionService.java
+ com.fsck.k9.notification.NotificationActionService
+com/fsck/k9/Clock.java
+ com.fsck.k9.Clock
+com/fsck/k9/message/IdentityHeaderParser.java
+ com.fsck.k9.message.IdentityHeaderParser
+com/fsck/k9/power/DozeChecker.java
+ com.fsck.k9.power.DozeChecker
+com/fsck/k9/crypto/OpenPgpApiHelper.java
+ com.fsck.k9.crypto.OpenPgpApiHelper
+com/fsck/k9/helper/Utility.java
+ com.fsck.k9.helper.Utility
+com/fsck/k9/helper/SingleLiveEvent.java
+ com.fsck.k9.helper.SingleLiveEvent
+ com.fsck.k9.helper.SingleLiveEvent$1
+com/fsck/k9/message/html/BitcoinUriParser.java
+ com.fsck.k9.message.html.BitcoinUriParser
+com/fsck/k9/mailstore/LocalStore.java
+ com.fsck.k9.mailstore.LocalStore
+ com.fsck.k9.mailstore.LocalStore$1
+ com.fsck.k9.mailstore.LocalStore$10
+ com.fsck.k9.mailstore.LocalStore$11
+ com.fsck.k9.mailstore.LocalStore$12
+ com.fsck.k9.mailstore.LocalStore$13
+ com.fsck.k9.mailstore.LocalStore$14
+ com.fsck.k9.mailstore.LocalStore$15
+ com.fsck.k9.mailstore.LocalStore$16
+ com.fsck.k9.mailstore.LocalStore$17
+ com.fsck.k9.mailstore.LocalStore$18
+ com.fsck.k9.mailstore.LocalStore$19
+ com.fsck.k9.mailstore.LocalStore$2
+ com.fsck.k9.mailstore.LocalStore$20
+ com.fsck.k9.mailstore.LocalStore$21
+ com.fsck.k9.mailstore.LocalStore$22
+ com.fsck.k9.mailstore.LocalStore$23
+ com.fsck.k9.mailstore.LocalStore$24
+ com.fsck.k9.mailstore.LocalStore$25
+ com.fsck.k9.mailstore.LocalStore$3
+ com.fsck.k9.mailstore.LocalStore$4
+ com.fsck.k9.mailstore.LocalStore$5
+ com.fsck.k9.mailstore.LocalStore$6
+ com.fsck.k9.mailstore.LocalStore$7
+ com.fsck.k9.mailstore.LocalStore$8
+ com.fsck.k9.mailstore.LocalStore$9
+ com.fsck.k9.mailstore.LocalStore$AttachmentInfo
+ com.fsck.k9.mailstore.LocalStore$BatchSetSelection
+ com.fsck.k9.mailstore.LocalStore$RealMigrationsHelper
+com/fsck/k9/helper/MergeCursor.java
+ com.fsck.k9.helper.MergeCursor
+com/fsck/k9/NotificationSetting.java
+ com.fsck.k9.NotificationSetting
+com/fsck/k9/mailstore/LocalMessage.java
+ com.fsck.k9.mailstore.LocalMessage
+ com.fsck.k9.mailstore.LocalMessage$1
+ com.fsck.k9.mailstore.LocalMessage$2
+ com.fsck.k9.mailstore.LocalMessage$3
+ com.fsck.k9.mailstore.LocalMessage$4
+com/fsck/k9/search/ConditionsTreeNode.java
+ com.fsck.k9.search.ConditionsTreeNode
+ com.fsck.k9.search.ConditionsTreeNode$1
+ com.fsck.k9.search.ConditionsTreeNode$Operator
+com/fsck/k9/service/StorageReceiver.java
+ com.fsck.k9.service.StorageReceiver
+com/fsck/k9/cache/EmailProviderCache.java
+ com.fsck.k9.cache.EmailProviderCache
+com/fsck/k9/helper/ParcelableUtil.java
+ com.fsck.k9.helper.ParcelableUtil
+com/fsck/k9/controller/MessagingControllerCommands.java
+ com.fsck.k9.controller.MessagingControllerCommands
+ com.fsck.k9.controller.MessagingControllerCommands$PendingAppend
+ com.fsck.k9.controller.MessagingControllerCommands$PendingCommand
+ com.fsck.k9.controller.MessagingControllerCommands$PendingDelete
+ com.fsck.k9.controller.MessagingControllerCommands$PendingEmptyTrash
+ com.fsck.k9.controller.MessagingControllerCommands$PendingExpunge
+ com.fsck.k9.controller.MessagingControllerCommands$PendingMarkAllAsRead
+ com.fsck.k9.controller.MessagingControllerCommands$PendingMoveAndMarkAsRead
+ com.fsck.k9.controller.MessagingControllerCommands$PendingMoveOrCopy
+ com.fsck.k9.controller.MessagingControllerCommands$PendingReplace
+ com.fsck.k9.controller.MessagingControllerCommands$PendingSetFlag
+com/fsck/k9/mailstore/AttachmentResolver.java
+ com.fsck.k9.mailstore.AttachmentResolver
+com/fsck/k9/helper/FileHelper.java
+ com.fsck.k9.helper.FileHelper
+com/fsck/k9/message/AutocryptStatusInteractor.java
+ com.fsck.k9.message.AutocryptStatusInteractor
+ com.fsck.k9.message.AutocryptStatusInteractor$RecipientAutocryptStatus
+ com.fsck.k9.message.AutocryptStatusInteractor$RecipientAutocryptStatusType
+com/fsck/k9/message/extractors/BodyTextExtractor.java
+ com.fsck.k9.message.extractors.BodyTextExtractor
+com/fsck/k9/notification/DeviceNotifications.java
+ com.fsck.k9.notification.DeviceNotifications
+com/fsck/k9/autocrypt/AutocryptOpenPgpApiInteractor.java
+ com.fsck.k9.autocrypt.AutocryptOpenPgpApiInteractor
+com/fsck/k9/notification/AuthenticationErrorNotifications.java
+ com.fsck.k9.notification.AuthenticationErrorNotifications
+com/fsck/k9/preferences/Settings.java
+ com.fsck.k9.preferences.Settings
+ com.fsck.k9.preferences.Settings$BooleanSetting
+ com.fsck.k9.preferences.Settings$ColorSetting
+ com.fsck.k9.preferences.Settings$EnumSetting
+ com.fsck.k9.preferences.Settings$FontSizeSetting
+ com.fsck.k9.preferences.Settings$IntegerRangeSetting
+ com.fsck.k9.preferences.Settings$InvalidSettingValueException
+ com.fsck.k9.preferences.Settings$PseudoEnumSetting
+ com.fsck.k9.preferences.Settings$SettingsDescription
+ com.fsck.k9.preferences.Settings$SettingsUpgrader
+ com.fsck.k9.preferences.Settings$StringSetting
+ com.fsck.k9.preferences.Settings$V
+ com.fsck.k9.preferences.Settings$WebFontSizeSetting
+com/fsck/k9/controller/MessageReference.java
+ com.fsck.k9.controller.MessageReference
+com/fsck/k9/mailstore/MessageViewInfo.java
+ com.fsck.k9.mailstore.MessageViewInfo
+com/fsck/k9/notification/NotificationData.java
+ com.fsck.k9.notification.NotificationData
+com/fsck/k9/BaseAccount.java
+ com.fsck.k9.BaseAccount
+com/fsck/k9/preferences/SettingsImporter.java
+ com.fsck.k9.preferences.SettingsImporter
+ com.fsck.k9.preferences.SettingsImporter$1
+ com.fsck.k9.preferences.SettingsImporter$AccountDescription
+ com.fsck.k9.preferences.SettingsImporter$AccountDescriptionPair
+ com.fsck.k9.preferences.SettingsImporter$ImportContents
+ com.fsck.k9.preferences.SettingsImporter$ImportResults
+ com.fsck.k9.preferences.SettingsImporter$Imported
+ com.fsck.k9.preferences.SettingsImporter$ImportedAccount
+ com.fsck.k9.preferences.SettingsImporter$ImportedFolder
+ com.fsck.k9.preferences.SettingsImporter$ImportedIdentity
+ com.fsck.k9.preferences.SettingsImporter$ImportedServer
+ com.fsck.k9.preferences.SettingsImporter$ImportedServerSettings
+ com.fsck.k9.preferences.SettingsImporter$ImportedSettings
+com/fsck/k9/mailstore/UnavailableStorageException.java
+ com.fsck.k9.mailstore.UnavailableStorageException
+com/fsck/k9/mailstore/MigrationsHelper.java
+ com.fsck.k9.mailstore.MigrationsHelper
+com/fsck/k9/Account.java
+ com.fsck.k9.Account
+ com.fsck.k9.Account$1
+ com.fsck.k9.Account$DeletePolicy
+ com.fsck.k9.Account$Expunge
+ com.fsck.k9.Account$FolderMode
+ com.fsck.k9.Account$MessageFormat
+ com.fsck.k9.Account$QuoteStyle
+ com.fsck.k9.Account$Searchable
+ com.fsck.k9.Account$ShowPictures
+ com.fsck.k9.Account$SortType
+ com.fsck.k9.Account$SpecialFolderSelection
+com/fsck/k9/helper/EmptyCursor.java
+ com.fsck.k9.helper.EmptyCursor
+com/fsck/k9/preferences/IdentitySettingsDescriptions.java
+ com.fsck.k9.preferences.IdentitySettingsDescriptions
+ com.fsck.k9.preferences.IdentitySettingsDescriptions$OptionalEmailAddressSetting
+ com.fsck.k9.preferences.IdentitySettingsDescriptions$SignatureSetting

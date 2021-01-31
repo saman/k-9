@@ -1,0 +1,20 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.fsck.k9.ui" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="21"
+6-->/Users/saman/Projects/asml-lang/k-9/app/ui/legacy/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="29" />
+7-->/Users/saman/Projects/asml-lang/k-9/app/ui/legacy/src/main/AndroidManifest.xml
+8
+9    <application>
+9-->/Users/saman/Projects/asml-lang/k-9/app/ui/legacy/src/main/AndroidManifest.xml:4:5-7:19
+10
+11        <!-- Mqtt Service -->
+12        <service android:name="org.eclipse.paho.android.service.MqttService" />
+12-->/Users/saman/Projects/asml-lang/k-9/app/ui/legacy/src/main/AndroidManifest.xml:6:9-80
+12-->/Users/saman/Projects/asml-lang/k-9/app/ui/legacy/src/main/AndroidManifest.xml:6:18-77
+13    </application>
+14
+15</manifest>

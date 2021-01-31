@@ -1,0 +1,32 @@
+com/fsck/k9/storage/migrations/LegacyPendingExpunge.java
+ com.fsck.k9.storage.migrations.LegacyPendingExpunge
+com/fsck/k9/preferences/K9StoragePersister.java
+ com.fsck.k9.preferences.K9StoragePersister
+ com.fsck.k9.preferences.K9StoragePersister$1
+ com.fsck.k9.preferences.K9StoragePersister$StoragePersistOperationCallback
+ com.fsck.k9.preferences.K9StoragePersister$StoragePersistOperations
+com/fsck/k9/preferences/K9StorageEditor.java
+ com.fsck.k9.preferences.K9StorageEditor
+ com.fsck.k9.preferences.K9StorageEditor$1
+com/fsck/k9/storage/migrations/MigrationTo62.java
+ com.fsck.k9.storage.migrations.MigrationTo62
+com/fsck/k9/storage/migrations/LegacyPendingSetFlag.java
+ com.fsck.k9.storage.migrations.LegacyPendingSetFlag
+com/fsck/k9/storage/migrations/LegacyPendingMarkAllAsRead.java
+ com.fsck.k9.storage.migrations.LegacyPendingMarkAllAsRead
+com/fsck/k9/storage/migrations/LegacyPendingMoveOrCopy.java
+ com.fsck.k9.storage.migrations.LegacyPendingMoveOrCopy
+com/fsck/k9/preferences/migrations/StorageMigrationTo2.java
+ com.fsck.k9.preferences.migrations.StorageMigrationTo2
+com/fsck/k9/storage/migrations/LegacyPendingCommand.java
+ com.fsck.k9.storage.migrations.LegacyPendingCommand
+com/fsck/k9/storage/BuildConfig.java
+ com.fsck.k9.storage.BuildConfig
+com/fsck/k9/storage/StoreSchemaDefinition.java
+ com.fsck.k9.storage.StoreSchemaDefinition
+com/fsck/k9/storage/migrations/LegacyPendingAppend.java
+ com.fsck.k9.storage.migrations.LegacyPendingAppend
+com/fsck/k9/storage/migrations/LegacyPendingDelete.java
+ com.fsck.k9.storage.migrations.LegacyPendingDelete
+com/fsck/k9/storage/migrations/LegacyPendingMoveAndMarkAsRead.java
+ com.fsck.k9.storage.migrations.LegacyPendingMoveAndMarkAsRead

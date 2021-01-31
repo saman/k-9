@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jcraft:jzlib:1.0.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jzlib/1.0.7/ba26d908c6eabe519ef645d81d4e267de7280f8f/jzlib-1.0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jzlib/1.0.7/dca8cfc6c6be48d8a913a578d2095c330be3962d/jzlib-1.0.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jzlib/1.0.7/e7c2bb6f07e66a7cfb1112100464cc0cdd166ee0/jzlib-1.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

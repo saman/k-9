@@ -1,0 +1,172 @@
+com/fsck/k9/mail/filter/EOLConvertingOutputStream.java
+ com.fsck.k9.mail.filter.EOLConvertingOutputStream
+com/fsck/k9/mail/filter/PeekableInputStream.java
+ com.fsck.k9.mail.filter.PeekableInputStream
+com/fsck/k9/mail/NetworkType.java
+ com.fsck.k9.mail.NetworkType
+com/fsck/k9/mail/DefaultBodyFactory.java
+ com.fsck.k9.mail.DefaultBodyFactory
+com/fsck/k9/mail/filter/LineWrapOutputStream.java
+ com.fsck.k9.mail.filter.LineWrapOutputStream
+com/fsck/k9/mail/CertificateChainException.java
+ com.fsck.k9.mail.CertificateChainException
+com/fsck/k9/mail/BoundaryGenerator.java
+ com.fsck.k9.mail.BoundaryGenerator
+com/fsck/k9/mail/Address.java
+ com.fsck.k9.mail.Address
+com/fsck/k9/mail/oauth/XOAuth2ChallengeParser.java
+ com.fsck.k9.mail.oauth.XOAuth2ChallengeParser
+com/fsck/k9/mail/filter/CountingOutputStream.java
+ com.fsck.k9.mail.filter.CountingOutputStream
+com/fsck/k9/mail/internet/MimeUtility.java
+ com.fsck.k9.mail.internet.MimeUtility
+ com.fsck.k9.mail.internet.MimeUtility$1
+ com.fsck.k9.mail.internet.MimeUtility$2
+com/fsck/k9/mail/CertificateValidationException.java
+ com.fsck.k9.mail.CertificateValidationException
+ com.fsck.k9.mail.CertificateValidationException$Reason
+com/fsck/k9/mail/common/BuildConfig.java
+ com.fsck.k9.mail.common.BuildConfig
+com/fsck/k9/mail/Part.java
+ com.fsck.k9.mail.Part
+com/fsck/k9/mail/ConnectionSecurity.java
+ com.fsck.k9.mail.ConnectionSecurity
+com/fsck/k9/mail/MessagingException.java
+ com.fsck.k9.mail.MessagingException
+com/fsck/k9/mail/AuthType.java
+ com.fsck.k9.mail.AuthType
+com/fsck/k9/mail/internet/CharsetSupport.java
+ com.fsck.k9.mail.internet.CharsetSupport
+com/fsck/k9/mail/internet/MimeMessageHelper.java
+ com.fsck.k9.mail.internet.MimeMessageHelper
+com/fsck/k9/mail/internet/MimeMultipart.java
+ com.fsck.k9.mail.internet.MimeMultipart
+com/fsck/k9/mail/filter/SmtpDataStuffing.java
+ com.fsck.k9.mail.filter.SmtpDataStuffing
+com/fsck/k9/mail/internet/TextBody.java
+ com.fsck.k9.mail.internet.TextBody
+com/fsck/k9/mail/FetchProfile.java
+ com.fsck.k9.mail.FetchProfile
+ com.fsck.k9.mail.FetchProfile$Item
+com/fsck/k9/mail/oauth/AuthorizationException.java
+ com.fsck.k9.mail.oauth.AuthorizationException
+com/fsck/k9/mail/ssl/TrustedSocketFactory.java
+ com.fsck.k9.mail.ssl.TrustedSocketFactory
+com/fsck/k9/mail/filter/Base64.java
+ com.fsck.k9.mail.filter.Base64
+ com.fsck.k9.mail.filter.Base64$DecoderException
+ com.fsck.k9.mail.filter.Base64$EncoderException
+com/fsck/k9/mail/MessageRetrievalListener.java
+ com.fsck.k9.mail.MessageRetrievalListener
+com/fsck/k9/mail/filter/Base64OutputStream.java
+ com.fsck.k9.mail.filter.Base64OutputStream
+com/fsck/k9/mail/ssl/DefaultTrustedSocketFactory.java
+ com.fsck.k9.mail.ssl.DefaultTrustedSocketFactory
+com/fsck/k9/mail/Transport.java
+ com.fsck.k9.mail.Transport
+com/fsck/k9/mail/oauth/OAuth2TokenProvider.java
+ com.fsck.k9.mail.oauth.OAuth2TokenProvider
+ com.fsck.k9.mail.oauth.OAuth2TokenProvider$OAuth2TokenProviderAuthCallback
+com/fsck/k9/mail/filter/SignSafeOutputStream.java
+ com.fsck.k9.mail.filter.SignSafeOutputStream
+ com.fsck.k9.mail.filter.SignSafeOutputStream$1
+ com.fsck.k9.mail.filter.SignSafeOutputStream$State
+ com.fsck.k9.mail.filter.SignSafeOutputStream$State$1
+ com.fsck.k9.mail.filter.SignSafeOutputStream$State$2
+ com.fsck.k9.mail.filter.SignSafeOutputStream$State$3
+ com.fsck.k9.mail.filter.SignSafeOutputStream$State$4
+ com.fsck.k9.mail.filter.SignSafeOutputStream$State$5
+ com.fsck.k9.mail.filter.SignSafeOutputStream$State$6
+ com.fsck.k9.mail.filter.SignSafeOutputStream$State$7
+ com.fsck.k9.mail.filter.SignSafeOutputStream$State$8
+com/fsck/k9/mail/helper/UrlEncodingHelper.java
+ com.fsck.k9.mail.helper.UrlEncodingHelper
+com/fsck/k9/mail/Body.java
+ com.fsck.k9.mail.Body
+com/fsck/k9/mail/internet/SizeAware.java
+ com.fsck.k9.mail.internet.SizeAware
+com/fsck/k9/mail/Message.java
+ com.fsck.k9.mail.Message
+ com.fsck.k9.mail.Message$RecipientType
+com/fsck/k9/mailstore/BinaryMemoryBody.java
+ com.fsck.k9.mailstore.BinaryMemoryBody
+com/fsck/k9/mail/internet/BinaryTempFileBody.java
+ com.fsck.k9.mail.internet.BinaryTempFileBody
+ com.fsck.k9.mail.internet.BinaryTempFileBody$BinaryTempFileBodyInputStream
+com/fsck/k9/mail/FolderClass.java
+ com.fsck.k9.mail.FolderClass
+com/fsck/k9/mail/internet/MimeMessage.java
+ com.fsck.k9.mail.internet.MimeMessage
+ com.fsck.k9.mail.internet.MimeMessage$1
+ com.fsck.k9.mail.internet.MimeMessage$MimeMessageBuilder
+com/fsck/k9/mail/FolderType.java
+ com.fsck.k9.mail.FolderType
+com/fsck/k9/mail/Flag.java
+ com.fsck.k9.mail.Flag
+com/fsck/k9/mail/internet/MimeBodyPart.java
+ com.fsck.k9.mail.internet.MimeBodyPart
+com/fsck/k9/mail/internet/EncoderUtil.java
+ com.fsck.k9.mail.internet.EncoderUtil
+ com.fsck.k9.mail.internet.EncoderUtil$Encoding
+com/fsck/k9/helper/ExceptionHelper.java
+ com.fsck.k9.helper.ExceptionHelper
+com/fsck/k9/mail/Multipart.java
+ com.fsck.k9.mail.Multipart
+com/fsck/k9/mail/message/MessageHeaderParser.java
+ com.fsck.k9.mail.message.MessageHeaderParser
+ com.fsck.k9.mail.message.MessageHeaderParser$MessageHeaderParserContentHandler
+com/fsck/k9/mail/internet/JisSupport.java
+ com.fsck.k9.mail.internet.JisSupport
+com/fsck/k9/mail/internet/FlowedMessageUtils.java
+ com.fsck.k9.mail.internet.FlowedMessageUtils
+com/fsck/k9/mail/internet/Viewable.java
+ com.fsck.k9.mail.internet.Viewable
+ com.fsck.k9.mail.internet.Viewable$Alternative
+ com.fsck.k9.mail.internet.Viewable$Flowed
+ com.fsck.k9.mail.internet.Viewable$Html
+ com.fsck.k9.mail.internet.Viewable$MessageHeader
+ com.fsck.k9.mail.internet.Viewable$Text
+ com.fsck.k9.mail.internet.Viewable$Textual
+com/fsck/k9/mail/ssl/LocalKeyStore.java
+ com.fsck.k9.mail.ssl.LocalKeyStore
+com/fsck/k9/mail/K9MailLib.java
+ com.fsck.k9.mail.K9MailLib
+ com.fsck.k9.mail.K9MailLib$1
+ com.fsck.k9.mail.K9MailLib$DebugStatus
+ com.fsck.k9.mail.K9MailLib$DefaultDebugStatus
+ com.fsck.k9.mail.K9MailLib$WritableDebugStatus
+com/fsck/k9/mail/ssl/TrustManagerFactory.java
+ com.fsck.k9.mail.ssl.TrustManagerFactory
+ com.fsck.k9.mail.ssl.TrustManagerFactory$1
+ com.fsck.k9.mail.ssl.TrustManagerFactory$SecureX509TrustManager
+com/fsck/k9/mail/BodyPart.java
+ com.fsck.k9.mail.BodyPart
+com/fsck/k9/mail/internet/ListHeaders.java
+ com.fsck.k9.mail.internet.ListHeaders
+com/fsck/k9/mail/Authentication.java
+ com.fsck.k9.mail.Authentication
+com/fsck/k9/mail/internet/Iso2022JpToShiftJisInputStream.java
+ com.fsck.k9.mail.internet.Iso2022JpToShiftJisInputStream
+ com.fsck.k9.mail.internet.Iso2022JpToShiftJisInputStream$1
+ com.fsck.k9.mail.internet.Iso2022JpToShiftJisInputStream$Charset
+com/fsck/k9/mail/internet/MessageExtractor.java
+ com.fsck.k9.mail.internet.MessageExtractor
+com/fsck/k9/mail/internet/RawDataBody.java
+ com.fsck.k9.mail.internet.RawDataBody
+com/fsck/k9/helper/MailTo.java
+ com.fsck.k9.helper.MailTo
+ com.fsck.k9.helper.MailTo$CaseInsensitiveParamWrapper
+com/fsck/k9/mail/internet/DecoderUtil.java
+ com.fsck.k9.mail.internet.DecoderUtil
+ com.fsck.k9.mail.internet.DecoderUtil$1
+ com.fsck.k9.mail.internet.DecoderUtil$EncodedWord
+com/fsck/k9/mail/BodyFactory.java
+ com.fsck.k9.mail.BodyFactory
+com/fsck/k9/mail/ssl/KeyChainKeyManager.java
+ com.fsck.k9.mail.ssl.KeyChainKeyManager
+com/fsck/k9/mail/ServerSettings.java
+ com.fsck.k9.mail.ServerSettings
+com/fsck/k9/mail/filter/FixedLengthInputStream.java
+ com.fsck.k9.mail.filter.FixedLengthInputStream
+com/fsck/k9/mail/internet/BinaryTempFileMessageBody.java
+ com.fsck.k9.mail.internet.BinaryTempFileMessageBody
