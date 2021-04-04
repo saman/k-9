@@ -124,6 +124,11 @@ import com.fsck.k9.ui.permissions.Permission;
 import com.fsck.k9.ui.permissions.PermissionUiHelper;
 
 import com.github.asml.rsm.android.RuntimeStateMigration;
+import com.github.asml.rsm.android.interfaces.OnDeviceJoinListener;
+import com.github.asml.rsm.android.interfaces.OnDeviceLeaveListener;
+import com.github.asml.rsm.android.interfaces.OnStateMigrationListener;
+import com.github.asml.rsm.android.interfaces.OnStateReceiveListener;
+import com.github.asml.rsm.android.interfaces.OnStateRequestListener;
 import com.github.asml.rsm.android.models.Device;
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
@@ -136,7 +141,11 @@ import timber.log.Timber;
 public class MessageCompose extends K9Activity implements OnClickListener,
         CancelListener, AttachmentDownloadCancelListener, OnFocusChangeListener,
         OnOpenPgpInlineChangeListener, OnOpenPgpSignOnlyChangeListener, MessageBuilder.Callback,
-        AttachmentPresenter.AttachmentsChangedListener, OnOpenPgpDisableListener, PermissionUiHelper {
+        AttachmentPresenter.AttachmentsChangedListener, OnOpenPgpDisableListener, OnDeviceJoinListener,
+        OnDeviceLeaveListener,
+        OnStateMigrationListener,
+        OnStateReceiveListener,
+        OnStateRequestListener, PermissionUiHelper {
 
     private static final int DIALOG_SAVE_OR_DISCARD_DRAFT_MESSAGE = 1;
     private static final int DIALOG_CONFIRM_DISCARD_ON_BACK = 2;
@@ -248,6 +257,7 @@ public class MessageCompose extends K9Activity implements OnClickListener,
     private boolean navigateUp;
     private RuntimeStateMigration rsm = RuntimeStateMigration.getInstance();
     public static final String RSM_MODEL = "sending-email";
+    private RecipientMvpView recipientMvpView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -316,7 +326,7 @@ public class MessageCompose extends K9Activity implements OnClickListener,
         chooseIdentityButton = findViewById(R.id.identity);
         chooseIdentityButton.setOnClickListener(this);
 
-        RecipientMvpView recipientMvpView = new RecipientMvpView(this);
+        recipientMvpView = new RecipientMvpView(this);
         ComposePgpInlineDecider composePgpInlineDecider = new ComposePgpInlineDecider();
         ComposePgpEnableByDefaultDecider composePgpEnableByDefaultDecider = new ComposePgpEnableByDefaultDecider();
 
@@ -365,6 +375,101 @@ public class MessageCompose extends K9Activity implements OnClickListener,
         subjectView.addTextChangedListener(draftNeedsChangingTextWatcher);
 
         messageContentView.addTextChangedListener(draftNeedsChangingTextWatcher);
+
+        //region Runtime State Migration
+        try {
+            rsm.addModel(readStringFromRaw(R.raw.sending_email));
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+        rsm.introduce();
+
+
+        subjectView.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                rsm.setHasState(RSM_MODEL, s.length() > 0);
+            }
+        });
+        messageContentView.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                rsm.setHasState(RSM_MODEL, s.length() > 0);
+            }
+        });
+
+
+        LinearLayout migrationMenu = findViewById(R.id.migration_menu);
+        LinearLayout migrationSet = findViewById(R.id.migration_set);
+        LinearLayout migrationGet = findViewById(R.id.migration_get);
+        migrationSet.setOnClickListener(v -> {
+            List<Device> devices = rsm.getDevices(RSM_MODEL);
+            if (devices.size() < 1) {
+                new AlertDialog.Builder(this)
+                        .setTitle("Migrate Email")
+                        .setMessage("There is not device for 'sending-email'")
+                        .setPositiveButton("Migrate", (d, w) -> d.dismiss())
+                        .create().show();
+                return;
+            }
+            final Device[] device = { devices.get(0) };
+
+            new AlertDialog.Builder(this)
+                    .setTitle("Migrate Email")
+                    .setSingleChoiceItems(getDevicesList(devices), 0, (dialog, which) -> device[0] = devices.get(which))
+                    .setPositiveButton("Migrate", (d, w) -> {
+                        List<String> toAddresses = new ArrayList<>();
+                        for (Address a : recipientMvpView.getToAddresses()) {
+                            toAddresses.add(a.getAddress());
+                        }
+
+                        rsm.setState(RSM_MODEL,
+                                new SendingEmailState(identity.getEmail(), toAddresses, subjectView.getText().toString(), messageContentView.getText().toString()).toString());
+                        rsm.sendState(RSM_MODEL, device[0].getId());
+                    })
+                    .create().show();
+        });
+        migrationGet.setOnClickListener(v -> {
+            List<Device> devices = rsm.getDevices(RSM_MODEL, true);
+            if (devices.size() < 1) {
+                new AlertDialog.Builder(this)
+                        .setTitle("Migrate Email")
+                        .setMessage("There is not device for 'sending-email'")
+                        .setPositiveButton("Migrate", (d, w) -> d.dismiss())
+                        .create().show();
+                return;
+            }
+            final Device[] device = { devices.get(0) };
+
+            new AlertDialog.Builder(this)
+                    .setTitle("Migrate Email")
+                    .setSingleChoiceItems(getDevicesList(devices), 0, (dialog, which) -> device[0] = devices.get(which))
+                    .setPositiveButton("Migrate", (d, w) -> rsm.getStateDevice(RSM_MODEL, device[0].getId()))
+                    .create().show();
+        });
+        findViewById(R.id.migration).setOnClickListener(v -> migrationMenu.setVisibility(migrationMenu.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
+        //endregion
+
 
         /*
          * We set this to invisible by default. Other methods will turn it back on if it's
@@ -490,132 +595,89 @@ public class MessageCompose extends K9Activity implements OnClickListener,
             checkAndRequestPermissions();
         }
 
-        rsm.setOnDeviceJoinListener((modelName, device) -> Toast.makeText(this, String.format("%s joined %s", device.getName(), modelName), Toast.LENGTH_SHORT).show());
-        rsm.setOnDeviceLeaveListener((device) -> Toast.makeText(this, String.format("%s left", device.getName()), Toast.LENGTH_SHORT).show());
-        rsm.setOnStateRequestListener((modelName, device) -> {
-            if (modelName.equals(RSM_MODEL)) {
-                StringBuilder sb = new StringBuilder();
-                for (Address a : recipientMvpView.getToAddresses()) {
-                    sb.append(a.toString()).append(",");
-                }
-                String to = StringUtils.stripEnd(sb.toString(), ",");
+    }
 
-                rsm.setState(RSM_MODEL, new SendingEmailState(identity.getEmail(), to, subjectView.getText().toString(), messageContentView.getText().toString()).toString());
-                rsm.sendState(RSM_MODEL, device.getId());
-            }
-        });
-        rsm.setOnStateReceiveListener((modelName, device, state, isValid) -> {
-            Log.d("RuntimeStateMigration",
-                    "setOnStateReceiveListener called with: modelName = [" + modelName + "], " + "device = [" + device.getName() + "], " + "state = [" + state + "], ");
-            if (modelName.equals(RSM_MODEL) && isValid) {
-                SendingEmailState emailState = SendingEmailState.fromJsonString(state);
-                recipientMvpView.clearTo();
-                initializeFromMailto(MailTo.parse(Uri.parse(String.format("mailto:?to=%s&subject=%s&body=%s", emailState.getTo(), emailState.getSubject(), emailState.getBody()))));
-                rsm.setMigration(RSM_MODEL, device.getId());
-            }
-        });
-        rsm.setOnStateMigrationListener((modelName, device) -> {
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        rsm.setOnDeviceJoinListener(this);
+        rsm.setOnDeviceLeaveListener(this);
+        rsm.setOnStateRequestListener(this);
+        rsm.setOnStateReceiveListener(this);
+        rsm.setOnStateMigrationListener(this);
+
+        messagingController.addListener(messagingListener);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+
+        rsm.removeCallbacks();
+
+        messagingController.removeListener(messagingListener);
+
+        boolean isPausingOnConfigurationChange = (getChangingConfigurations() & ActivityInfo.CONFIG_ORIENTATION)
+                == ActivityInfo.CONFIG_ORIENTATION;
+        boolean isCurrentlyBuildingMessage = currentMessageBuilder != null;
+
+        if (isPausingOnConfigurationChange || isCurrentlyBuildingMessage || isInSubActivity) {
+            return;
+        }
+
+        checkToSaveDraftImplicitly();
+    }
+
+    @Override
+    public void onDeviceJoin(String modelName, Device device) {
+        Toast.makeText(this, String.format("%s joined %s", device.getName(), modelName), Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onDeviceLeave(Device device) {
+        Toast.makeText(this, String.format("%s left", device.getName()), Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onStateMigration(String modelName, Device device) {
+        if (modelName.equals(RSM_MODEL)) {
             recipientMvpView.clearTo();
             subjectView.setText("");
             messageContentView.setText("");
-        });
-
-        try {
-            rsm.addModel(readStringFromRaw(R.raw.sending_email));
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
         }
-        rsm.introduce();
+    }
 
+    @Override
+    public void onStateReceive(String modelName, Device device, String state, boolean isValid) {
+        Log.d("RuntimeStateMigration",
+                "setOnStateReceiveListener (Compose) called with: modelName = [" + modelName + "], " + "device = [" + device.getName() + "], " + "state = [" + state +
+                        "], isValid = " + isValid);
+        if (modelName.equals(RSM_MODEL) && isValid) {
+            SendingEmailState emailState = SendingEmailState.fromJsonString(state);
+            recipientMvpView.clearTo();
+            initializeFromMailto(MailTo.parse(
+                    Uri.parse(String.format("mailto:?to=%s&subject=%s&body=%s",
+                            MailTo.toCommaSeparatedString(emailState.getTo()),
+                            emailState.getSubject(),
+                            emailState.getBody()))
+                    )
+            );
+            rsm.setMigration(RSM_MODEL, device.getId());
+        }
+    }
 
-        subjectView.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
+    @Override
+    public void onStateRequest(String modelName, Device device) {
+        if (modelName.equals(RSM_MODEL)) {
+            List<String> toAddresses = new ArrayList<>();
+            for (Address a : recipientMvpView.getToAddresses()) {
+                toAddresses.add(a.getAddress());
             }
 
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                rsm.setHasState(RSM_MODEL);
-            }
-        });
-        messageContentView.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                rsm.setHasState(RSM_MODEL);
-            }
-        });
-
-
-        LinearLayout migrationMenu = findViewById(R.id.migration_menu);
-        LinearLayout migrationSet = findViewById(R.id.migration_set);
-        LinearLayout migrationGet = findViewById(R.id.migration_get);
-        migrationSet.setOnClickListener(v -> {
-            List<Device> devices = rsm.getDevices(RSM_MODEL);
-            if (devices.size() < 1) {
-                new AlertDialog.Builder(this)
-                        .setTitle("Migrate Email")
-                        .setMessage("There is not device for 'sending-email'")
-                        .setPositiveButton("Migrate", (d, w) -> d.dismiss())
-                        .create().show();
-                return;
-            }
-            final Device[] device = { devices.get(0) };
-
-            new AlertDialog.Builder(this)
-                    .setTitle("Migrate Email")
-                    .setSingleChoiceItems(getDevicesList(devices), 0, (dialog, which) -> device[0] = devices.get(which))
-                    .setPositiveButton("Migrate", (d, w) -> {
-                        StringBuilder sb = new StringBuilder();
-                        for (Address a : recipientMvpView.getToAddresses()) {
-                            sb.append(a.toString()).append(",");
-                        }
-                        String to = StringUtils.stripEnd(sb.toString(), ",");
-
-                        rsm.setState(RSM_MODEL,
-                                new SendingEmailState(identity.getEmail(), to, subjectView.getText().toString(), messageContentView.getText().toString()).toString());
-                        rsm.sendState(RSM_MODEL, device[0].getId());
-                    })
-                    .create().show();
-        });
-        migrationGet.setOnClickListener(v -> {
-            List<Device> devices = rsm.getDevices(RSM_MODEL, true);
-            if (devices.size() < 1) {
-                new AlertDialog.Builder(this)
-                        .setTitle("Migrate Email")
-                        .setMessage("There is not device for 'sending-email'")
-                        .setPositiveButton("Migrate", (d, w) -> d.dismiss())
-                        .create().show();
-                return;
-            }
-            final Device[] device = { devices.get(0) };
-
-            new AlertDialog.Builder(this)
-                    .setTitle("Migrate Email")
-                    .setSingleChoiceItems(getDevicesList(devices), 0, (dialog, which) -> device[0] = devices.get(which))
-                    .setPositiveButton("Migrate", (d, w) -> rsm.getStateDevice(RSM_MODEL, device[0].getId()))
-                    .create().show();
-        });
-        findViewById(R.id.migration).setOnClickListener(v -> {
-            List<Device> devices = rsm.getDevices(RSM_MODEL, true);
-            migrationGet.setVisibility(devices == null || devices.size() < 1 ? View.GONE : View.VISIBLE);
-            migrationMenu.setVisibility(migrationMenu.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
-        });
+            rsm.setState(RSM_MODEL, new SendingEmailState(identity.getEmail(), toAddresses, subjectView.getText().toString(), messageContentView.getText().toString()).toString());
+            rsm.sendState(RSM_MODEL, device.getId());
+        }
     }
 
     CharSequence[] getDevicesList(List<Device> devices) {
@@ -720,28 +782,6 @@ public class MessageCompose extends K9Activity implements OnClickListener,
         }
 
         return startedByExternalIntent;
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        messagingController.addListener(messagingListener);
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        messagingController.removeListener(messagingListener);
-
-        boolean isPausingOnConfigurationChange = (getChangingConfigurations() & ActivityInfo.CONFIG_ORIENTATION)
-                == ActivityInfo.CONFIG_ORIENTATION;
-        boolean isCurrentlyBuildingMessage = currentMessageBuilder != null;
-
-        if (isPausingOnConfigurationChange || isCurrentlyBuildingMessage || isInSubActivity) {
-            return;
-        }
-
-        checkToSaveDraftImplicitly();
     }
 
     /**

@@ -58,15 +58,12 @@ class Api {
             public void messageArrived(String topic, MqttMessage message) throws Exception {
                 Log.d(TAG, "messageArrived() called with: topic = [" + topic + "], message = [" + message + "]");
                 String[] topicParts = topic.split("/");
-                Log.d(TAG, "messageArrived: Split:" + topicParts.length);
 
                 String deviceId = null;
                 String mainTopic = topicParts[0];
                 if (topicParts.length == 2) {
                     deviceId = topicParts[1];
                 }
-
-                Log.d(TAG, "messageArrived: Topic: " + mainTopic);
                 if (mainTopic.equals("online")) {
                     onOnlineListener.onOnline(deviceId, message.toString().equals("true"));
                 } else {
@@ -76,7 +73,7 @@ class Api {
 
             @Override
             public void deliveryComplete(IMqttDeliveryToken token) {
-                Log.d(TAG, "deliveryComplete() called with: token = [" + token + "]");
+
             }
         });
         MqttConnectOptions options = new MqttConnectOptions();
@@ -122,8 +119,8 @@ class Api {
         publish(modelName + "/" + deviceId, data);
     }
 
-    public void publishHasState(String modelName, Device device) {
-        State<HasState> data = new State<>(new HasState(device));
+    public void publishHasState(String modelName, boolean value, Device device) {
+        State<HasState> data = new State<>(new HasState(device, value));
         publish(modelName, data);
     }
 

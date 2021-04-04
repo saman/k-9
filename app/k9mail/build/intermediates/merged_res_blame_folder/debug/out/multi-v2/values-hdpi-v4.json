@@ -4,7 +4,7 @@
             "outputFile": "/Users/saman/Projects/asml-lang/k-9/app/k9mail/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/39a4c860b666328ee00fa527e9333cb7/appcompat-1.2.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/6e5f15ed96b405f9c707aab6a5e4c679/appcompat-1.2.0/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

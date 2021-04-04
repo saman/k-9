@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.takisoft.preferencex:preferencex-ringtone:1.1.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e33d2de0b4236ed868f3ccc2d5cfe96e/preferencex-ringtone-1.1.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac7406deeda876704017eb24a8db8377/preferencex-ringtone-1.1.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e33d2de0b4236ed868f3ccc2d5cfe96e/preferencex-ringtone-1.1.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e33d2de0b4236ed868f3ccc2d5cfe96e/preferencex-ringtone-1.1.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e33d2de0b4236ed868f3ccc2d5cfe96e/preferencex-ringtone-1.1.0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac7406deeda876704017eb24a8db8377/preferencex-ringtone-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac7406deeda876704017eb24a8db8377/preferencex-ringtone-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac7406deeda876704017eb24a8db8377/preferencex-ringtone-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.takisoft.preferencex/preferencex-ringtone/1.1.0/71b6eae507baf753adb2b6856760d08ba3065b10/preferencex-ringtone-1.1.0-javadoc.jar!/" />

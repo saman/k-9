@@ -4,25 +4,6 @@
             "outputFile": "/Users/saman/Projects/asml-lang/k-9/app/k9mail/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/d0e62d801293e52cd47ec069da7717d9/material-1.2.1/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24,30",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,128,198,270,340,405,472,542,614,683,752,834,924,1000,1068,1135,1213,1278,1345,1517,1912",
-                        "endLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,23,29,34",
-                        "endColumns": "72,69,71,69,64,66,69,71,68,68,81,89,75,67,66,77,64,66,10,10,10",
-                        "endOffsets": "123,193,265,335,400,467,537,609,678,747,829,919,995,1063,1130,1208,1273,1340,1512,1907,2176"
-                    },
-                    "to": {
-                        "startLines": "13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,41,42,59,63,69",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "771,844,914,986,1056,1121,1188,1258,1330,1399,1468,1550,1640,1716,1784,1851,2667,2732,3634,3806,4201",
-                        "endLines": "13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,41,42,62,68,73",
-                        "endColumns": "72,69,71,69,64,66,69,71,68,68,81,89,75,67,66,77,64,66,10,10,10",
-                        "endOffsets": "839,909,981,1051,1116,1183,1253,1325,1394,1463,1545,1635,1711,1779,1846,1924,2727,2794,3801,4196,4465"
-                    }
-                },
-                {
                     "source": "/Users/saman/Projects/asml-lang/k-9/app/k9mail/src/main/res/values-land/unread_widget_styles.xml",
                     "from": {
                         "startLines": "3,12",
@@ -42,7 +23,26 @@
                     }
                 },
                 {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/f6bbce39c76a4d137ce78dc5405e7a0e/datetimepicker-1.0.2/res/values-land/values-land.xml",
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/a0ecc9cb2a344a78b7031db92d715690/material-1.2.1/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24,30",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,128,198,270,340,405,472,542,614,683,752,834,924,1000,1068,1135,1213,1278,1345,1517,1912",
+                        "endLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,23,29,34",
+                        "endColumns": "72,69,71,69,64,66,69,71,68,68,81,89,75,67,66,77,64,66,10,10,10",
+                        "endOffsets": "123,193,265,335,400,467,537,609,678,747,829,919,995,1063,1130,1208,1273,1340,1512,1907,2176"
+                    },
+                    "to": {
+                        "startLines": "13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,41,42,59,63,69",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "771,844,914,986,1056,1121,1188,1258,1330,1399,1468,1550,1640,1716,1784,1851,2667,2732,3634,3806,4201",
+                        "endLines": "13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,41,42,62,68,73",
+                        "endColumns": "72,69,71,69,64,66,69,71,68,68,81,89,75,67,66,77,64,66,10,10,10",
+                        "endOffsets": "839,909,981,1051,1116,1183,1253,1325,1394,1463,1545,1635,1711,1779,1846,1924,2727,2794,3801,4196,4465"
+                    }
+                },
+                {
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/732fb10934f5dc2921060db9147a347a/datetimepicker-1.0.2/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -59,7 +59,7 @@
                     }
                 },
                 {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/39a4c860b666328ee00fa527e9333cb7/appcompat-1.2.0/res/values-land/values-land.xml",
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/6e5f15ed96b405f9c707aab6a5e4c679/appcompat-1.2.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

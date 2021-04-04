@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.takisoft.preferencex:preferencex-datetimepicker:1.1.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/734be16f0bba9ab868de8dc3d418d395/preferencex-datetimepicker-1.1.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/00ff7e25cffbf304dda4ee570608d71f/preferencex-datetimepicker-1.1.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/734be16f0bba9ab868de8dc3d418d395/preferencex-datetimepicker-1.1.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/734be16f0bba9ab868de8dc3d418d395/preferencex-datetimepicker-1.1.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/734be16f0bba9ab868de8dc3d418d395/preferencex-datetimepicker-1.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/00ff7e25cffbf304dda4ee570608d71f/preferencex-datetimepicker-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/00ff7e25cffbf304dda4ee570608d71f/preferencex-datetimepicker-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/00ff7e25cffbf304dda4ee570608d71f/preferencex-datetimepicker-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.takisoft.preferencex/preferencex-datetimepicker/1.1.0/3b1bcfa1b7e781f0d427d75085b46260e730f35f/preferencex-datetimepicker-1.1.0-javadoc.jar!/" />

@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: de.cketti.library.changelog:ckchangelog:1.2.1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2c34a1fa49e0c86aadacedc4db019737/ckchangelog-1.2.1/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2c34a1fa49e0c86aadacedc4db019737/ckchangelog-1.2.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2c34a1fa49e0c86aadacedc4db019737/ckchangelog-1.2.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd7d45a7ee8bfec7231cc8f2125f5d15/ckchangelog-1.2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd7d45a7ee8bfec7231cc8f2125f5d15/ckchangelog-1.2.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd7d45a7ee8bfec7231cc8f2125f5d15/ckchangelog-1.2.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.cketti.library.changelog/ckchangelog/1.2.1/81cf4107638079ab25f2b0088bfc630b34c52411/ckchangelog-1.2.1-javadoc.jar!/" />

@@ -100,16 +100,16 @@ public final class RuntimeStateMigration implements OnOnlineListener, OnMessageL
             throw new IllegalStateException("Could not find the model " + modelName);
         }
         model.setState(state);
-        api.publishHasState(modelName, device);
+        api.publishHasState(modelName, true, device);
     }
 
-    public void setHasState(String modelName) {
+    public void setHasState(String modelName, boolean value) {
         Model model = getModel(modelName);
         if (model == null) {
             throw new IllegalStateException("Could not find the model " + modelName);
         }
 
-        api.publishHasState(modelName, device);
+        api.publishHasState(modelName, value, device);
     }
 
     public void sendState(String modelName, String deviceId) {
@@ -145,28 +145,15 @@ public final class RuntimeStateMigration implements OnOnlineListener, OnMessageL
         if (model == null) {
             throw new IllegalStateException("Could not find the model " + modelName);
         }
+        devices.stream().forEach(d -> Log.d(TAG, "getDevices: " + d.getName()));
         if (hasState) {
             return devices.stream().filter(d -> d.getModelsHasState().contains(modelName)).collect(Collectors.toList());
         }
         return devices.stream().filter(d -> d.getModels().contains(modelName)).collect(Collectors.toList());
-/*
-        List<Device> deviceList = new ArrayList<>();
-        for (Device device : devices) {
-            List<String> deviceModels = device.getModels();
-            for (String m : deviceModels) {
-                if (m.equals(modelName)) {
-                    deviceList.add(device);
-                    break;
-                }
-            }
-        }
-        return deviceList;
-
- */
     }
 
     private Model getModel(String name) {
-        return models.stream().filter(m-> m.getName().equals(name)).findFirst().orElse(null);
+        return models.stream().filter(m -> m.getName().equals(name)).findFirst().orElse(null);
     }
 
     @Override
@@ -189,10 +176,10 @@ public final class RuntimeStateMigration implements OnOnlineListener, OnMessageL
                 JavaType type = mapper.getTypeFactory().constructParametricType(State.class, DeviceState.class);
                 State<DeviceState> state = mapper.readValue(payload, type);
 
-                Device device = devices.stream().filter(d-> d.getId().equals(state.getData().getDevice().getId())).findFirst().orElse(null);
-                if (device == null){
+                Device device = devices.stream().filter(d -> d.getId().equals(state.getData().getDevice().getId())).findFirst().orElse(null);
+                if (device == null) {
                     devices.add(state.getData().getDevice());
-                    device = devices.get(devices.size()-1);
+                    device = devices.get(devices.size() - 1);
                 }
                 device.addModel(topic);
 
@@ -232,8 +219,13 @@ public final class RuntimeStateMigration implements OnOnlineListener, OnMessageL
                 State<HasState> state = mapper.readValue(payload, new TypeReference<State<HasState>>() {
                 });
                 Device device = devices.stream().filter(d -> d.getId().equals(state.getData().getDevice().getId())).findFirst().orElse(null);
-                if (device != null && !device.getModelsHasState().contains(topic)) {
+                if (device == null) {
+                    return;
+                }
+                if (state.getData().getValue() && !device.getModelsHasState().contains(topic)) {
                     device.addModelHasState(topic);
+                } else if (!state.getData().getValue()) {
+                    device.removeHasState(topic);
                 }
             }
         } catch (JSONException e) {
@@ -284,5 +276,13 @@ public final class RuntimeStateMigration implements OnOnlineListener, OnMessageL
 
     public void setOnStateMigrationListener(OnStateMigrationListener listener) {
         this.onStateMigrationListener = listener;
+    }
+
+    public void removeCallbacks() {
+        this.onDeviceJoinListener = null;
+        this.onDeviceLeaveListener = null;
+        this.onStateMigrationListener = null;
+        this.onStateReceiveListener = null;
+        this.onStateRequestListener = null;
     }
 }

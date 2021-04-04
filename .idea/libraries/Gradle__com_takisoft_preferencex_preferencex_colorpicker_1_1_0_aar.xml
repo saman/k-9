@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.takisoft.preferencex:preferencex-colorpicker:1.1.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6b12e25f5e77ff4eb6fe736deb68f196/preferencex-colorpicker-1.1.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6b12e25f5e77ff4eb6fe736deb68f196/preferencex-colorpicker-1.1.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6b12e25f5e77ff4eb6fe736deb68f196/preferencex-colorpicker-1.1.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ae6710e91e882b9bfdb1c14ddc0421c1/preferencex-colorpicker-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ae6710e91e882b9bfdb1c14ddc0421c1/preferencex-colorpicker-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ae6710e91e882b9bfdb1c14ddc0421c1/preferencex-colorpicker-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.takisoft.preferencex/preferencex-colorpicker/1.1.0/2df7fbd0bc08f75781ef8839e5e40c679c2b6d11/preferencex-colorpicker-1.1.0-javadoc.jar!/" />

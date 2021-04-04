@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.splitwise:tokenautocomplete:4.0.0-beta01@aar">
     <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2e61ce4abd0e080569772cb867b440c1/tokenautocomplete-4.0.0-beta01/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2e61ce4abd0e080569772cb867b440c1/tokenautocomplete-4.0.0-beta01/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/371911bbf6d21b74e0c12cfb2ff4c689/tokenautocomplete-4.0.0-beta01/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/371911bbf6d21b74e0c12cfb2ff4c689/tokenautocomplete-4.0.0-beta01/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/371911bbf6d21b74e0c12cfb2ff4c689/tokenautocomplete-4.0.0-beta01/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2e61ce4abd0e080569772cb867b440c1/tokenautocomplete-4.0.0-beta01/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.splitwise/tokenautocomplete/4.0.0-beta01/e7bbfa0b5a5da0b6791c4bd5a7e4bb01aa50c70e/tokenautocomplete-4.0.0-beta01-javadoc.jar!/" />

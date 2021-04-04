@@ -4,17 +4,7 @@
             "outputFile": "/Users/saman/Projects/asml-lang/k-9/app/k9mail/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en/values-en.xml",
             "map": [
                 {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/f6bbce39c76a4d137ce78dc5405e7a0e/datetimepicker-1.0.2/res/values-en/values-en.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,115,169,215,265",
-                        "endColumns": "59,53,45,49,46",
-                        "endOffsets": "110,164,210,260,307"
-                    }
-                },
-                {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/c97ebeef04f1d7f2fe5b8ce023cc1454/SearchPreference-v2.0.0/res/values-en/values-en.xml",
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/96933b3942e5cf0097e7d1bb132c2c6c/SearchPreference-v2.0.0/res/values-en/values-en.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
@@ -28,6 +18,16 @@
                         "startOffsets": "312,369,442,515,570,637",
                         "endColumns": "56,72,72,54,66,59",
                         "endOffsets": "364,437,510,565,632,692"
+                    }
+                },
+                {
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/732fb10934f5dc2921060db9147a347a/datetimepicker-1.0.2/res/values-en/values-en.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,115,169,215,265",
+                        "endColumns": "59,53,45,49,46",
+                        "endOffsets": "110,164,210,260,307"
                     }
                 }
             ]

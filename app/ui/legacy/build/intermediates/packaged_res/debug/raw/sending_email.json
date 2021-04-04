@@ -18,8 +18,11 @@
     },
     "to": {
       "description": "The reciever email",
-      "type": "string",
-      "format": "email"
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "email"
+      }
     },
     "subject": {
       "description": "The subject text of the email",

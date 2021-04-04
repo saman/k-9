@@ -4,7 +4,7 @@
             "outputFile": "/Users/saman/Projects/asml-lang/k-9/app/k9mail/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/39a4c860b666328ee00fa527e9333cb7/appcompat-1.2.0/res/values-v26/values-v26.xml",
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/6e5f15ed96b405f9c707aab6a5e4c679/appcompat-1.2.0/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

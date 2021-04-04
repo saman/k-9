@@ -4,7 +4,7 @@
             "outputFile": "/Users/saman/Projects/asml-lang/k-9/app/k9mail/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/2143a9f7df5ec404d9e48e1a8a846601/core-1.3.2/res/values-v16/values-v16.xml",
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/b52209e87c682c06a637364b28111bf5/core-1.3.2/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/39a4c860b666328ee00fa527e9333cb7/appcompat-1.2.0/res/values-v16/values-v16.xml",
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/6e5f15ed96b405f9c707aab6a5e4c679/appcompat-1.2.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

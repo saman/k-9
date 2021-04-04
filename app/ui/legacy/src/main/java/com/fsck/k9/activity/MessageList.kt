@@ -65,6 +65,12 @@ import com.fsck.k9.ui.permissions.PermissionUiHelper
 import com.fsck.k9.view.ViewSwitcher
 import com.fsck.k9.view.ViewSwitcher.OnSwitchCompleteListener
 import com.github.asml.rsm.android.RuntimeStateMigration
+import com.github.asml.rsm.android.interfaces.OnDeviceJoinListener
+import com.github.asml.rsm.android.interfaces.OnDeviceLeaveListener
+import com.github.asml.rsm.android.interfaces.OnStateMigrationListener
+import com.github.asml.rsm.android.interfaces.OnStateReceiveListener
+import com.github.asml.rsm.android.interfaces.OnStateRequestListener
+import com.github.asml.rsm.android.models.Device
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.mikepenz.materialdrawer.Drawer.OnDrawerListener
 import org.apache.commons.lang3.StringUtils
@@ -78,6 +84,7 @@ import timber.log.Timber
  *
  * From this Activity the user can perform all standard message operations.
  */
+@SuppressLint("LogNotTimber")
 open class MessageList :
     K9Activity(),
     MessageListFragmentListener,
@@ -132,8 +139,7 @@ open class MessageList :
     private var viewSwitcher: ViewSwitcher? = null
 
     private val RSM_MODEL = "search"
-
-    @SuppressLint("LogNotTimber")
+    private val TAG = "RuntimeStateMigration"
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -183,44 +189,6 @@ open class MessageList :
         if (savedInstanceState == null) {
             checkAndRequestPermissions()
         }
-        rsm.setOnDeviceJoinListener { modelName, device ->
-            Log.d("RuntimeStateMigration", "setOnDeviceJoinListener called with: modelName = $modelName, device = ${device.name}")
-            Toast.makeText(this, "${device.name} joined $modelName", Toast.LENGTH_SHORT).show()
-        }
-        rsm.setOnDeviceLeaveListener { device ->
-            Log.d("RuntimeStateMigration", "setOnDeviceLeaveListener called with: device = ${device.name}")
-            Toast.makeText(this, "${device.name} left", Toast.LENGTH_SHORT).show()
-        }
-        rsm.setOnStateRequestListener { modelName, device ->
-            Log.d("RuntimeStateMigration", "setOnStateRequestListener() called with: modelName = $modelName, device = ${device.name}")
-            if (modelName == RSM_MODEL) {
-                rsm.setState(RSM_MODEL, SearchState(searchView.query.toString(), true).toString())
-                rsm.sendState(RSM_MODEL, device.id)
-            }
-        }
-        rsm.setOnStateReceiveListener { modelName, device, state, isValid ->
-            Log.d("RuntimeStateMigration", "setOnStateReceiveListener() called with: modelName = $modelName, device = ${device.name}, state = $state, isValid = $isValid")
-            if (modelName == RSM_MODEL && isValid) {
-                val searchState = SearchState.fromJsonString(state)
-                searchView.isIconified = false
-                searchView.setQuery(searchState.query, searchState.isSubmit)
-                //requestSearchWithInitialValue(searchState.query)
-                rsm.setMigration(RSM_MODEL, device.id)
-            } else if (modelName == MessageCompose.RSM_MODEL && isValid) {
-                val emailState = SendingEmailState.fromJsonString(state)
-                intent = Intent(
-                    Intent.ACTION_VIEW,
-                    Uri.parse("mailto:?to=${emailState.to}&subject=${emailState.subject}&body=${emailState.body}"),
-                    this, MessageCompose::class.java
-                )
-                startActivity(intent)
-            }
-        }
-        rsm.setOnStateMigrationListener { modelName, device ->
-            if (modelName == RSM_MODEL && searchView.isShown) {
-                searchView.setQuery("", false)
-            }
-        }
         rsm.addModel(readStringFromRaw(R.raw.search))
         rsm.addModel(readStringFromRaw(R.raw.sending_email))
         rsm.introduce()
@@ -245,13 +213,14 @@ open class MessageList :
                     device = devices[which]
                 }
                 .setPositiveButton("Migrate") { _, _ ->
-                    rsm.setState(RSM_MODEL, SearchState(searchView.query.toString(), false).toString())
+                    rsm.setState(RSM_MODEL, SearchState(searchView.query.toString(), this is Search).toString())
                     rsm.sendState(RSM_MODEL, device.id)
                 }
                 .create().show()
         }
         migrationGet.setOnClickListener {
             val devices = rsm.getDevices(RSM_MODEL, true)
+
             if (devices.size < 1) {
                 AlertDialog.Builder(this)
                     .setTitle("Migrate Search")
@@ -269,10 +238,93 @@ open class MessageList :
                 .setPositiveButton("Migrate") { _, _ -> rsm.getStateDevice(RSM_MODEL, device.id) }
                 .create().show()
         }
-        findViewById<View>(R.id.migration).setOnClickListener { v: View? ->
-            val devices = rsm.getDevices(RSM_MODEL, true)
-            migrationGet.visibility = if (devices == null || devices.size < 1) View.GONE else View.VISIBLE
+        findViewById<View>(R.id.migration).setOnClickListener {
+            Log.d("RuntimeStateMigration", "migration -> is search: : ${this is Search}")
             migrationMenu.visibility = if (migrationMenu.visibility == View.VISIBLE) View.GONE else View.VISIBLE
+        }
+    }
+
+    public override fun onPause() {
+        super.onPause()
+        rsm.removeCallbacks()
+        StorageManager.getInstance(application).removeListener(storageListener)
+    }
+
+    public override fun onResume() {
+        super.onResume()
+        rsm.setOnDeviceJoinListener(this::onDeviceJoin)
+        rsm.setOnDeviceLeaveListener(this::onDeviceLeave)
+        rsm.setOnStateRequestListener(this::onStateRequest)
+        rsm.setOnStateReceiveListener(this::onStateReceive)
+        rsm.setOnStateMigrationListener(this::onStateMigration)
+
+        if (messageListActivityAppearance == null) {
+            messageListActivityAppearance = MessageListActivityAppearance.create()
+        } else if (messageListActivityAppearance != MessageListActivityAppearance.create()) {
+            recreate()
+        }
+
+        if (this !is Search) {
+            // necessary b/c no guarantee Search.onStop will be called before MessageList.onResume
+            // when returning from search results
+            searchStatusManager.isActive = false
+        } else {
+            if (this::searchView.isInitialized) {
+                val query = intent.getStringExtra(SearchManager.QUERY)?.trim()
+                searchView.isIconified = false
+                searchView.setQuery(query, false)
+            }
+        }
+
+        if (account != null && !account!!.isAvailable(this)) {
+            onAccountUnavailable()
+            return
+        }
+
+        StorageManager.getInstance(application).addListener(storageListener)
+    }
+
+    fun onDeviceJoin(modelName: String?, device: Device?) {
+        Log.d("RuntimeStateMigration", "setOnDeviceJoinListener called with: modelName = $modelName, device = ${device?.name}")
+        Toast.makeText(this, "${device?.name} joined $modelName", Toast.LENGTH_SHORT).show()
+    }
+
+    fun onDeviceLeave(device: Device?) {
+        Log.d("RuntimeStateMigration", "setOnDeviceLeaveListener called with: device = ${device?.name}")
+        Toast.makeText(this, "${device?.name} left", Toast.LENGTH_SHORT).show()
+    }
+
+    fun onStateMigration(modelName: String?, device: Device?) {
+        if (modelName == RSM_MODEL && searchView.isShown) {
+            searchView.setQuery("", false)
+        }
+    }
+
+    fun onStateReceive(modelName: String?, device: Device?, state: String?, isValid: Boolean) {
+        Log.d("RuntimeStateMigration", "setOnStateReceiveListener (Search) called with: modelName = $modelName, device = ${device?.name}, state = $state, isValid = $isValid")
+        if (modelName == RSM_MODEL && isValid) {
+            val searchState = SearchState.fromJsonString(state)
+            searchView.isIconified = false
+            searchView.setQuery(searchState.query, searchState.isSubmit)
+            //requestSearchWithInitialValue(searchState.query)
+            rsm.setMigration(RSM_MODEL, device?.id)
+        } else if (modelName == MessageCompose.RSM_MODEL && isValid) {
+            val emailState = SendingEmailState.fromJsonString(state)
+            intent = Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse("mailto:?to=${emailState.to}&subject=${emailState.subject}&body=${emailState.body}"),
+                this, MessageCompose::class.java
+            )
+            rsm.setMigration(MessageCompose.RSM_MODEL, device?.id)
+            startActivity(intent)
+        }
+    }
+
+    fun onStateRequest(modelName: String?, device: Device?) {
+        Log.d("RuntimeStateMigration", "setOnStateRequestListener() called with: modelName = $modelName, device = ${device?.name}")
+        if (modelName == RSM_MODEL) {
+            rsm.setState(RSM_MODEL, SearchState(searchView.query.toString(), this is Search).toString())
+            rsm.sendState(RSM_MODEL, device?.id)
         }
     }
 
@@ -432,6 +484,7 @@ open class MessageList :
                 // Query was received from Search Dialog
                 val query = intent.getStringExtra(SearchManager.QUERY)?.trim()
 
+
                 search = LocalSearch(getString(R.string.search_results))
                 search!!.isManualSearch = true
                 noThreading = true
@@ -521,34 +574,6 @@ open class MessageList :
         if (!hasPermission(Permission.READ_CONTACTS)) {
             requestPermissionOrShowRationale(Permission.READ_CONTACTS)
         }
-    }
-
-    public override fun onPause() {
-        super.onPause()
-        StorageManager.getInstance(application).removeListener(storageListener)
-    }
-
-    public override fun onResume() {
-        super.onResume()
-
-        if (messageListActivityAppearance == null) {
-            messageListActivityAppearance = MessageListActivityAppearance.create()
-        } else if (messageListActivityAppearance != MessageListActivityAppearance.create()) {
-            recreate()
-        }
-
-        if (this !is Search) {
-            // necessary b/c no guarantee Search.onStop will be called before MessageList.onResume
-            // when returning from search results
-            searchStatusManager.isActive = false
-        }
-
-        if (account != null && !account!!.isAvailable(this)) {
-            onAccountUnavailable()
-            return
-        }
-
-        StorageManager.getInstance(application).addListener(storageListener)
     }
 
     override fun onStart() {
@@ -1005,12 +1030,14 @@ open class MessageList :
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        Log.d(TAG, "onCreateOptionsMenu() called")
         menuInflater.inflate(R.menu.message_list_option, menu)
         this.menu = menu
         return true
     }
 
     override fun onPrepareOptionsMenu(menu: Menu): Boolean {
+        Log.d(TAG, "onPrepareOptionsMenu() called")
         super.onPrepareOptionsMenu(menu)
         configureMenu(menu)
         return true
@@ -1024,6 +1051,7 @@ open class MessageList :
      * in this method.
      */
     private fun configureMenu(menu: Menu?) {
+        Log.d(TAG, "configureMenu() called with: menu = $menu")
         if (menu == null) return
 
         // Set visibility of menu items related to the message view
@@ -1138,16 +1166,15 @@ open class MessageList :
         // Hide both search menu items by default and enable one when appropriate
         val searchManager = getSystemService(Context.SEARCH_SERVICE) as SearchManager
         searchView = menu.findItem(R.id.search).actionView as SearchView
-/*        searchView.setOnQueryTextFocusChangeListener { v, hasFocus ->
-            migration.visibility = if (hasFocus) View.VISIBLE else View.GONE
-        }*/
+
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
+                //searchView.isIconified = false
                 return false
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
-                rsm.setHasState(RSM_MODEL)
+                rsm.setHasState(RSM_MODEL, newText?.isNotEmpty() == true)
                 return false
             }
         })
@@ -1155,6 +1182,11 @@ open class MessageList :
             isVisible = false
             setSearchableInfo(searchManager.getSearchableInfo(componentName))
             setIconifiedByDefault(true)
+        }
+        if (this is Search) {
+            val query = intent.getStringExtra(SearchManager.QUERY)?.trim()
+            searchView.isIconified = false
+            searchView.setQuery(query, false)
         }
         //menu.findItem(R.id.search).isVisible = false
         menu.findItem(R.id.search_remote).isVisible = false

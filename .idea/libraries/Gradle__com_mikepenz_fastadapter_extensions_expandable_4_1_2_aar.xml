@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.mikepenz:fastadapter-extensions-expandable:4.1.2@aar">
     <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3f8ffd32c12a9a8b69f723af1164a7de/fastadapter-extensions-expandable-4.1.2/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3f8ffd32c12a9a8b69f723af1164a7de/fastadapter-extensions-expandable-4.1.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5857033fdb7ab7744334c88539efc3f8/fastadapter-extensions-expandable-4.1.2/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5857033fdb7ab7744334c88539efc3f8/fastadapter-extensions-expandable-4.1.2/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5857033fdb7ab7744334c88539efc3f8/fastadapter-extensions-expandable-4.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3f8ffd32c12a9a8b69f723af1164a7de/fastadapter-extensions-expandable-4.1.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/fastadapter-extensions-expandable/4.1.2/7c6c5861c33eb5edac9bbc6e32e6c8443608666b/fastadapter-extensions-expandable-4.1.2-javadoc.jar!/" />

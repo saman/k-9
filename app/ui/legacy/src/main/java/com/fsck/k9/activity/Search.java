@@ -4,6 +4,7 @@ package com.fsck.k9.activity;
 public class Search extends MessageList {
     @Override
     public void onStart() {
+        invalidateOptionsMenu();
         getSearchStatusManager().setActive(true);
         super.onStart();
     }

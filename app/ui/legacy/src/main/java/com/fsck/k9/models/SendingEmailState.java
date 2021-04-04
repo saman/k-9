@@ -1,20 +1,22 @@
 package com.fsck.k9.models;
 
 
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class SendingEmailState {
     private String from;
-    private String to;
+    private List<String> to;
     private String subject;
     private String body;
 
     public SendingEmailState() {
     }
 
-    public SendingEmailState(String from, String to, String subject, String body) {
+    public SendingEmailState(String from, List<String> to, String subject, String body) {
         this.from = from;
         this.to = to;
         this.subject = subject;
@@ -25,7 +27,7 @@ public class SendingEmailState {
         return from;
     }
 
-    public String getTo() {
+    public List<String> getTo() {
         return to;
     }
 

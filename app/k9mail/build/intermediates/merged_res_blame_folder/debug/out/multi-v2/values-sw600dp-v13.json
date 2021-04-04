@@ -4,41 +4,7 @@
             "outputFile": "/Users/saman/Projects/asml-lang/k-9/app/k9mail/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/3c4bcf300f28ec9bbbc1e40fb1248d96/materialize-1.2.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "54",
-                        "endOffsets": "105"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1237",
-                        "endColumns": "54",
-                        "endOffsets": "1287"
-                    }
-                },
-                {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/c3a3a09803331b9f71edd0b0825c925e/materialdrawer-7.0.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "63",
-                        "endOffsets": "114"
-                    },
-                    "to": {
-                        "startLines": "19",
-                        "startColumns": "4",
-                        "startOffsets": "1173",
-                        "endColumns": "63",
-                        "endOffsets": "1232"
-                    }
-                },
-                {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/d0e62d801293e52cd47ec069da7717d9/material-1.2.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/a0ecc9cb2a344a78b7031db92d715690/material-1.2.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
@@ -57,13 +23,47 @@
                     }
                 },
                 {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/39a4c860b666328ee00fa527e9333cb7/appcompat-1.2.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/6e5f15ed96b405f9c707aab6a5e4c679/appcompat-1.2.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
                         "startOffsets": "55,124,193,263,337,413,472,543",
                         "endColumns": "68,68,69,73,75,58,70,67",
                         "endOffsets": "119,188,258,332,408,467,538,606"
+                    }
+                },
+                {
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/a2e54732c8e09295b36d5b75007f08c5/materialdrawer-7.0.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "63",
+                        "endOffsets": "114"
+                    },
+                    "to": {
+                        "startLines": "19",
+                        "startColumns": "4",
+                        "startOffsets": "1173",
+                        "endColumns": "63",
+                        "endOffsets": "1232"
+                    }
+                },
+                {
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/c92abc02b5c9496fc4165121f3134c99/materialize-1.2.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "54",
+                        "endOffsets": "105"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1237",
+                        "endColumns": "54",
+                        "endOffsets": "1287"
                     }
                 }
             ]

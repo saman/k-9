@@ -6,17 +6,23 @@ import com.github.asml.rsm.android.models.Device;
 
 class HasState implements Publishable {
     private Device device;
-    private String action = "has-state";
+    private boolean value;
+    private final String action = "has-state";
 
     public HasState() {
     }
 
-    public HasState(Device device) {
+    public HasState(Device device, boolean value) {
         this.device = device;
+        this.value = value;
     }
 
     public Device getDevice() {
         return device;
+    }
+
+    public boolean getValue() {
+        return value;
     }
 
     @Override

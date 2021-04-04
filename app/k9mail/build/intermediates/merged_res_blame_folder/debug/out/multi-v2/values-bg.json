@@ -4,7 +4,41 @@
             "outputFile": "/Users/saman/Projects/asml-lang/k-9/app/k9mail/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml",
             "map": [
                 {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/06efec43ea052b78b0e35196ad749e11/colorpicker-1.0.0/res/values-bg/values-bg.xml",
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/732fb10934f5dc2921060db9147a347a/datetimepicker-1.0.2/res/values-bg/values-bg.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,127,200,266,319,364,421,468,547,628,698,769,832,892,954,1013,1098,1185,1264,1332,1387,1473,1561,1640,1713,1773,1840,1961",
+                        "endColumns": "71,72,65,52,44,56,46,78,80,69,70,62,59,61,58,84,86,78,67,54,85,87,78,72,59,66,120,134",
+                        "endOffsets": "122,195,261,314,359,416,463,542,623,693,764,827,887,949,1008,1093,1180,1259,1327,1382,1468,1556,1635,1708,1768,1835,1956,2091"
+                    },
+                    "to": {
+                        "startLines": "494,495,496,497,498,499,500,710,794,832,833,909,910,911,913,1006,1007,1008,1009,1010,1011,1012,1013,1014,1015,1016,1017,1018",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "43191,43263,43336,43402,43455,43500,43557,62373,69968,73304,73374,79797,79860,79920,80054,87245,87330,87417,87496,87564,87619,87705,87793,87872,87945,88005,88072,88193",
+                        "endColumns": "71,72,65,52,44,56,46,78,80,69,70,62,59,61,58,84,86,78,67,54,85,87,78,72,59,66,120,134",
+                        "endOffsets": "43258,43331,43397,43450,43495,43552,43599,62447,70044,73369,73440,79855,79915,79977,80108,87325,87412,87491,87559,87614,87700,87788,87867,87940,88000,88067,88188,88323"
+                    }
+                },
+                {
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/7d1ef7a92d719cac1571da98a54f2f64/navigation-ui-2.3.1/res/values-bg/values-bg.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,168",
+                        "endColumns": "112,123",
+                        "endOffsets": "163,287"
+                    },
+                    "to": {
+                        "startLines": "797,798",
+                        "startColumns": "4,4",
+                        "startOffsets": "70248,70361",
+                        "endColumns": "112,123",
+                        "endOffsets": "70356,70480"
+                    }
+                },
+                {
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/5c3ccbc7d90f48813632ca02f129d4fd/colorpicker-1.0.0/res/values-bg/values-bg.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -40,41 +74,24 @@
                     }
                 },
                 {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/caa18452270a464e69a39e2b8e6acd1b/preference-1.1.1/res/values-bg/values-bg.xml",
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/ac7406deeda876704017eb24a8db8377/preferencex-ringtone-1.1.0/res/values-bg/values-bg.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "105,177,265,344,484,653,735",
-                        "endColumns": "71,87,78,139,168,81,77",
-                        "endOffsets": "172,260,339,479,648,730,808"
+                        "startOffsets": "55,121,198,284,348,406,454",
+                        "endColumns": "65,76,85,63,57,47,97",
+                        "endOffsets": "116,193,279,343,401,449,547"
                     },
                     "to": {
-                        "startLines": "454,566,805,863,1003,1042,1043",
+                        "startLines": "397,403,830,895,896,897,1022",
                         "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "39470,49532,70869,76402,86979,90295,90377",
-                        "endColumns": "71,87,78,139,168,81,77",
-                        "endOffsets": "39537,49615,70943,76537,87143,90372,90450"
+                        "startOffsets": "34681,35013,73157,78742,78806,78864,88560",
+                        "endColumns": "65,76,85,63,57,47,97",
+                        "endOffsets": "34742,35085,73238,78801,78859,78907,88653"
                     }
                 },
                 {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/17b8080ba50a665e4f7d19dbf8a98b05/navigation-ui-2.3.1/res/values-bg/values-bg.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,168",
-                        "endColumns": "112,123",
-                        "endOffsets": "163,287"
-                    },
-                    "to": {
-                        "startLines": "797,798",
-                        "startColumns": "4,4",
-                        "startOffsets": "70248,70361",
-                        "endColumns": "112,123",
-                        "endOffsets": "70356,70480"
-                    }
-                },
-                {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/39a4c860b666328ee00fa527e9333cb7/appcompat-1.2.0/res/values-bg/values-bg.xml",
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/6e5f15ed96b405f9c707aab6a5e4c679/appcompat-1.2.0/res/values-bg/values-bg.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -91,7 +108,7 @@
                     }
                 },
                 {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/2143a9f7df5ec404d9e48e1a8a846601/core-1.3.2/res/values-bg/values-bg.xml",
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/b52209e87c682c06a637364b28111bf5/core-1.3.2/res/values-bg/values-bg.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -108,37 +125,20 @@
                     }
                 },
                 {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/f6bbce39c76a4d137ce78dc5405e7a0e/datetimepicker-1.0.2/res/values-bg/values-bg.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,127,200,266,319,364,421,468,547,628,698,769,832,892,954,1013,1098,1185,1264,1332,1387,1473,1561,1640,1713,1773,1840,1961",
-                        "endColumns": "71,72,65,52,44,56,46,78,80,69,70,62,59,61,58,84,86,78,67,54,85,87,78,72,59,66,120,134",
-                        "endOffsets": "122,195,261,314,359,416,463,542,623,693,764,827,887,949,1008,1093,1180,1259,1327,1382,1468,1556,1635,1708,1768,1835,1956,2091"
-                    },
-                    "to": {
-                        "startLines": "494,495,496,497,498,499,500,710,794,832,833,909,910,911,913,1006,1007,1008,1009,1010,1011,1012,1013,1014,1015,1016,1017,1018",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "43191,43263,43336,43402,43455,43500,43557,62373,69968,73304,73374,79797,79860,79920,80054,87245,87330,87417,87496,87564,87619,87705,87793,87872,87945,88005,88072,88193",
-                        "endColumns": "71,72,65,52,44,56,46,78,80,69,70,62,59,61,58,84,86,78,67,54,85,87,78,72,59,66,120,134",
-                        "endOffsets": "43258,43331,43397,43450,43495,43552,43599,62447,70044,73369,73440,79855,79915,79977,80108,87325,87412,87491,87559,87614,87700,87788,87867,87940,88000,88067,88188,88323"
-                    }
-                },
-                {
-                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/e33d2de0b4236ed868f3ccc2d5cfe96e/preferencex-ringtone-1.1.0/res/values-bg/values-bg.xml",
+                    "source": "/Users/saman/.gradle/caches/transforms-2/files-2.1/d7514b8b72dcdd9fa118cac0e6f5b983/preference-1.1.1/res/values-bg/values-bg.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,121,198,284,348,406,454",
-                        "endColumns": "65,76,85,63,57,47,97",
-                        "endOffsets": "116,193,279,343,401,449,547"
+                        "startOffsets": "105,177,265,344,484,653,735",
+                        "endColumns": "71,87,78,139,168,81,77",
+                        "endOffsets": "172,260,339,479,648,730,808"
                     },
                     "to": {
-                        "startLines": "397,403,830,895,896,897,1022",
+                        "startLines": "454,566,805,863,1003,1042,1043",
                         "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "34681,35013,73157,78742,78806,78864,88560",
-                        "endColumns": "65,76,85,63,57,47,97",
-                        "endOffsets": "34742,35085,73238,78801,78859,78907,88653"
+                        "startOffsets": "39470,49532,70869,76402,86979,90295,90377",
+                        "endColumns": "71,87,78,139,168,81,77",
+                        "endOffsets": "39537,49615,70943,76537,87143,90372,90450"
                     }
                 }
             ]

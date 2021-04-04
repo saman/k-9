@@ -49,6 +49,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_margin="16dp"
+        app:backgroundTint="#6200ee"
         android:src="@drawable/ic_migrate"
         app:fabSize="normal" />
 
@@ -63,45 +64,9 @@
         android:visibility="gone">
 
         <LinearLayout
-            android:id="@+id/migration_set"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginRight="8dp"
-                android:padding="4dp"
-                android:text="Set State"
-                android:textColor="#ffffff"
-                android:textSize="12sp">
-
-                <aapt:attr name="android:background">
-
-                    <shape android:shape="rectangle">
-
-                        <solid android:color="#8B000000" />
-                        <!-- A hack because we can't set the color to a theme attribute like ?attr/messageListThreadCountBackgroundColor" -->
-                        <corners android:radius="4dp" />
-
-                    </shape>
-                </aapt:attr>
-            </TextView>
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_migration_set"
-                app:fabSize="mini" />
-        </LinearLayout>
-
-        <LinearLayout
             android:id="@+id/migration_get"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:orientation="horizontal">
 
             <TextView
@@ -129,7 +94,45 @@
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:backgroundTint="#6200ee"
                 android:src="@drawable/ic_migration_get"
+                app:fabSize="mini" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/migration_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:padding="4dp"
+                android:text="Set State"
+                android:textColor="#ffffff"
+                android:textSize="12sp">
+
+                <aapt:attr name="android:background">
+
+                    <shape android:shape="rectangle">
+
+                        <solid android:color="#8B000000" />
+                        <!-- A hack because we can't set the color to a theme attribute like ?attr/messageListThreadCountBackgroundColor" -->
+                        <corners android:radius="4dp" />
+
+                    </shape>
+                </aapt:attr>
+            </TextView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="#6200ee"
+                android:src="@drawable/ic_migration_set"
                 app:fabSize="mini" />
         </LinearLayout>
     </LinearLayout>

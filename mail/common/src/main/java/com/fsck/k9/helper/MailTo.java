@@ -85,7 +85,7 @@ public final class MailTo {
         return Address.parse(addressList);
     }
 
-    private static String toCommaSeparatedString(List<String> list) {
+    public static String toCommaSeparatedString(List<String> list) {
         StringBuilder stringBuilder = new StringBuilder();
         for (String item : list) {
             stringBuilder.append(item).append(',');
